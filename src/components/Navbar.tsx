@@ -70,8 +70,26 @@ const Navbar = () => {
       <div className={`flex items-center ${
         isMobile 
           ? 'justify-center space-x-8' 
-          : 'flex-col justify-center h-full space-y-8'
+          : 'flex-col h-full'
       }`}>
+        {/* Desktop Logo */}
+        {!isMobile && (
+          <motion.div 
+            variants={itemVariants}
+            className="mb-8 mt-4"
+          >
+            <Link to="/" className="flex items-center justify-center">
+              <img 
+                src="/images/logo2.png" 
+                alt="Robofiesta Logo" 
+                className="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300"
+              />
+            </Link>
+          </motion.div>
+        )}
+        
+        {/* Navigation Items */}
+        <div className={`flex ${isMobile ? 'space-x-8' : 'flex-col space-y-8 flex-1 justify-center'}`}>
         {navItems.map((item) => {
           const isActive = location.pathname === item.route
           
@@ -116,6 +134,7 @@ const Navbar = () => {
             </motion.div>
           )
         })}
+        </div>
       </div>
       
       {/* Subtle glow effect */}

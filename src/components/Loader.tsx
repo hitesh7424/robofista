@@ -63,8 +63,12 @@ const Loader = ({ text = "Loading...", onComplete }: LoaderProps) => {
           }}
           className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gradient-to-r from-primary via-secondary to-highlight p-1"
         >
-          <div className="w-full h-full rounded-full bg-bg-primary flex items-center justify-center">
-            <span className="text-2xl md:text-3xl">🤖</span>
+          <div className="w-full h-full rounded-full bg-bg-primary flex items-center justify-center overflow-hidden">
+            <img 
+              src="/images/logo1.png" 
+              alt="Robofiesta Logo" 
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
+            />
           </div>
         </motion.div>
 
