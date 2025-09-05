@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "yt-video",
+    "title": "Robotics Lab Tour",
+    "description": "Take a virtual tour of our state-of-the-art robotics laboratory",
+    "url": "youtube.com/shorts/Cwzu_LornhQ"
+  },
+  {
+    "id": 2,
+    "type": "video",
+    "title": "Hackathon",
+    "description": "Intense coding and robotics innovation during our 24-hour hackathon event",
+    "url": "/videos/hackthon.mp4"
+  },
+  {
+    "id": 3,
+    "type": "yt-video",
+    "title": "Autonomous Robot Demo",
+    "description": "Watch our autonomous robots in action during practice sessions",
+    "url": "youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 4,
+    "type": "image",
+    "title": "Workshop Moments",
+    "description": "Students learning and building together in our workshops",
+    "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    "id": 5,
+    "type": "yt-video",
+    "title": "Drone Competition Highlights",
+    "description": "Amazing aerial maneuvers from last year's drone programming competition",
+    "url": "youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": 6,
+    "type": "image",
+    "title": "Team Collaboration",
+    "description": "Teams working together to solve complex robotics challenges",
+    "url": "/images/ppt.jpg"
+  }
+]

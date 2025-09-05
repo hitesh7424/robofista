@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "title": "Robo Race",
+    "date": "2025-10-15",
+    "time": "10:00 AM",
+    "description": "An exciting robot racing competition where teams compete with their autonomous robots through challenging tracks.",
+    "rules": [
+      "Maximum robot dimensions: 30cm x 30cm x 30cm",
+      "Autonomous navigation only",
+      "No remote control allowed",
+      "Time-based scoring system"
+    ],
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Competition",
+    "prize": "$1000",
+    "registrationLink": "https://forms.google.com/roborace-registration"
+  },
+  {
+    "id": 2,
+    "title": "Line Following Robot",
+    "date": "2025-10-16",
+    "time": "2:00 PM",
+    "description": "Classic line following competition where robots navigate through complex paths using sensors.",
+    "rules": [
+      "Follow black line on white surface",
+      "Fastest completion wins",
+      "No human intervention during run",
+      "Maximum 3 attempts per team"
+    ],
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Competition",
+    "prize": "$500",
+    "registrationLink": "https://forms.google.com/linefollowing-registration"
+  },
+  {
+    "id": 3,
+    "title": "Drone Programming",
+    "date": "2025-10-17",
+    "time": "11:00 AM",
+    "description": "Program drones to perform aerial maneuvers and complete challenging flight missions.",
+    "rules": [
+      "Pre-programmed flight paths only",
+      "Maximum flight time: 5 minutes",
+      "Safety protocols must be followed",
+      "Indoor flight arena"
+    ],
+    "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Competition",
+    "prize": "$750",
+    "registrationLink": "https://forms.google.com/drone-programming-registration"
+  },
+  {
+    "id": 4,
+    "title": "AI Workshop",
+    "date": "2025-10-18",
+    "time": "9:00 AM",
+    "description": "Learn the fundamentals of artificial intelligence and machine learning in robotics applications.",
+    "rules": [
+      "Bring your own laptop",
+      "Basic programming knowledge required",
+      "Certificate provided",
+      "Limited to 50 participants"
+    ],
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Workshop",
+    "prize": "Certificate",
+    "registrationLink": "https://forms.google.com/ai-workshop-registration"
+  },
+  {
+    "id": 5,
+    "title": "Robot Soccer",
+    "date": "2025-10-19",
+    "time": "3:00 PM",
+    "description": "Teams of robots compete in an exciting soccer match using autonomous navigation and ball control.",
+    "rules": [
+      "Maximum 3 robots per team",
+      "Autonomous play only",
+      "Standard soccer field dimensions",
+      "90-minute matches"
+    ],
+    "image": "https://images.unsplash.com/photo-1574781330855-d0db50d93c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Competition",
+    "prize": "$1200",
+    "registrationLink": "https://forms.google.com/robot-soccer-registration"
+  },
+  {
+    "id": 6,
+    "title": "Automation Expo",
+    "date": "2025-10-20",
+    "time": "1:00 PM",
+    "description": "Showcase of latest automation technologies and industrial robotics solutions.",
+    "rules": [
+      "Open exhibition format",
+      "Interactive demonstrations",
+      "Industry expert presentations",
+      "Networking opportunities"
+    ],
+    "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Exhibition",
+    "prize": "Recognition",
+    "registrationLink": "https://forms.google.com/automation-expo-registration"
+  }
+]

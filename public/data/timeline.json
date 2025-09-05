@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "date": "2025-09-01",
+    "title": "Registration Opens",
+    "description": "Start your journey! Early bird registrations begin with special discounts.",
+    "status": "completed",
+    "icon": "🚀"
+  },
+  {
+    "id": 2,
+    "date": "2025-09-15",
+    "title": "Workshop Registrations",
+    "description": "Specialized workshop registrations open for hands-on learning experiences.",
+    "status": "completed",
+    "icon": "🔧"
+  },
+  {
+    "id": 3,
+    "date": "2025-10-01",
+    "title": "Team Formation Deadline",
+    "description": "Final deadline for team registrations and submission of team details.",
+    "status": "upcoming",
+    "icon": "👥"
+  },
+  {
+    "id": 4,
+    "date": "2025-10-10",
+    "title": "Technical Briefing",
+    "description": "Virtual briefing session covering all competition rules and guidelines.",
+    "status": "upcoming",
+    "icon": "📋"
+  },
+  {
+    "id": 5,
+    "date": "2025-10-15",
+    "title": "Symposium Day 1",
+    "description": "Opening ceremony and first day of competitions begin!",
+    "status": "upcoming",
+    "icon": "🎉"
+  },
+  {
+    "id": 6,
+    "date": "2025-10-20",
+    "title": "Symposium Finale",
+    "description": "Award ceremony and closing celebrations. Winners announced!",
+    "status": "upcoming",
+    "icon": "🏆"
+  }
+]
