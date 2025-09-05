@@ -4,23 +4,41 @@ import Countdown from '../components/Countdown'
 const Home = () => {
   return (
     <div className="h-screen overflow-hidden flex flex-col items-center justify-center px-4 relative">
-      {/* Subtle animated background */}
-      <div className="absolute inset-0 -z-10">
+      {/* Video Background */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Animated gradient background as primary background */}
         <motion.div
           animate={{
             background: [
-              'radial-gradient(circle at 20% 80%, #00FFF7 0%, transparent 70%)',
-              'radial-gradient(circle at 80% 20%, #9D4EDD 0%, transparent 70%)',
-              'radial-gradient(circle at 40% 40%, #1E90FF 0%, transparent 70%)',
+              'radial-gradient(circle at 20% 80%, rgba(0, 255, 247, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(157, 78, 221, 0.1) 0%, transparent 50%), radial-gradient(circle at 40% 40%, rgba(30, 144, 255, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 20%, rgba(0, 255, 247, 0.1) 0%, transparent 50%), radial-gradient(circle at 40% 40%, rgba(157, 78, 221, 0.1) 0%, transparent 50%), radial-gradient(circle at 20% 80%, rgba(30, 144, 255, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 40% 40%, rgba(0, 255, 247, 0.1) 0%, transparent 50%), radial-gradient(circle at 20% 80%, rgba(157, 78, 221, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.1) 0%, transparent 50%)',
             ],
           }}
           transition={{
-            duration: 12,
+            duration: 15,
             repeat: Infinity,
             repeatType: 'reverse',
           }}
-          className="absolute inset-0 opacity-5"
+          className="absolute inset-0"
         />
+        
+        {/* Try Vimeo iframe overlay */}
+        <iframe
+          src="https://player.vimeo.com/video/1115238176?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&background=1&app_id=58479"
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto transform -translate-x-1/2 -translate-y-1/2 scale-150 opacity-30"
+          style={{
+            pointerEvents: 'none',
+            border: 'none'
+          }}
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          title="Background Video"
+          frameBorder="0"
+        />
+        
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Logo Section */}
@@ -80,6 +98,7 @@ const Home = () => {
       >
         <Countdown />
       </motion.div>
+      
     </div>
   )
 }

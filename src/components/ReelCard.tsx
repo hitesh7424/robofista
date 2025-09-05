@@ -89,11 +89,11 @@ const ReelCard = ({ media, isActive }: ReelCardProps) => {
   }
 
   return (
-    <div className="relative w-full h-screen snap-start flex items-center justify-center bg-bg-primary">
+    <div className="relative w-full h-screen snap-start flex items-center justify-center px-2 md:px-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="relative w-full max-w-md mx-auto h-full max-h-[80vh] rounded-3xl overflow-hidden glassmorphism neon-glow"
+        className="relative w-full max-w-md mx-auto h-full max-h-[85vh] md:max-h-[80vh] rounded-3xl overflow-hidden glassmorphism neon-glow"
       >
         {/* Media content */}
         <div 

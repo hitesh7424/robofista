@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import EventCard from '../components/EventCard'
 import EventModal from '../components/EventModal'
+import Loader from '../components/Loader'
 
 interface Event {
   id: number
@@ -20,6 +21,7 @@ const Explore = () => {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [showLoader, setShowLoader] = useState(true)
   const [filter, setFilter] = useState<string>('All')
 
   useEffect(() => {
@@ -53,21 +55,13 @@ const Explore = () => {
     setSelectedEvent(null)
   }
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-          className="w-12 h-12 border-2 border-primary border-t-transparent rounded-full"
-        />
-      </div>
-    )
+  if (loading || showLoader) {
+    return <Loader text="Loading Events..." onComplete={() => setShowLoader(false)} />
   }
 
   return (
-    <div className="min-h-screen pt-8 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen pt-20 md:pt-8 px-4 pb-20 md:pb-8 relative">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

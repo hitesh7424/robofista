@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import ReelCard from '../components/ReelCard'
+import Loader from '../components/Loader'
 
 interface MediaItem {
   id: number
@@ -14,6 +15,7 @@ const Reels = () => {
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loading, setLoading] = useState(true)
+  const [showLoader, setShowLoader] = useState(true)
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -72,20 +74,12 @@ const Reels = () => {
     }
   }
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-bg-primary">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-          className="w-12 h-12 border-2 border-primary border-t-transparent rounded-full"
-        />
-      </div>
-    )
+  if (loading || showLoader) {
+    return <Loader text="Loading Media..." onComplete={() => setShowLoader(false)} />
   }
 
   return (
-    <div className="relative h-screen overflow-hidden bg-bg-primary md:ml-20">
+    <div className="relative h-screen overflow-hidden ml-0 md:ml-20">
       {/* Main container */}
       <div
         ref={containerRef}
@@ -102,14 +96,14 @@ const Reels = () => {
       </div>
 
       {/* Navigation dots */}
-      <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-40 flex flex-col space-y-4">
+      <div className="fixed right-2 md:right-4 top-1/2 transform -translate-y-1/2 z-40 flex flex-col space-y-3 md:space-y-4">
         {mediaItems.map((_, index) => (
           <motion.button
             key={index}
             whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.8 }}
             onClick={() => scrollToIndex(index)}
-            className={`w-4 h-4 rounded-full transition-all duration-300 border-2 ${
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 border-2 ${
               index === currentIndex
                 ? 'bg-primary border-primary shadow-lg shadow-primary/50'
                 : 'bg-transparent border-white/50 hover:border-white/80 hover:bg-white/20'
@@ -122,10 +116,10 @@ const Reels = () => {
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        className="fixed top-0 left-0 right-0 z-40 p-4 bg-gradient-to-b from-bg-primary/80 to-transparent"
+        className="fixed top-0 left-0 right-0 z-40 p-3 md:p-4 bg-gradient-to-b from-bg-primary/80 to-transparent"
       >
         <div className="flex items-center justify-between max-w-md mx-auto">
-          <h1 className="text-xl font-heading font-bold text-primary">
+          <h1 className="text-lg md:text-xl font-heading font-bold text-primary">
             Symposium Reels
           </h1>
           <div className="flex items-center space-x-2 text-text-secondary text-sm">

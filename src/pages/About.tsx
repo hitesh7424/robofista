@@ -48,8 +48,8 @@ const About = () => {
   ]
 
   return (
-    <div className="min-h-screen pt-8 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen pt-8 px-4 relative">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
