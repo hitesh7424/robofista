@@ -62,7 +62,7 @@ const Home = () => {
           className="mx-auto mb-1"
         >
           <img
-            src="/images/logo2.png"
+            src="/logo/logo2.webp"
             alt="Robofiesta Logo"
             className="w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 mx-auto object-contain"
             style={{
@@ -79,7 +79,7 @@ const Home = () => {
           className="mb-2 relative"
         >
           <img
-            src="/images/robo_text_logo.png"
+            src="/logo/robo_text_logo.webp"
             alt="Robofiesta 2K25"
             className="w-72 md:w-[26rem] lg:w-[32rem] xl:w-[38rem] h-auto mx-auto object-contain max-w-[90vw]"
             style={{

@@ -65,7 +65,7 @@ const Loader = ({ text = "Loading...", onComplete }: LoaderProps) => {
         >
           <div className="w-full h-full rounded-full bg-bg-primary flex items-center justify-center overflow-hidden">
             <img 
-              src="/images/logo1.png" 
+              src="/logo/logo1.webp" 
               alt="Robofiesta Logo" 
               className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />

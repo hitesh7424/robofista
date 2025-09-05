@@ -80,7 +80,7 @@ const Navbar = () => {
           >
             <Link to="/" className="flex items-center justify-center">
               <img 
-                src="/images/logo2.png" 
+                src="/logo/logo2.webp" 
                 alt="Robofiesta Logo" 
                 className="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300"
               />

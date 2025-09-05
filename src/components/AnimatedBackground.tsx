@@ -33,25 +33,25 @@ const AnimatedBackground = () => {
     let h = canvas.height = window.innerHeight
 
     const opts = {
-      len: 20,
-      count: 80,
+      len: 25,
+      count: 100,
       baseTime: 10,
       addedTime: 10,
-      dieChance: 0.05,
+      dieChance: 0.03,
       spawnChance: 1,
-      sparkChance: 0.2,
-      sparkDist: 15,
+      sparkChance: 0.25,
+      sparkDist: 20,
       sparkSize: 3,
-      color: 'hsl(hue,100%,light%)',
-      baseLight: 70,
-      addedLight: 20,
-      shadowToTimePropMult: 8,
+      color: 'hsl(hue,80%,light%)',
+      baseLight: 35,
+      addedLight: 15,
+      shadowToTimePropMult: 6,
       baseLightInputMultiplier: 0.01,
       addedLightInputMultiplier: 0.02,
       cx: w / 2,
       cy: h / 2,
-      repaintAlpha: 0.02,
-      hueChange: 0.2
+      repaintAlpha: 0.03,
+      hueChange: 0.1
     }
 
     let lines: Line[] = []
@@ -86,7 +86,10 @@ const AnimatedBackground = () => {
         this.addedY = 0
         this.rad = 0
         this.lightInputMultiplier = opts.baseLightInputMultiplier + opts.addedLightInputMultiplier * Math.random()
-        this.color = opts.color.replace('hue', (tickRef.current * opts.hueChange).toString())
+        // Calculate hue transition from red (0) to blue (240) over time
+        const hueProgress = (tickRef.current * opts.hueChange) % 360
+        const transitionHue = hueProgress <= 180 ? hueProgress * (240/180) : 240 - ((hueProgress - 180) * (240/180))
+        this.color = opts.color.replace('hue', Math.floor(transitionHue).toString())
         this.cumulativeTime = 0
         this.beginPhase()
       }
