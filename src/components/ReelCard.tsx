@@ -1,11 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
 
-// Helper function to check if URL is a YouTube video
-const isYouTubeUrl = (url: string) => {
-  return url.includes('youtube.com') || url.includes('youtu.be')
-}
-
 // Helper function to convert YouTube URL to embed format (supports regular videos and Shorts)
 const getYouTubeEmbedUrl = (url: string, isActive: boolean) => {
   // Handle YouTube Shorts
