@@ -10,6 +10,11 @@ interface Event {
   image: string
   category: string
   prize: string
+  registrationLink: string
+  coordinators?: {
+    students: string[]
+    faculty: string
+  }
 }
 
 interface EventCardProps {
@@ -81,6 +86,16 @@ const EventCard = ({ event, onClick }: EventCardProps) => {
         <p className="text-text-secondary font-body text-sm leading-relaxed line-clamp-3">
           {event.description}
         </p>
+
+        {/* Coordinators indicator */}
+        {event.coordinators && (
+          <div className="flex items-center space-x-2 mt-3 text-xs text-secondary">
+            <span>👥</span>
+            <span className="font-body">
+              Faculty: {event.coordinators.faculty} | Students: {event.coordinators.students.length}
+            </span>
+          </div>
+        )}
 
         {/* Hover indicator */}
         <motion.div

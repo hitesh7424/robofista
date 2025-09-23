@@ -1,104 +1,266 @@
 [
   {
     "id": 1,
-    "title": "Robo Race",
-    "date": "2025-10-15",
+    "title": "Line Follower",
+    "date": "2025-10-29",
     "time": "10:00 AM",
-    "description": "An exciting robot racing competition where teams compete with their autonomous robots through challenging tracks.",
-    "rules": [
-      "Maximum robot dimensions: 30cm x 30cm x 30cm",
-      "Autonomous navigation only",
-      "No remote control allowed",
-      "Time-based scoring system"
-    ],
-    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Competition",
-    "prize": "$1000",
-    "registrationLink": "https://forms.google.com/roborace-registration"
-  },
-  {
-    "id": 2,
-    "title": "Line Following Robot",
-    "date": "2025-10-16",
-    "time": "2:00 PM",
-    "description": "Classic line following competition where robots navigate through complex paths using sensors.",
+    "description": "Classic line following competition where robots navigate through complex paths using sensors to follow a black line on white surface.",
     "rules": [
       "Follow black line on white surface",
       "Fastest completion wins",
       "No human intervention during run",
-      "Maximum 3 attempts per team"
+      "Maximum 3 attempts per team",
+      "Robot must stay within track boundaries"
     ],
     "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     "category": "Competition",
-    "prize": "$500",
-    "registrationLink": "https://forms.google.com/linefollowing-registration"
+    "prize": "₹15,000",
+    "registrationLink": "https://forms.google.com/linefollower-registration",
+    "coordinators": {
+      "students": ["Guru Akash", "Ashvath", "Kishore V", "Manigandan E", "Meganathan"],
+      "faculty": "Mr. J. Srinivas"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Sumo Bot",
+    "date": "2025-10-29",
+    "time": "11:30 AM",
+    "description": "Robot sumo wrestling competition where autonomous bots battle to push opponents out of the ring using strategy and power.",
+    "rules": [
+      "Maximum robot weight: 3kg",
+      "Robot dimensions: 20cm x 20cm",
+      "Autonomous operation only",
+      "No remote control allowed",
+      "Match duration: 3 minutes"
+    ],
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Competition",
+    "prize": "₹20,000",
+    "registrationLink": "https://forms.google.com/sumobot-registration",
+    "coordinators": {
+      "students": ["Rajesh", "Perumal M", "Mokesh S", "Gokul V"],
+      "faculty": "Mr. J. Srinivas"
+    }
   },
   {
     "id": 3,
-    "title": "Drone Programming",
-    "date": "2025-10-17",
-    "time": "11:00 AM",
-    "description": "Program drones to perform aerial maneuvers and complete challenging flight missions.",
+    "title": "Paper Presentation",
+    "date": "2025-10-29",
+    "time": "2:00 PM",
+    "description": "Present innovative research papers on robotics, automation, and emerging technologies in front of expert judges.",
     "rules": [
-      "Pre-programmed flight paths only",
-      "Maximum flight time: 5 minutes",
-      "Safety protocols must be followed",
-      "Indoor flight arena"
+      "Maximum 15 minutes presentation",
+      "5 minutes Q&A session",
+      "Original research work only",
+      "PowerPoint presentation required",
+      "Maximum 4 members per team"
     ],
-    "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Competition",
-    "prize": "$750",
-    "registrationLink": "https://forms.google.com/drone-programming-registration"
+    "image": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Academic",
+    "prize": "₹10,000",
+    "registrationLink": "https://forms.google.com/paper-presentation-registration",
+    "coordinators": {
+      "students": ["Madhan", "Monisha", "Santhiya V", "Ramya R", "Akash K"],
+      "faculty": "Mrs. Priyanka"
+    }
   },
   {
     "id": 4,
-    "title": "AI Workshop",
-    "date": "2025-10-18",
-    "time": "9:00 AM",
-    "description": "Learn the fundamentals of artificial intelligence and machine learning in robotics applications.",
+    "title": "Robo Race",
+    "date": "2025-10-29",
+    "time": "3:30 PM",
+    "description": "High-speed robot racing competition where autonomous robots navigate through challenging obstacle courses and tracks.",
     "rules": [
-      "Bring your own laptop",
-      "Basic programming knowledge required",
-      "Certificate provided",
-      "Limited to 50 participants"
+      "Maximum robot dimensions: 30cm x 30cm x 30cm",
+      "Autonomous navigation only",
+      "No remote control allowed",
+      "Time-based scoring system",
+      "Multiple track challenges"
     ],
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Workshop",
-    "prize": "Certificate",
-    "registrationLink": "https://forms.google.com/ai-workshop-registration"
+    "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Competition",
+    "prize": "₹25,000",
+    "registrationLink": "https://forms.google.com/roborace-registration",
+    "coordinators": {
+      "students": ["Sharvin", "Udhayakumar P", "Ramalingam J", "Gukesh P"],
+      "faculty": "Mr. Priyadharshini"
+    }
   },
   {
     "id": 5,
-    "title": "Robot Soccer",
-    "date": "2025-10-19",
-    "time": "3:00 PM",
-    "description": "Teams of robots compete in an exciting soccer match using autonomous navigation and ball control.",
+    "title": "Project Expo",
+    "date": "2025-10-30",
+    "time": "10:00 AM",
+    "description": "Showcase innovative robotics and automation projects with live demonstrations and interactive exhibits.",
+    "rules": [
+      "Original project work required",
+      "Live demonstration mandatory",
+      "Project documentation needed",
+      "Maximum 5 members per team",
+      "Open exhibition format"
+    ],
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Exhibition",
+    "prize": "₹18,000",
+    "registrationLink": "https://forms.google.com/project-expo-registration",
+    "coordinators": {
+      "students": ["Adheshwaran", "Sachin S", "Santha Kumar E", "Yogeshwaran"],
+      "faculty": "Mrs. Vennila"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Robo Soccer",
+    "date": "2025-10-30",
+    "time": "11:30 AM",
+    "description": "Exciting robot soccer matches where teams of autonomous robots compete in strategic gameplay and ball control.",
     "rules": [
       "Maximum 3 robots per team",
       "Autonomous play only",
       "Standard soccer field dimensions",
-      "90-minute matches"
+      "Match duration: 20 minutes",
+      "No human intervention during play"
     ],
     "image": "https://images.unsplash.com/photo-1574781330855-d0db50d93c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     "category": "Competition",
-    "prize": "$1200",
-    "registrationLink": "https://forms.google.com/robot-soccer-registration"
+    "prize": "₹22,000",
+    "registrationLink": "https://forms.google.com/robosoccer-registration",
+    "coordinators": {
+      "students": ["Pothigaivasan", "Prakash M", "Saranraj N", "Tamil Vanan"],
+      "faculty": "Mrs. Vennila"
+    }
   },
   {
-    "id": 6,
-    "title": "Automation Expo",
-    "date": "2025-10-20",
-    "time": "1:00 PM",
-    "description": "Showcase of latest automation technologies and industrial robotics solutions.",
+    "id": 7,
+    "title": "From Theory to Practice",
+    "date": "2025-10-30",
+    "time": "2:00 PM",
+    "description": "Bridge the gap between theoretical knowledge and practical implementation in robotics and automation systems.",
     "rules": [
-      "Open exhibition format",
-      "Interactive demonstrations",
-      "Industry expert presentations",
-      "Networking opportunities"
+      "Theory to practical demonstration",
+      "Concept explanation required",
+      "Working prototype needed",
+      "Maximum 4 members per team",
+      "15 minutes presentation time"
     ],
-    "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Exhibition",
-    "prize": "Recognition",
-    "registrationLink": "https://forms.google.com/automation-expo-registration"
+    "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Academic",
+    "prize": "₹12,000",
+    "registrationLink": "https://forms.google.com/theory-practice-registration",
+    "coordinators": {
+      "students": ["Anbuselvan", "Prathap A", "Jayavel", "Yuvan Shankara Pandian S"],
+      "faculty": "Mr. Tharmalingam"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Technical Quiz",
+    "date": "2025-10-30",
+    "time": "3:30 PM",
+    "description": "Test your technical knowledge in robotics, automation, AI, and emerging technologies through challenging quiz rounds.",
+    "rules": [
+      "Multiple rounds of questions",
+      "Individual and team rounds",
+      "No external help allowed",
+      "Time-bound answers",
+      "Elimination format"
+    ],
+    "image": "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Academic",
+    "prize": "₹8,000",
+    "registrationLink": "https://forms.google.com/technical-quiz-registration",
+    "coordinators": {
+      "students": ["Ranjith", "Yuvan Shankara Pandian S", "Tamizhvanan R"],
+      "faculty": "TBA"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Workshop (PLC/ROS)",
+    "date": "2025-10-31",
+    "time": "10:00 AM",
+    "description": "Hands-on workshop on Programmable Logic Controllers (PLC) and Robot Operating System (ROS) for industrial automation.",
+    "rules": [
+      "Bring your own laptop",
+      "Basic programming knowledge required",
+      "Certificate provided upon completion",
+      "Limited to 40 participants",
+      "Hands-on practical sessions"
+    ],
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Workshop",
+    "prize": "Certificate + Kit",
+    "registrationLink": "https://forms.google.com/plc-ros-workshop-registration",
+    "coordinators": {
+      "students": ["Madhan", "Sheguvaran", "Varshaa R V", "Azeema M", "Kamesh"],
+      "faculty": "Mrs. Priyanka"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Connections",
+    "date": "2025-10-31",
+    "time": "11:30 AM",
+    "description": "Interactive networking event connecting students, industry professionals, and robotics enthusiasts.",
+    "rules": [
+      "Interactive networking format",
+      "Speed networking sessions",
+      "Industry mentor interactions",
+      "Career guidance sessions",
+      "Open discussion forums"
+    ],
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Networking",
+    "prize": "Networking Opportunities",
+    "registrationLink": "https://forms.google.com/connections-registration",
+    "coordinators": {
+      "students": ["Praveen", "Ramachandiran M", "Sridhar S", "Mohamed Hanees R"],
+      "faculty": "Mrs. Jothi Lakhsmi"
+    }
+  },
+  {
+    "id": 11,
+    "title": "E-Sports (Free Fire, Stumble Guys)",
+    "date": "2025-10-31",
+    "time": "2:00 PM",
+    "description": "Gaming tournament featuring popular mobile games Free Fire and Stumble Guys with exciting competitions.",
+    "rules": [
+      "Mobile gaming tournament",
+      "Free Fire and Stumble Guys competitions",
+      "Fair play policy enforced",
+      "Device checks before matches",
+      "Tournament bracket format"
+    ],
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Gaming",
+    "prize": "₹15,000",
+    "registrationLink": "https://forms.google.com/esports-registration",
+    "coordinators": {
+      "students": ["Ashwath", "Vedhagiri S", "Dhanabalan T", "Robin"],
+      "faculty": "Mrs. Priyanka"
+    }
+  },
+  {
+    "id": 12,
+    "title": "CID",
+    "date": "2025-10-31",
+    "time": "3:30 PM",
+    "description": "Crime Investigation Department - A mystery solving competition combining technical skills with detective work.",
+    "rules": [
+      "Team-based mystery solving",
+      "Technical clues and challenges",
+      "Time-bound investigation",
+      "Maximum 4 members per team",
+      "Multi-stage elimination rounds"
+    ],
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "category": "Challenge",
+    "prize": "₹10,000",
+    "registrationLink": "https://forms.google.com/cid-registration",
+    "coordinators": {
+      "students": ["Guru Akash", "Mohana Vel S", "Vishva M", "Tamizhvanan R"],
+      "faculty": "Mrs. Vennila"
+    }
   }
 ]

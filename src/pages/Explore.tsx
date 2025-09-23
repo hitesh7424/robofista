@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import EventCard from '../components/EventCard'
 import EventModal from '../components/EventModal'
 import Loader from '../components/Loader'
+import EventsOverview from '../components/EventsOverview'
 
 interface Event {
   id: number
@@ -14,6 +15,11 @@ interface Event {
   image: string
   category: string
   prize: string
+  registrationLink: string
+  coordinators?: {
+    students: string[]
+    faculty: string
+  }
 }
 
 const Explore = () => {
@@ -45,6 +51,20 @@ const Explore = () => {
     ? events 
     : events.filter(event => event.category === filter)
 
+  // Calculate statistics
+  const eventsByCategory = events.reduce((acc, event) => {
+    acc[event.category] = (acc[event.category] || 0) + 1
+    return acc
+  }, {} as { [key: string]: number })
+
+  const totalPrizeValue = events.reduce((total, event) => {
+    if (event.prize.includes('₹')) {
+      const prizeNum = parseInt(event.prize.replace(/₹|,/g, ''))
+      return total + (isNaN(prizeNum) ? 0 : prizeNum)
+    }
+    return total
+  }, 0)
+
   const handleEventClick = (event: Event) => {
     setSelectedEvent(event)
     setIsModalOpen(true)
@@ -66,11 +86,11 @@ const Explore = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-8"
         >
           <h1 className="text-4xl md:text-5xl font-heading font-black mb-4">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Explore Events
+              Robofiesta 2K25 Events
             </span>
           </h1>
           <p className="text-text-secondary font-body text-lg max-w-2xl mx-auto">
@@ -78,6 +98,13 @@ const Explore = () => {
             and inspire the next generation of robotics enthusiasts.
           </p>
         </motion.div>
+
+        {/* Events Overview */}
+        <EventsOverview 
+          totalEvents={events.length}
+          totalPrize={`₹${totalPrizeValue.toLocaleString()}`}
+          eventsByCategory={eventsByCategory}
+        />
 
         {/* Filter Tabs */}
         <motion.div

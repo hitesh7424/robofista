@@ -11,6 +11,11 @@ interface Event {
   image: string
   category: string
   prize: string
+  registrationLink: string
+  coordinators?: {
+    students: string[]
+    faculty: string
+  }
 }
 
 interface EventModalProps {
@@ -147,7 +152,7 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="mb-8"
+                className="mb-6"
               >
                 <h3 className="text-lg font-heading font-semibold text-secondary mb-3">
                   Rules & Guidelines
@@ -168,6 +173,53 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                 </ul>
               </motion.div>
 
+              {/* Coordinators */}
+              {event.coordinators && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="mb-8"
+                >
+                  <h3 className="text-lg font-heading font-semibold text-secondary mb-4">
+                    Event Coordinators
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    {/* Faculty Coordinator */}
+                    <div className="glassmorphism rounded-xl p-4">
+                      <h4 className="text-sm font-semibold text-primary mb-2 flex items-center">
+                        <span className="mr-2">👨‍🏫</span>
+                        Faculty Coordinator
+                      </h4>
+                      <p className="text-text-secondary font-body">{event.coordinators.faculty}</p>
+                    </div>
+
+                    {/* Student Coordinators */}
+                    <div className="glassmorphism rounded-xl p-4">
+                      <h4 className="text-sm font-semibold text-primary mb-3 flex items-center">
+                        <span className="mr-2">👥</span>
+                        Student Coordinators
+                      </h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        {event.coordinators.students.map((student, index) => (
+                          <motion.div
+                            key={index}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.5 + index * 0.05 }}
+                            className="flex items-center space-x-2 bg-bg-primary/30 rounded-lg p-2"
+                          >
+                            <span className="w-2 h-2 rounded-full bg-primary"></span>
+                            <span className="text-text-secondary font-body text-sm">{student}</span>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+
               {/* Register button */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -175,13 +227,17 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                 transition={{ delay: 0.5 }}
                 className="flex justify-center pt-4 pb-24 md:pb-6"
               >
-                <motion.button
+                <motion.a
+                  href={event.registrationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-2xl font-heading font-bold text-bg-primary hover:shadow-2xl transition-all duration-300 neon-glow"
+                  className="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-2xl font-heading font-bold text-bg-primary hover:shadow-2xl transition-all duration-300 neon-glow inline-flex items-center space-x-2"
                 >
-                  Register Now
-                </motion.button>
+                  <span>Register Now</span>
+                  <span>🚀</span>
+                </motion.a>
               </motion.div>
             </div>
           </motion.div>
