@@ -46,36 +46,36 @@ const Countdown = () => {
   ]
 
   return (
-    <div className="flex flex-col items-center space-y-6 py-8">
+    <div className="flex flex-col items-center space-y-4 sm:space-y-6 py-4 sm:py-8">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-2xl md:text-3xl font-heading font-bold text-center"
+        className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-center"
       >
         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Symposium Begins In
         </span>
       </motion.h2>
 
-      <div className="grid grid-cols-4 md:grid-cols-4 gap-4 md:gap-8">
+      <div className="grid grid-cols-4 gap-2 sm:gap-4 md:gap-6 lg:gap-8 w-full max-w-2xl">
         {timeUnits.map((unit, index) => (
           <motion.div
             key={unit.label}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: index * 0.1 }}
-            className="flex flex-col items-center glassmorphism rounded-2xl p-4 md:p-6"
+            className="flex flex-col items-center glassmorphism rounded-xl sm:rounded-2xl p-2 sm:p-4 md:p-6"
           >
             <motion.div
               key={unit.value}
               initial={{ scale: 1.2, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-              className="text-3xl md:text-5xl font-countdown font-bold text-primary"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-countdown font-bold text-primary"
             >
               {unit.value.toString().padStart(2, '0')}
             </motion.div>
-            <span className="text-sm md:text-base font-body text-text-secondary mt-2 tracking-wider">
+            <span className="text-xs sm:text-sm md:text-base font-body text-text-secondary mt-1 sm:mt-2 tracking-wider">
               {unit.label}
             </span>
           </motion.div>
@@ -88,7 +88,7 @@ const Countdown = () => {
         transition={{ delay: 0.5 }}
         className="text-center text-text-secondary"
       >
-        <p className="text-sm md:text-base font-body">
+        <p className="text-xs sm:text-sm md:text-base font-body">
           October 15, 2025 • 10:00 AM IST
         </p>
       </motion.div>

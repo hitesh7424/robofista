@@ -3,9 +3,9 @@ import Countdown from "../components/Countdown";
 
 const Home = () => {
   return (
-    <div className="w-screen h-screen fixed inset-0 overflow-hidden flex flex-col items-center justify-center px-4">
+    <div className="relative min-h-screen w-full overflow-x-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 -z-10 w-full h-full overflow-hidden">
+      <div className="fixed inset-0 -z-10 w-full h-full overflow-hidden">
         {/* Animated gradient background as primary background */}
         <motion.div
           animate={{
@@ -35,7 +35,7 @@ const Home = () => {
             minWidth: "100%",
             minHeight: "100%",
             objectFit: "cover",
-            transform: "scale(1.1)", // Slight scale to ensure no gaps
+            transform: "scale(1.1)",
             transformOrigin: "center center",
           }}
           allow="autoplay; fullscreen; picture-in-picture"
@@ -48,66 +48,60 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Logo Section */}
-      <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-center mb-6 mt-4 md:mt-8"
-      >
+      {/* Main Content Container */}
+      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 py-8">
+        {/* Logo Section */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="mx-auto mb-1"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center mb-4 sm:mb-6"
         >
-          <img
-            src="/logo/logo2.webp"
-            alt="Robofiesta Logo"
-            className="w-24 h-24 md:w-36 md:h-36 lg:w-48 lg:h-48 mx-auto object-contain"
-            style={{
-              filter:
-                "drop-shadow(0 0 20px rgba(0, 255, 247, 0.4)) drop-shadow(0 0 40px rgba(157, 78, 221, 0.3)) drop-shadow(0 0 60px rgba(30, 144, 255, 0.2))",
-            }}
-          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="mx-auto mb-2"
+          >
+            <img
+              src="/logo/logo2.webp"
+              alt="Robofiesta Logo"
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto object-contain"
+              style={{
+                filter:
+                  "drop-shadow(0 0 15px rgba(0, 255, 247, 0.4)) drop-shadow(0 0 30px rgba(157, 78, 221, 0.3)) drop-shadow(0 0 45px rgba(30, 144, 255, 0.2))",
+              }}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="mb-2 relative"
+          >
+            <img
+              src="/logo/robo_text_logo.webp"
+              alt="Robofiesta 2K25"
+              className="w-64 sm:w-80 md:w-96 lg:w-[28rem] xl:w-[32rem] h-auto mx-auto object-contain max-w-[90vw]"
+              style={{
+                filter:
+                  "drop-shadow(0 0 8px rgba(0, 255, 247, 0.3)) drop-shadow(0 0 16px rgba(157, 78, 221, 0.2)) drop-shadow(0 0 24px rgba(30, 144, 255, 0.1))",
+              }}
+            />
+          </motion.div>
         </motion.div>
 
+        {/* Countdown Section */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mb-2 relative"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 1 }}
+          className="w-full max-w-4xl px-2"
         >
-          <img
-            src="/logo/robo_text_logo.webp"
-            alt="Robofiesta 2K25"
-            className="w-72 md:w-[26rem] lg:w-[32rem] xl:w-[38rem] h-auto mx-auto object-contain max-w-[90vw]"
-            style={{
-              filter:
-                "drop-shadow(0 0 10px rgba(0, 255, 247, 0.3)) drop-shadow(0 0 20px rgba(157, 78, 221, 0.2)) drop-shadow(0 0 30px rgba(30, 144, 255, 0.1))",
-            }}
-          />
+          <Countdown />
         </motion.div>
-
-        {/* <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-          className="text-lg md:text-xl font-heading font-semibold text-text-secondary mb-2"
-        >
-          SYMPOSIUM 2025
-        </motion.p> */}
-      </motion.div>
-
-      {/* Countdown Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.9, duration: 1 }}
-        className="w-full max-w-4xl px-2"
-      >
-        <Countdown />
-      </motion.div>
+      </div>
     </div>
   );
 };
