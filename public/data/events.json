@@ -13,7 +13,7 @@
       "Robot must stay within track boundaries"
     ],
     "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Competition",
+    "category": "Technical",
     "prize": "₹15,000",
     "registrationLink": "https://forms.google.com/linefollower-registration",
     "coordinators": {
@@ -35,7 +35,7 @@
       "Match duration: 3 minutes"
     ],
     "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Competition",
+    "category": "Technical",
     "prize": "₹20,000",
     "registrationLink": "https://forms.google.com/sumobot-registration",
     "coordinators": {
@@ -57,7 +57,7 @@
       "Maximum 4 members per team"
     ],
     "image": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Academic",
+    "category": "Knowledge-Based",
     "prize": "₹10,000",
     "registrationLink": "https://forms.google.com/paper-presentation-registration",
     "coordinators": {
@@ -79,7 +79,7 @@
       "Multiple track challenges"
     ],
     "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Competition",
+    "category": "Technical",
     "prize": "₹25,000",
     "registrationLink": "https://forms.google.com/roborace-registration",
     "coordinators": {
@@ -101,7 +101,7 @@
       "Open exhibition format"
     ],
     "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Exhibition",
+    "category": "Technical",
     "prize": "₹18,000",
     "registrationLink": "https://forms.google.com/project-expo-registration",
     "coordinators": {
@@ -123,7 +123,7 @@
       "No human intervention during play"
     ],
     "image": "https://images.unsplash.com/photo-1574781330855-d0db50d93c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Competition",
+    "category": "Technical",
     "prize": "₹22,000",
     "registrationLink": "https://forms.google.com/robosoccer-registration",
     "coordinators": {
@@ -145,7 +145,7 @@
       "15 minutes presentation time"
     ],
     "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Academic",
+    "category": "Technical",
     "prize": "₹12,000",
     "registrationLink": "https://forms.google.com/theory-practice-registration",
     "coordinators": {
@@ -167,7 +167,7 @@
       "Elimination format"
     ],
     "image": "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Academic",
+    "category": "Knowledge-Based",
     "prize": "₹8,000",
     "registrationLink": "https://forms.google.com/technical-quiz-registration",
     "coordinators": {
@@ -189,7 +189,7 @@
       "Hands-on practical sessions"
     ],
     "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Workshop",
+    "category": "Technical",
     "prize": "Certificate + Kit",
     "registrationLink": "https://forms.google.com/plc-ros-workshop-registration",
     "coordinators": {
@@ -211,7 +211,7 @@
       "Open discussion forums"
     ],
     "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Networking",
+    "category": "Knowledge-Based",
     "prize": "Networking Opportunities",
     "registrationLink": "https://forms.google.com/connections-registration",
     "coordinators": {
@@ -233,7 +233,7 @@
       "Tournament bracket format"
     ],
     "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Gaming",
+    "category": "Fun/Non-Technical",
     "prize": "₹15,000",
     "registrationLink": "https://forms.google.com/esports-registration",
     "coordinators": {
@@ -255,7 +255,7 @@
       "Multi-stage elimination rounds"
     ],
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    "category": "Challenge",
+    "category": "Fun/Non-Technical",
     "prize": "₹10,000",
     "registrationLink": "https://forms.google.com/cid-registration",
     "coordinators": {

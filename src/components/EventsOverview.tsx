@@ -21,15 +21,15 @@ const EventsOverview = ({ totalEvents, totalPrize, eventsByCategory }: EventsOve
       color: 'text-secondary'
     },
     {
-      icon: '🎯',
-      label: 'Competitions',
-      value: eventsByCategory['Competition'] || 0,
+      icon: '🔧',
+      label: 'Technical Events',
+      value: eventsByCategory['Technical'] || 0,
       color: 'text-highlight'
     },
     {
-      icon: '🔬',
-      label: 'Workshops',
-      value: eventsByCategory['Workshop'] || 0,
+      icon: '�',
+      label: 'Knowledge-Based',
+      value: eventsByCategory['Knowledge-Based'] || 0,
       color: 'text-primary'
     }
   ]

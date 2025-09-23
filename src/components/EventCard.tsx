@@ -30,6 +30,15 @@ const EventCard = ({ event, onClick }: EventCardProps) => {
     })
   }
 
+  const getCategoryIcon = (category: string) => {
+    const iconMap: { [key: string]: string } = {
+      'Technical': '🔧',
+      'Knowledge-Based': '📚',
+      'Fun/Non-Technical': '🎮'
+    }
+    return iconMap[category] || '📋'
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -53,8 +62,9 @@ const EventCard = ({ event, onClick }: EventCardProps) => {
         
         {/* Category badge */}
         <div className="absolute top-3 left-3">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary backdrop-blur-sm">
-            {event.category}
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary backdrop-blur-sm space-x-1">
+            <span>{getCategoryIcon(event.category)}</span>
+            <span>{event.category}</span>
           </span>
         </div>
 

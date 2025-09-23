@@ -51,6 +51,17 @@ const Explore = () => {
     ? events 
     : events.filter(event => event.category === filter)
 
+  // Category icons mapping
+  const getCategoryIcon = (category: string) => {
+    const iconMap: { [key: string]: string } = {
+      'All': '🌟',
+      'Technical': '🔧',
+      'Knowledge-Based': '📚',
+      'Fun/Non-Technical': '🎮'
+    }
+    return iconMap[category] || '📋'
+  }
+
   // Calculate statistics
   const eventsByCategory = events.reduce((acc, event) => {
     acc[event.category] = (acc[event.category] || 0) + 1
@@ -111,7 +122,7 @@ const Explore = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-4 mb-8"
         >
           {categories.map((category) => (
             <motion.button
@@ -119,16 +130,54 @@ const Explore = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setFilter(category)}
-              className={`px-6 py-3 rounded-2xl font-heading font-medium transition-all duration-300 ${
+              className={`px-6 py-3 rounded-2xl font-heading font-medium transition-all duration-300 flex items-center space-x-2 ${
                 filter === category
                   ? 'bg-gradient-to-r from-primary to-secondary text-bg-primary neon-glow'
                   : 'glassmorphism text-text-secondary hover:text-primary border border-white/10'
               }`}
             >
-              {category}
+              <span>{getCategoryIcon(category)}</span>
+              <span>{category}</span>
             </motion.button>
           ))}
         </motion.div>
+
+        {/* Category Summary */}
+        {filter === 'All' && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+          >
+            <div className="glassmorphism rounded-2xl p-6 text-center neon-glow">
+              <div className="text-4xl mb-3">🔧</div>
+              <h3 className="font-heading font-bold text-primary mb-2">Technical Events</h3>
+              <p className="text-text-secondary font-body text-sm mb-3">
+                Line Follower, Sumo Bot, Robo Race, Robo Soccer, Project Expo, From Theory to Practice, Workshop (PLC/ROS)
+              </p>
+              <div className="text-highlight font-bold">{eventsByCategory['Technical'] || 0} Events</div>
+            </div>
+
+            <div className="glassmorphism rounded-2xl p-6 text-center neon-glow">
+              <div className="text-4xl mb-3">📚</div>
+              <h3 className="font-heading font-bold text-primary mb-2">Knowledge-Based Events</h3>
+              <p className="text-text-secondary font-body text-sm mb-3">
+                Paper Presentation, Technical Quiz, Connections
+              </p>
+              <div className="text-highlight font-bold">{eventsByCategory['Knowledge-Based'] || 0} Events</div>
+            </div>
+
+            <div className="glassmorphism rounded-2xl p-6 text-center neon-glow">
+              <div className="text-4xl mb-3">🎮</div>
+              <h3 className="font-heading font-bold text-primary mb-2">Fun / Non-Technical Events</h3>
+              <p className="text-text-secondary font-body text-sm mb-3">
+                E-Sports (Free Fire, Stumble Guys), CID
+              </p>
+              <div className="text-highlight font-bold">{eventsByCategory['Fun/Non-Technical'] || 0} Events</div>
+            </div>
+          </motion.div>
+        )}
 
         {/* Events Grid */}
         <motion.div
