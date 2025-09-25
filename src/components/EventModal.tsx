@@ -16,6 +16,10 @@ interface Event {
     students: string[]
     faculty: string
   }
+  contact?: {
+    phone: string[]
+    email: string
+  }
 }
 
 interface EventModalProps {
@@ -215,6 +219,67 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                           </motion.div>
                         ))}
                       </div>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+
+              {/* Contact Details */}
+              {event.contact && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="mb-8"
+                >
+                  <h3 className="text-lg font-heading font-semibold text-secondary mb-4">
+                    Contact Details
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    {/* Phone Numbers */}
+                    <div className="glassmorphism rounded-xl p-4">
+                      <h4 className="text-sm font-semibold text-primary mb-3 flex items-center">
+                        <span className="mr-2">📞</span>
+                        Phone Numbers
+                      </h4>
+                      <div className="flex flex-wrap gap-3">
+                        {event.contact.phone.map((phone, index) => (
+                          <motion.a
+                            key={index}
+                            href={`tel:${phone}`}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.6 + index * 0.1 }}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="flex items-center space-x-2 bg-gradient-to-r from-primary/20 to-secondary/20 hover:from-primary/30 hover:to-secondary/30 rounded-lg px-4 py-2 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer"
+                          >
+                            <span className="text-primary">📱</span>
+                            <span className="text-text-secondary font-body font-medium">{phone}</span>
+                          </motion.a>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Email */}
+                    <div className="glassmorphism rounded-xl p-4">
+                      <h4 className="text-sm font-semibold text-primary mb-3 flex items-center">
+                        <span className="mr-2">📧</span>
+                        Email
+                      </h4>
+                      <motion.a
+                        href={`mailto:${event.contact.email}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.7 }}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="inline-flex items-center space-x-2 bg-gradient-to-r from-secondary/20 to-primary/20 hover:from-secondary/30 hover:to-primary/30 rounded-lg px-4 py-2 border border-secondary/30 hover:border-secondary/50 transition-all duration-300 cursor-pointer"
+                      >
+                        <span className="text-secondary">✉️</span>
+                        <span className="text-text-secondary font-body font-medium">{event.contact.email}</span>
+                      </motion.a>
                     </div>
                   </div>
                 </motion.div>

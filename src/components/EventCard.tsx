@@ -15,6 +15,10 @@ interface Event {
     students: string[]
     faculty: string
   }
+  contact?: {
+    phone: string[]
+    email: string
+  }
 }
 
 interface EventCardProps {
