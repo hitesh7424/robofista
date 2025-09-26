@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import EventCard from '../components/EventCard'
 import EventModal from '../components/EventModal'
 import Loader from '../components/Loader'
-import EventsOverview from '../components/EventsOverview'
 
 interface Event {
   id: number
@@ -60,8 +59,8 @@ const Explore = () => {
     const iconMap: { [key: string]: string } = {
       'All': '🌟',
       'Technical': '🔧',
-      'Knowledge-Based': '📚',
-      'Fun/Non-Technical': '🎮'
+      'Knowledge': '📚',
+      'Fun': '🎮'
     }
     return iconMap[category] || '📋'
   }
@@ -114,74 +113,32 @@ const Explore = () => {
           </p>
         </motion.div>
 
-        {/* Events Overview */}
-        <EventsOverview 
-          totalEvents={events.length}
-          totalPrize={`₹${totalPrizeValue.toLocaleString()}`}
-          eventsByCategory={eventsByCategory}
-        />
-
         {/* Filter Tabs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-8"
+          className="mb-8"
         >
-          {categories.map((category) => (
-            <motion.button
-              key={category}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setFilter(category)}
-              className={`px-6 py-3 rounded-2xl font-heading font-medium transition-all duration-300 flex items-center space-x-2 ${
-                filter === category
-                  ? 'bg-gradient-to-r from-primary to-secondary text-bg-primary neon-glow'
-                  : 'glassmorphism text-text-secondary hover:text-primary border border-white/10'
-              }`}
-            >
-              <span>{getCategoryIcon(category)}</span>
-              <span>{category}</span>
-            </motion.button>
-          ))}
+          <div className="flex overflow-x-auto scrollbar-hide gap-3 px-4 md:justify-center md:flex-wrap md:px-0">
+            {categories.map((category) => (
+              <motion.button
+                key={category}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setFilter(category)}
+                className={`flex-shrink-0 px-4 py-2 md:px-6 md:py-3 rounded-2xl font-heading font-medium transition-all duration-300 flex items-center space-x-2 whitespace-nowrap ${
+                  filter === category
+                    ? 'bg-gradient-to-r from-primary to-secondary text-bg-primary neon-glow'
+                    : 'glassmorphism text-text-secondary hover:text-primary border border-white/10'
+                }`}
+              >
+                <span>{getCategoryIcon(category)}</span>
+                <span>{category}</span>
+              </motion.button>
+            ))}
+          </div>
         </motion.div>
-
-        {/* Category Summary */}
-        {filter === 'All' && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
-          >
-            <div className="glassmorphism rounded-2xl p-6 text-center neon-glow">
-              <div className="text-4xl mb-3">🔧</div>
-              <h3 className="font-heading font-bold text-primary mb-2">Technical Events</h3>
-              <p className="text-text-secondary font-body text-sm mb-3">
-                Line Follower, Sumo Bot, Robo Race, Robo Soccer, Project Expo, From Theory to Practice, Workshop (PLC/ROS)
-              </p>
-              <div className="text-highlight font-bold">{eventsByCategory['Technical'] || 0} Events</div>
-            </div>
-
-            <div className="glassmorphism rounded-2xl p-6 text-center neon-glow">
-              <div className="text-4xl mb-3">📚</div>
-              <h3 className="font-heading font-bold text-primary mb-2">Knowledge-Based Events</h3>
-              <p className="text-text-secondary font-body text-sm mb-3">
-                Paper Presentation, Technical Quiz, Connections
-              </p>
-              <div className="text-highlight font-bold">{eventsByCategory['Knowledge-Based'] || 0} Events</div>
-            </div>
-
-            <div className="glassmorphism rounded-2xl p-6 text-center neon-glow">
-              <div className="text-4xl mb-3">🎮</div>
-              <h3 className="font-heading font-bold text-primary mb-2">Fun / Non-Technical Events</h3>
-              <p className="text-text-secondary font-body text-sm mb-3">
-                E-Sports (Free Fire, Stumble Guys), CID
-              </p>
-              <div className="text-highlight font-bold">{eventsByCategory['Fun/Non-Technical'] || 0} Events</div>
-            </div>
-          </motion.div>
-        )}
 
         {/* Events Grid */}
         <motion.div
@@ -221,36 +178,6 @@ const Explore = () => {
             </p>
           </motion.div>
         )}
-
-        {/* Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
-        >
-          {[
-            { label: 'Total Events', value: events.length, icon: '🎯' },
-            { label: 'Competitions', value: events.filter(e => e.category === 'Competition').length, icon: '🏆' },
-            { label: 'Workshops', value: events.filter(e => e.category === 'Workshop').length, icon: '🔧' },
-            { label: 'Exhibitions', value: events.filter(e => e.category === 'Exhibition').length, icon: '🎪' },
-          ].map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.1 }}
-              className="glassmorphism rounded-2xl p-6 text-center neon-glow"
-            >
-              <div className="text-3xl mb-2">{stat.icon}</div>
-              <div className="text-2xl md:text-3xl font-heading font-bold text-primary mb-1">
-                {stat.value}
-              </div>
-              <div className="text-sm text-text-secondary font-body">
-                {stat.label}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
 
       {/* Event Modal */}
