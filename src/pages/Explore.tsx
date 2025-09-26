@@ -31,8 +31,6 @@ const Explore = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [loading, setLoading] = useState(true)
   const [showLoader, setShowLoader] = useState(true)
-  const [filter, setFilter] = useState<string>('All')
-
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -48,36 +46,6 @@ const Explore = () => {
 
     fetchEvents()
   }, [])
-
-  const categories = ['All', ...new Set(events.map(event => event.category))]
-  const filteredEvents = filter === 'All' 
-    ? events 
-    : events.filter(event => event.category === filter)
-
-  // Category icons mapping
-  const getCategoryIcon = (category: string) => {
-    const iconMap: { [key: string]: string } = {
-      'All': '🌟',
-      'Technical': '🔧',
-      'Knowledge': '📚',
-      'Fun': '🎮'
-    }
-    return iconMap[category] || '📋'
-  }
-
-  // Calculate statistics
-  const eventsByCategory = events.reduce((acc, event) => {
-    acc[event.category] = (acc[event.category] || 0) + 1
-    return acc
-  }, {} as { [key: string]: number })
-
-  const totalPrizeValue = events.reduce((total, event) => {
-    if (event.prize.includes('₹')) {
-      const prizeNum = parseInt(event.prize.replace(/₹|,/g, ''))
-      return total + (isNaN(prizeNum) ? 0 : prizeNum)
-    }
-    return total
-  }, 0)
 
   const handleEventClick = (event: Event) => {
     setSelectedEvent(event)
@@ -104,40 +72,13 @@ const Explore = () => {
         >
           <h1 className="text-4xl md:text-5xl font-heading font-black mb-4">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Robofiesta 2K25 Events
+              ROBONEXUS 2K25 Events
             </span>
           </h1>
           <p className="text-text-secondary font-body text-lg max-w-2xl mx-auto">
             Discover exciting competitions, workshops, and exhibitions designed to challenge
             and inspire the next generation of robotics enthusiasts.
           </p>
-        </motion.div>
-
-        {/* Filter Tabs */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="mb-8"
-        >
-          <div className="flex overflow-x-auto scrollbar-hide gap-3 px-4 md:justify-center md:flex-wrap md:px-0">
-            {categories.map((category) => (
-              <motion.button
-                key={category}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setFilter(category)}
-                className={`flex-shrink-0 px-4 py-2 md:px-6 md:py-3 rounded-2xl font-heading font-medium transition-all duration-300 flex items-center space-x-2 whitespace-nowrap ${
-                  filter === category
-                    ? 'bg-gradient-to-r from-primary to-secondary text-bg-primary neon-glow'
-                    : 'glassmorphism text-text-secondary hover:text-primary border border-white/10'
-                }`}
-              >
-                <span>{getCategoryIcon(category)}</span>
-                <span>{category}</span>
-              </motion.button>
-            ))}
-          </div>
         </motion.div>
 
         {/* Events Grid */}
@@ -147,7 +88,7 @@ const Explore = () => {
           transition={{ delay: 0.4 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {filteredEvents.map((event, index) => (
+          {events.map((event, index) => (
             <motion.div
               key={event.id}
               initial={{ opacity: 0, y: 50 }}
@@ -163,7 +104,7 @@ const Explore = () => {
         </motion.div>
 
         {/* Empty State */}
-        {filteredEvents.length === 0 && !loading && (
+        {events.length === 0 && !loading && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

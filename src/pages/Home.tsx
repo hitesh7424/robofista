@@ -65,7 +65,7 @@ const Home = () => {
           >
             <img
               src="/logo/logo2.webp"
-              alt="Robofiesta Logo"
+              alt="ROBONEXUS Logo"
               className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto object-contain"
               style={{
                 filter:
@@ -82,7 +82,7 @@ const Home = () => {
           >
             <img
               src="/logo/robo_text_logo.webp"
-              alt="Robofiesta 2K25"
+              alt="ROBONEXUS 2K25"
               className="w-64 sm:w-80 md:w-96 lg:w-[28rem] xl:w-[32rem] h-auto mx-auto object-contain max-w-[90vw]"
               style={{
                 filter:

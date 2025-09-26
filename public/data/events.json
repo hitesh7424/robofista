@@ -12,7 +12,7 @@
       "Maximum 3 attempts per team",
       "Robot must stay within track boundaries"
     ],
-    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/01_line_follower.png",
     "category": "Technical",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/linefollower-registration",
@@ -38,7 +38,7 @@
       "No remote control allowed",
       "Match duration: 3 minutes"
     ],
-    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/02_sumo_bot.png",
     "category": "Technical",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/sumobot-registration",
@@ -64,7 +64,7 @@
       "PowerPoint presentation required",
       "Maximum 4 members per team"
     ],
-    "image": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/06_paper_presentation.png",
     "category": "Knowledge",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/paper-presentation-registration",
@@ -90,7 +90,7 @@
       "Time-based scoring system",
       "Multiple track challenges"
     ],
-    "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/03_robo_race.png",
     "category": "Technical",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/roborace-registration",
@@ -116,7 +116,7 @@
       "Maximum 5 members per team",
       "Open exhibition format"
     ],
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/07_project_expo.png",
     "category": "Knowledge",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/project-expo-registration",
@@ -142,7 +142,7 @@
       "Match duration: 20 minutes",
       "No human intervention during play"
     ],
-    "image": "https://images.unsplash.com/photo-1574781330855-d0db50d93c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/04_robo_soccer.png",
     "category": "Technical",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/robosoccer-registration",
@@ -168,7 +168,7 @@
       "Maximum 4 members per team",
       "15 minutes presentation time"
     ],
-    "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/08_theory_to_practice.png",
     "category": "Knowledge",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/theory-practice-registration",
@@ -194,7 +194,7 @@
       "Time-bound answers",
       "Elimination format"
     ],
-    "image": "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/05_tech_quiz.png",
     "category": "Technical",
     "prize": "₹8",
     "registrationLink": "https://forms.google.com/technical-quiz-registration",
@@ -220,7 +220,7 @@
       "Limited to 40 participants",
       "Hands-on practical sessions"
     ],
-    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/09_workshop_plc_ros.png",
     "category": "Knowledge",
     "prize": "Certificate + Kit",
     "registrationLink": "https://forms.google.com/plc-ros-workshop-registration",
@@ -246,7 +246,7 @@
       "Career guidance sessions",
       "Open discussion forums"
     ],
-    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/10_connections.png",
     "category": "Knowledge",
     "prize": "Networking Opportunities",
     "registrationLink": "https://forms.google.com/connections-registration",
@@ -272,7 +272,7 @@
       "Device checks before matches",
       "Tournament bracket format"
     ],
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/11_esports.png",
     "category": "Fun",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/esports-registration",
@@ -298,7 +298,7 @@
       "Maximum 4 members per team",
       "Multi-stage elimination rounds"
     ],
-    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    "image": "/images/events/12_cid.png",
     "category": "Fun",
     "prize": "₹1",
     "registrationLink": "https://forms.google.com/cid-registration",

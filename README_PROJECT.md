@@ -1,6 +1,6 @@
-# Robotics & Automation Symposium 2025 Website
+# ROBONEXUS 2K25 - Robotics & Automation Symposium Website
 
-A futuristic, hi-tech Instagram-inspired React website for the Robotics & Automation Symposium 2025. Built with cutting-edge web technologies to showcase events, media, and information about the symposium.
+A futuristic, hi-tech Instagram-inspired React website for ROBONEXUS 2K25 - The ultimate Robotics & Automation Symposium. Built with cutting-edge web technologies to showcase events, media, and information about the symposium.
 
 ## 🚀 Features
 

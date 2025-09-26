@@ -1,54 +1,62 @@
 import { motion } from 'framer-motion'
 
 const About = () => {
-  const teamMembers = [
-    {
-      name: 'Dr. Sarah Johnson',
-      role: 'Event Director',
-      department: 'Robotics Engineering',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      social: { linkedin: '#', twitter: '#', email: 'sarah.johnson@university.edu' }
+  const contactInfo = [
+    { 
+      icon: '📱', 
+      label: 'Phone', 
+      value: '+91 98765 43210', 
+      href: 'tel:+919876543210',
+      description: 'Call us for event inquiries'
     },
-    {
-      name: 'Prof. Michael Chen',
-      role: 'Technical Coordinator',
-      department: 'Computer Science',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      social: { linkedin: '#', twitter: '#', email: 'michael.chen@university.edu' }
+    { 
+      icon: '📷', 
+      label: 'Instagram', 
+      value: '@robonexus2k25', 
+      href: 'https://instagram.com/robonexus2k25',
+      description: 'Follow us for updates'
     },
-    {
-      name: 'Dr. Emily Rodriguez',
-      role: 'Workshop Lead',
-      department: 'Automation Systems',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      social: { linkedin: '#', twitter: '#', email: 'emily.rodriguez@university.edu' }
-    },
-    {
-      name: 'Alex Kumar',
-      role: 'Student Coordinator',
-      department: 'Robotics Club President',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-      social: { linkedin: '#', twitter: '#', email: 'alex.kumar@student.university.edu' }
+    { 
+      icon: '📧', 
+      label: 'Email', 
+      value: 'info@robonexus.com', 
+      href: 'mailto:info@robonexus.com',
+      description: 'Send us your queries'
     }
   ]
 
-  const contactLinks = [
-    { icon: '📧', label: 'Email', value: 'symposium@university.edu', href: 'mailto:symposium@university.edu' },
-    { icon: '📱', label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-    { icon: '📍', label: 'Location', value: 'University Campus, Tech Building', href: '#' },
-    { icon: '🌐', label: 'Website', value: 'www.university.edu/robotics', href: 'https://university.edu/robotics' },
+  const keyFeatures = [
+    {
+      icon: '🤖',
+      title: 'Advanced Robotics',
+      description: 'State-of-the-art robotics competitions featuring autonomous systems, AI integration, and cutting-edge technology demonstrations.'
+    },
+    {
+      icon: '🎓',
+      title: 'Educational Workshops',
+      description: 'Hands-on learning experiences with PLC programming, ROS development, and industry-standard automation tools.'
+    },
+    {
+      icon: '🏆',
+      title: 'Competitive Events',
+      description: 'Exciting competitions including robot racing, sumo battles, soccer matches, and technical challenges for all skill levels.'
+    },
+    {
+      icon: '🌐',
+      title: 'Industry Connect',
+      description: 'Networking opportunities with industry professionals, career guidance sessions, and exposure to latest industry trends.'
+    }
   ]
 
-  const socialLinks = [
-    { icon: '📘', name: 'Facebook', href: '#', color: 'hover:text-blue-500' },
-    { icon: '🐦', name: 'Twitter', href: '#', color: 'hover:text-sky-500' },
-    { icon: '📷', name: 'Instagram', href: '#', color: 'hover:text-pink-500' },
-    { icon: '💼', name: 'LinkedIn', href: '#', color: 'hover:text-blue-600' },
-    { icon: '📺', name: 'YouTube', href: '#', color: 'hover:text-red-500' },
+  const eventStats = [
+    { number: '12+', label: 'Events' },
+    { number: '500+', label: 'Expected Participants' },
+    { number: '3', label: 'Days of Innovation' },
+    { number: '₹50K+', label: 'Prize Pool' }
   ]
 
   return (
-    <div className="min-h-screen pt-8 px-4 relative">
+    <div className="min-h-screen pt-20 md:pt-8 px-4 pb-20 md:pb-8 relative">
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <motion.div
@@ -58,269 +66,285 @@ const About = () => {
         >
           <h1 className="text-4xl md:text-5xl font-heading font-black mb-4">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              About the Symposium
+              About ROBONEXUS 2K25
             </span>
           </h1>
           <p className="text-text-secondary font-body text-lg max-w-3xl mx-auto leading-relaxed">
-            Discover the minds behind the most innovative robotics event of the year and learn more
-            about our mission to advance the future of automation technology.
+            Welcome to the ultimate robotics and automation symposium, where innovation meets excellence
+            and the future of technology comes to life.
           </p>
         </motion.div>
 
-        {/* College Info */}
+        {/* Symposium Info */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="mb-20"
+          className="mb-16"
         >
           <div className="glassmorphism rounded-3xl p-8 md:p-12 neon-glow">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-heading font-bold text-primary mb-6">
-                  Institute of Technology
-                </h2>
-                <p className="text-text-secondary font-body leading-relaxed mb-6">
-                  Established in 1965, our Institute of Technology has been at the forefront of
-                  engineering education and research. With state-of-the-art facilities and world-class
-                  faculty, we continue to push the boundaries of what's possible in robotics and automation.
-                </p>
-                <div className="grid grid-cols-2 gap-6 text-center">
-                  <div>
-                    <div className="text-2xl font-heading font-bold text-primary">50+</div>
-                    <div className="text-sm text-text-secondary">Years of Excellence</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-heading font-bold text-primary">5000+</div>
-                    <div className="text-sm text-text-secondary">Students</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-heading font-bold text-primary">200+</div>
-                    <div className="text-sm text-text-secondary">Faculty Members</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-heading font-bold text-primary">15+</div>
-                    <div className="text-sm text-text-secondary">Research Labs</div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                ROBONEXUS 2K25
+              </h2>
+              <p className="text-text-secondary font-body text-lg leading-relaxed max-w-4xl mx-auto">
+                An extraordinary symposium bringing together robotics enthusiasts, students, and industry experts 
+                to explore the cutting-edge world of robotics and automation. Experience thrilling competitions, 
+                educational workshops, and networking opportunities that will shape the future of technology.
+              </p>
+            </div>
+
+            {/* Event Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+              {eventStats.map((stat, index) => (
                 <motion.div
-                  animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                  className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-xl"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="University Campus"
-                  className="relative rounded-3xl w-full h-64 object-cover"
-                />
-              </div>
+                  key={stat.label}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="text-center p-4 rounded-xl glassmorphism"
+                >
+                  <div className="text-2xl md:text-3xl font-heading font-bold text-primary mb-1">
+                    {stat.number}
+                  </div>
+                  <div className="text-sm text-text-secondary font-body">
+                    {stat.label}
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </motion.section>
 
-        {/* Department Info */}
+        {/* Department & College Info */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="mb-20"
+          className="mb-16"
+        >
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Department Info */}
+            <div className="glassmorphism rounded-3xl p-8 neon-glow">
+              <h3 className="text-2xl font-heading font-bold text-primary mb-4">
+                🤖 Department of Robotics & Automation
+              </h3>
+              <p className="text-text-secondary font-body leading-relaxed mb-4">
+                The Department of Robotics and Automation is dedicated to advancing the field of 
+                autonomous systems and intelligent machines. Our cutting-edge curriculum and research 
+                programs prepare students for the rapidly evolving world of robotics technology.
+              </p>
+              <ul className="space-y-2 text-text-secondary font-body">
+                <li className="flex items-center space-x-2">
+                  <span className="text-secondary">✓</span>
+                  <span>Advanced Robotics Research Labs</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-secondary">✓</span>
+                  <span>Industry-Integrated Curriculum</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-secondary">✓</span>
+                  <span>State-of-the-art Equipment</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* College Info */}
+            <div className="glassmorphism rounded-3xl p-8 neon-glow">
+              <h3 className="text-2xl font-heading font-bold text-primary mb-4">
+                🏛️ Karpaga Vinayaga College of Engineering and Technology
+              </h3>
+              <p className="text-text-secondary font-body leading-relaxed mb-4">
+                A premier institution committed to excellence in engineering education and research. 
+                KVCET has been nurturing innovative minds and creating future leaders in technology 
+                for over decades.
+              </p>
+              <ul className="space-y-2 text-text-secondary font-body">
+                <li className="flex items-center space-x-2">
+                  <span className="text-secondary">✓</span>
+                  <span>AICTE Approved Institution</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-secondary">✓</span>
+                  <span>World-Class Infrastructure</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="text-secondary">✓</span>
+                  <span>Industry-Academia Partnerships</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Key Features */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-secondary to-highlight bg-clip-text text-transparent">
-              Department of Robotics & Automation
+            <span className="bg-gradient-to-r from-highlight to-primary bg-clip-text text-transparent">
+              What Makes Us Special
             </span>
           </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Our Mission',
-                icon: '🎯',
-                description: 'To advance the field of robotics through cutting-edge research, innovative education, and collaborative partnerships with industry leaders.'
-              },
-              {
-                title: 'Research Areas',
-                icon: '🔬',
-                description: 'Autonomous systems, AI integration, human-robot interaction, industrial automation, and bio-inspired robotics.'
-              },
-              {
-                title: 'Innovation Hub',
-                icon: '💡',
-                description: 'Our labs are equipped with the latest technology, providing students with hands-on experience in designing and building next-generation robots.'
-              }
-            ].map((item, index) => (
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {keyFeatures.map((feature, index) => (
               <motion.div
-                key={item.title}
+                key={feature.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
                 className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{item.icon}</div>
+                <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="font-heading font-bold text-xl text-primary mb-3">
-                  {item.title}
+                  {feature.title}
                 </h3>
-                <p className="text-text-secondary font-body leading-relaxed">
-                  {item.description}
+                <p className="text-text-secondary font-body leading-relaxed text-sm">
+                  {feature.description}
                 </p>
               </motion.div>
             ))}
           </div>
         </motion.section>
 
-        {/* Team Section */}
+        {/* Contact Information */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="mb-20"
-        >
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-highlight to-primary bg-clip-text text-transparent">
-              Meet Our Team
-            </span>
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="glassmorphism rounded-2xl p-6 text-center neon-glow hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="relative mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto object-cover border-2 border-primary/30"
-                  />
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 blur-xl" />
-                </div>
-                
-                <h3 className="font-heading font-bold text-lg text-primary mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-secondary font-medium text-sm mb-2">
-                  {member.role}
-                </p>
-                <p className="text-text-secondary font-body text-xs mb-4">
-                  {member.department}
-                </p>
-
-                <div className="flex justify-center space-x-3">
-                  <motion.a
-                    whileHover={{ scale: 1.2 }}
-                    href={member.social.email}
-                    className="text-text-secondary hover:text-primary transition-colors"
-                  >
-                    📧
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ scale: 1.2 }}
-                    href={member.social.linkedin}
-                    className="text-text-secondary hover:text-primary transition-colors"
-                  >
-                    💼
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ scale: 1.2 }}
-                    href={member.social.twitter}
-                    className="text-text-secondary hover:text-primary transition-colors"
-                  >
-                    🐦
-                  </motion.a>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        {/* Contact Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="mb-20"
+          className="mb-16"
         >
           <div className="glassmorphism rounded-3xl p-8 md:p-12 neon-glow">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-12">
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Get in Touch
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8">
+              <span className="bg-gradient-to-r from-secondary to-highlight bg-clip-text text-transparent">
+                Get In Touch
               </span>
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12">
-              {/* Contact Info */}
-              <div className="space-y-6">
-                {contactLinks.map((contact, index) => (
-                  <motion.a
-                    key={contact.label}
-                    href={contact.href}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ scale: 1.02 }}
-                    className="flex items-center space-x-4 p-4 glassmorphism rounded-xl hover:neon-glow transition-all duration-300"
-                  >
-                    <span className="text-2xl">{contact.icon}</span>
-                    <div>
-                      <div className="font-heading font-semibold text-primary">
-                        {contact.label}
-                      </div>
-                      <div className="text-text-secondary font-body text-sm">
-                        {contact.value}
-                      </div>
-                    </div>
-                  </motion.a>
-                ))}
-              </div>
-
-              {/* Social Links */}
-              <div>
-                <h3 className="font-heading font-bold text-xl text-secondary mb-6">
-                  Follow Us
-                </h3>
-                <div className="grid grid-cols-3 gap-4 mb-8">
-                  {socialLinks.map((social, index) => (
-                    <motion.a
-                      key={social.name}
-                      href={social.href}
-                      initial={{ opacity: 0, scale: 0.5 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: index * 0.1 }}
-                      whileHover={{ scale: 1.1 }}
-                      className={`flex flex-col items-center p-4 glassmorphism rounded-xl text-center transition-all duration-300 ${social.color}`}
-                    >
-                      <span className="text-2xl mb-2">{social.icon}</span>
-                      <span className="text-xs font-body">{social.name}</span>
-                    </motion.a>
-                  ))}
-                </div>
-
-                <div className="glassmorphism rounded-2xl p-6">
-                  <h4 className="font-heading font-semibold text-primary mb-3">
-                    Newsletter Signup
-                  </h4>
-                  <p className="text-text-secondary font-body text-sm mb-4">
-                    Stay updated with the latest robotics news and symposium announcements.
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {contactInfo.map((contact, index) => (
+                <motion.a
+                  key={contact.label}
+                  href={contact.href}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.2 }}
+                  whileHover={{ scale: 1.05 }}
+                  className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300 block"
+                >
+                  <div className="text-4xl mb-3">{contact.icon}</div>
+                  <h3 className="font-heading font-bold text-lg text-primary mb-2">
+                    {contact.label}
+                  </h3>
+                  <p className="text-secondary font-body font-medium mb-2">
+                    {contact.value}
                   </p>
-                  <div className="flex space-x-2">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      className="flex-1 px-4 py-2 bg-bg-primary/50 border border-white/20 rounded-lg text-text-primary placeholder-text-secondary focus:outline-none focus:border-primary"
-                    />
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-gradient-to-r from-primary to-secondary rounded-lg font-medium text-bg-primary"
-                    >
-                      Subscribe
-                    </motion.button>
-                  </div>
-                </div>
+                  <p className="text-text-secondary font-body text-sm">
+                    {contact.description}
+                  </p>
+                </motion.a>
+              ))}
+            </div>
+
+            {/* College Address */}
+            <div className="text-center mb-8">
+              <h3 className="text-xl font-heading font-bold text-primary mb-4">
+                📍 College Address
+              </h3>
+              <p className="text-text-secondary font-body leading-relaxed max-w-2xl mx-auto">
+                Karpaga Vinayaga College of Engineering and Technology<br />
+                GST Road, Chengalpattu District<br />
+                Tamil Nadu, India - 603308
+              </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Google Map */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="mb-16"
+        >
+          <div className="glassmorphism rounded-3xl p-8 neon-glow">
+            <h2 className="text-2xl font-heading font-bold text-center text-primary mb-6">
+              🗺️ Find Us Here
+            </h2>
+            <div className="relative h-96 rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0234567890123!2d80.0234567!3d12.8234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKarpaga%20Vinayaga%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="KVCET Location"
+                className="rounded-2xl"
+              />
+            </div>
+            <p className="text-center text-text-secondary font-body mt-4 text-sm">
+              Navigate to our campus easily using the map above or click 
+              <a 
+                href="https://goo.gl/maps/your-college-link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-secondary ml-1 underline"
+              >
+                here for directions
+              </a>
+            </p>
+          </div>
+        </motion.section>
+
+        {/* Important Information */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="mb-8"
+        >
+          <div className="glassmorphism rounded-3xl p-8 md:p-12 neon-glow">
+            <h2 className="text-3xl font-heading font-bold text-center mb-8">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Important Information
+              </span>
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-heading font-bold text-secondary mb-4">
+                  📅 Event Schedule
+                </h3>
+                <ul className="space-y-2 text-text-secondary font-body">
+                  <li>• Registration Deadline: October 25, 2025</li>
+                  <li>• Event Dates: October 29-31, 2025</li>
+                  <li>• Venue: KVCET Campus</li>
+                  <li>• Reporting Time: 9:00 AM (All Days)</li>
+                </ul>
               </div>
+              
+              <div>
+                <h3 className="text-xl font-heading font-bold text-secondary mb-4">
+                  💡 What to Bring
+                </h3>
+                <ul className="space-y-2 text-text-secondary font-body">
+                  <li>• Student ID Card</li>
+                  <li>• Laptop (for workshops)</li>
+                  <li>• Registration Confirmation</li>
+                  <li>• Enthusiasm for Robotics! 🚀</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border border-primary/20">
+              <h3 className="text-lg font-heading font-bold text-primary mb-2 text-center">
+                🎯 Mission Statement
+              </h3>
+              <p className="text-text-secondary font-body text-center leading-relaxed">
+                To inspire, educate, and connect the next generation of robotics and automation engineers 
+                through innovative competitions, world-class workshops, and meaningful industry interactions.
+              </p>
             </div>
           </div>
         </motion.section>

@@ -1,0 +1,205 @@
+{
+  "imagePrompts": {
+    "marvel": {
+      "theme": "Marvel Cinematic Universe",
+      "colorScheme": "Red, gold, blue with arc reactor glows",
+      "style": "Cinematic, heroic, high-tech",
+      "events": {
+        "1": {
+          "eventId": 1,
+          "eventTitle": "Line Follower",
+          "themedTitle": "Spider-Man's Web Path Challenge",
+          "prompt": "Spider-Man's high-tech spider-robot following a glowing web pattern through a futuristic Stark Industries laboratory, red and blue LED lights, holographic web projections on the floor, Tony Stark's workshop aesthetic, advanced sensors and circuitry, Marvel cinematic universe style, dramatic lighting with blue tech glow, 4K photorealistic rendering"
+        },
+        "2": {
+          "eventId": 2,
+          "eventTitle": "Sumo Bot",
+          "themedTitle": "Hulk vs. Thing Arena Battle",
+          "prompt": "Two massive robotic versions of Hulk and The Thing facing off in a circular arena, green and orange metallic armor plating, Avengers compound training facility background, superhero battle atmosphere, dramatic comic book lighting, action-packed scene, Marvel superhero aesthetic, industrial sci-fi setting"
+        },
+        "3": {
+          "eventId": 3,
+          "eventTitle": "Robo Race",
+          "themedTitle": "Iron Man's Arc Reactor Circuit",
+          "prompt": "Sleek red and gold Iron Man-inspired racing robot speeding through a glowing arc reactor-themed race track, repulsor technology effects, Stark Industries racing circuit, blue energy trails, futuristic Marvel technology aesthetic, motion blur effects, high-tech racing environment, cinematic lighting"
+        },
+        "4": {
+          "eventId": 4,
+          "eventTitle": "Robo Soccer",
+          "themedTitle": "Avengers Training Field",
+          "prompt": "Team of small Iron Man and Captain America themed robots playing soccer on a high-tech Avengers training field, holographic goal posts, shield and repulsor effects, modern superhero facility, dynamic action shot, Marvel cinematic universe styling, heroic lighting"
+        }
+      }
+    },
+    "dc": {
+      "theme": "DC Extended Universe",
+      "colorScheme": "Dark blues, blacks with tech blue highlights",
+      "style": "Sophisticated, corporate, dark knight aesthetic",
+      "events": {
+        "5": {
+          "eventId": 5,
+          "eventTitle": "Technical Quiz",
+          "themedTitle": "Batman's Batcave Challenge",
+          "prompt": "Dark knight's Batcave with multiple computer screens displaying technical questions about robotics and AI, Batman's high-tech command center, participants seated at futuristic workstations, blue holographic displays, Gotham City tech aesthetic, dramatic cave lighting with blue monitors"
+        },
+        "6": {
+          "eventId": 6,
+          "eventTitle": "Paper Presentation",
+          "themedTitle": "Wayne Enterprises Tech Summit",
+          "prompt": "Luxurious Wayne Enterprises boardroom with presenter showing advanced robotics research on massive displays, Bruce Wayne's corporate setting, professional DC universe business atmosphere, sleek modern presentation hall, sophisticated lighting, corporate superhero aesthetic"
+        },
+        "7": {
+          "eventId": 7,
+          "eventTitle": "Project Expo",
+          "themedTitle": "Justice League Hall of Technology",
+          "prompt": "Futuristic Justice League Watchtower exhibition hall with innovative superhero gadgets and robotics projects on display, visitors examining Batman's tech, Superman's Kryptonian devices, Wonder Woman's mystical-tech fusion, heroic sci-fi atmosphere, epic superhero lighting"
+        }
+      }
+    },
+    "anime": {
+      "theme": "Anime/Cyberpunk Sci-Fi",
+      "colorScheme": "Neon purples, cyans, digital blues",
+      "style": "Cyberpunk, mecha, futuristic Japanese",
+      "events": {
+        "8": {
+          "eventId": 8,
+          "eventTitle": "From Theory to Practice",
+          "themedTitle": "Futuristic Engineering Lab Transformation",
+          "prompt": "Clean futuristic engineering laboratory with split layout showing theoretical holographic blueprints on left side and working robotic prototypes on right side, professional scientists in lab coats, digital interfaces and floating data displays, bright white and blue LED lighting, modern Japanese tech aesthetic, educational atmosphere, high-tech research facility, safe for work professional environment"
+        },
+        "9": {
+          "eventId": 9,
+          "eventTitle": "Workshop (PLC/ROS)",
+          "themedTitle": "Gundam Mobile Suit Training Academy",
+          "prompt": "Futuristic Gundam pilot training facility with participants working on mecha control systems and robotics programming, giant mobile suit silhouettes in background, Japanese anime tech aesthetic, blue and white color scheme, advanced pilot training atmosphere, anime mecha styling"
+        }
+      }
+    },
+    "starwars": {
+      "theme": "Star Wars Galaxy",
+      "colorScheme": "Blue holograms, imperial reds, Jedi temple whites",
+      "style": "Galactic, mystical technology, space opera",
+      "events": {
+        "10": {
+          "eventId": 10,
+          "eventTitle": "Connections",
+          "themedTitle": "Jedi Council Networking Chamber",
+          "prompt": "Elegant Jedi Temple chamber with holographic networking stations, participants in modern attire discussing technology while surrounded by Star Wars architecture, blue hologram effects, peaceful Force-sensitive atmosphere, galactic republic aesthetic, serene lighting with blue holo-glow"
+        },
+        "11": {
+          "eventId": 11,
+          "eventTitle": "E-Sports (Free Fire, Stumble Guys)",
+          "themedTitle": "Death Star Gaming Command Center",
+          "prompt": "Imperial Death Star command center transformed into a gaming tournament venue, multiple screens showing Free Fire and Stumble Guys gameplay, participants in gaming chairs with Imperial design elements, red and black color scheme, dramatic Star Wars lighting, galactic empire aesthetic"
+        }
+      }
+    },
+    "steampunk": {
+      "theme": "Victorian Cyberpunk/Steampunk",
+      "colorScheme": "Brass, copper, steam white with neon accents",
+      "style": "Victorian meets cyberpunk, retro-futurism",
+      "events": {
+        "12": {
+          "eventId": 12,
+          "eventTitle": "CID",
+          "themedTitle": "Sherlock Holmes' Victorian Cyberpunk Investigation",
+          "prompt": "Victorian London detective office merged with cyberpunk technology, brass and copper mechanical investigation tools, steam-powered computers displaying digital clues, participants solving mysteries with vintage-futuristic gadgets, steampunk aesthetic with neon highlights, dramatic gaslight and LED combination"
+        }
+      }
+    }
+  },
+  "originalPrompts": {
+    "1": {
+      "eventId": 1,
+      "eventTitle": "Line Follower",
+      "prompt": "A sleek autonomous robot with sensors following a black line on a white track surface, modern laboratory setting with blue LED lights, circuit boards visible, cables neatly organized, futuristic robotic competition arena, high-tech atmosphere, dramatic lighting, 4K quality, photorealistic"
+    },
+    "2": {
+      "eventId": 2,
+      "eventTitle": "Sumo Bot",
+      "prompt": "Two compact fighting robots facing each other in a circular sumo ring, metallic armor plating, LED status indicators, autonomous battlebots with pushing mechanisms, arena surrounded by spectators, intense competition atmosphere, studio lighting, action shot, high resolution"
+    },
+    "3": {
+      "eventId": 3,
+      "eventTitle": "Robo Race",
+      "prompt": "High-speed autonomous racing robot navigating through an obstacle course, motion blur effects, sleek aerodynamic design, racing track with barriers and checkpoints, futuristic motorsport arena, neon accent lighting, dynamic action shot, professional photography style"
+    },
+    "4": {
+      "eventId": 4,
+      "eventTitle": "Robo Soccer",
+      "prompt": "Multiple small autonomous robots playing soccer on a green field, ball control mechanisms, team coordination, mini soccer stadium setup, robotic players in action, goal posts visible, competitive sports atmosphere, bright arena lighting, wide angle shot"
+    },
+    "5": {
+      "eventId": 5,
+      "eventTitle": "Technical Quiz",
+      "prompt": "Modern quiz competition setup with digital screens displaying technical questions about robotics and AI, participants with buzzers, professional quiz show lighting, futuristic presentation hall, electronic displays, academic competition atmosphere, clean and professional"
+    },
+    "6": {
+      "eventId": 6,
+      "eventTitle": "Paper Presentation",
+      "prompt": "Professional presentation hall with a speaker presenting robotics research on a large screen, audience of students and faculty, PowerPoint slides about automation technology, academic conference setting, professional lighting, modern auditorium, scholarly atmosphere"
+    },
+    "7": {
+      "eventId": 7,
+      "eventTitle": "Project Expo",
+      "prompt": "Exhibition hall filled with innovative robotics projects on display tables, students demonstrating their creations to visitors, interactive prototypes, technical posters, innovation showcase environment, bright exhibition lighting, bustling atmosphere, technology fair setting"
+    },
+    "8": {
+      "eventId": 8,
+      "eventTitle": "From Theory to Practice",
+      "prompt": "Split scene showing theoretical diagrams on one side and working robotic prototypes on the other, bridge between classroom learning and real-world application, engineering workshop setting, blueprints and actual robots, educational atmosphere, balanced composition"
+    },
+    "9": {
+      "eventId": 9,
+      "eventTitle": "Workshop (PLC/ROS)",
+      "prompt": "Hands-on workshop with participants working on laptops and PLC controllers, instructor demonstrating Robot Operating System, industrial automation equipment, learning environment, technical training setup, collaborative atmosphere, modern classroom with robotics equipment"
+    },
+    "10": {
+      "eventId": 10,
+      "eventTitle": "Connections",
+      "prompt": "Professional networking event with students and industry professionals mingling, handshakes and business card exchanges, modern conference hall, networking tables, professional attire, career fair atmosphere, warm lighting, business networking environment"
+    },
+    "11": {
+      "eventId": 11,
+      "eventTitle": "E-Sports (Free Fire, Stumble Guys)",
+      "prompt": "Gaming tournament setup with multiple mobile devices, players intensely focused on screens, gaming chairs and setup, tournament brackets displayed, competitive gaming atmosphere, RGB lighting, esports arena environment, spectators watching, modern gaming venue"
+    },
+    "12": {
+      "eventId": 12,
+      "eventTitle": "CID",
+      "prompt": "Mystery solving competition with detective-themed setup, evidence boards with clues, magnifying glasses and investigation tools, team members analyzing technical puzzles, forensic laboratory setting, dramatic lighting, mystery atmosphere, problem-solving environment"
+    }
+  },
+  "usageInstructions": {
+    "aspectRatios": {
+      "landscape": "--ar 16:9 (for banners)",
+      "portrait": "--ar 4:5 (for cards)",
+      "square": "--ar 1:1 (for social media)"
+    },
+    "qualitySettings": {
+      "midjourney": "--v 6 --quality 2",
+      "dalle": "Use highest quality settings",
+      "stableDiffusion": "Steps: 50, CFG Scale: 7-12"
+    },
+    "styleModifiers": {
+      "cinematic": "--style cinematic",
+      "anime": "--style anime",
+      "photorealistic": "--style raw"
+    },
+    "aiPlatforms": [
+      "DALL-E 3",
+      "Midjourney",
+      "Stable Diffusion",
+      "Leonardo AI",
+      "Adobe Firefly"
+    ]
+  },
+  "brandGuidelines": {
+    "primaryColors": ["#0A0F1C", "#00FFF7"],
+    "secondaryColors": ["#1E3A8A", "#3B82F6"],
+    "mood": "Exciting, innovative, competitive, professional",
+    "setting": "Modern college/university robotics facilities",
+    "lighting": "Professional, dramatic, with neon highlights",
+    "quality": "4K resolution, photorealistic rendering"
+  }
+}
