@@ -5,8 +5,8 @@ const About = () => {
     { 
       icon: '📱', 
       label: 'Phone', 
-      value: '+91 98765 43210', 
-      href: 'tel:+919876543210',
+      value: '+91 98404 00868', 
+      href: 'tel:+919840400868',
       description: 'Call us for event inquiries'
     },
     { 
@@ -19,8 +19,8 @@ const About = () => {
     { 
       icon: '📧', 
       label: 'Email', 
-      value: 'info@robonexus.com', 
-      href: 'mailto:info@robonexus.com',
+      value: 'robonexus2025@college.edu', 
+      href: 'mailto:robonexus2025@college.edu',
       description: 'Send us your queries'
     }
   ]
@@ -450,10 +450,10 @@ const About = () => {
                   <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
                     <span>📞</span>
                     <a 
-                      href="tel:+919710830456" 
+                      href="tel:+916379929194" 
                       className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
                     >
-                      +91 97108 30456
+                      +91 63799 29194
                     </a>
                   </div>
                   <p className="text-xs text-text-secondary font-body">
@@ -469,10 +469,10 @@ const About = () => {
                   <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
                     <span>📞</span>
                     <a 
-                      href="tel:+919500063471" 
+                      href="tel:+919500740713" 
                       className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
                     >
-                      +91 95000 63471
+                      +91 95007 40713
                     </a>
                   </div>
                   <p className="text-xs text-text-secondary font-body">
@@ -488,10 +488,10 @@ const About = () => {
                   <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
                     <span>📞</span>
                     <a 
-                      href="tel:+918072536987" 
+                      href="tel:+916379996749" 
                       className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
                     >
-                      +91 80725 36987
+                      +91 63799 96749
                     </a>
                   </div>
                   <p className="text-xs text-text-secondary font-body">
@@ -507,10 +507,10 @@ const About = () => {
                   <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
                     <span>📞</span>
                     <a 
-                      href="tel:+919626166996" 
+                      href="tel:+919025827412" 
                       className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
                     >
-                      +91 96261 66996
+                      +91 90258 27412
                     </a>
                   </div>
                   <p className="text-xs text-text-secondary font-body">
@@ -526,10 +526,10 @@ const About = () => {
                   <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
                     <span>📞</span>
                     <a 
-                      href="tel:+919500563471" 
+                      href="tel:+918072413865" 
                       className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
                     >
-                      +91 95005 63471
+                      +91 80724 13865
                     </a>
                   </div>
                   <p className="text-xs text-text-secondary font-body">

@@ -335,13 +335,13 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             <p className="text-xs text-text-secondary font-body">Event Support</p>
                           </div>
                           <motion.a
-                            href="tel:+919710830456"
+                            href="tel:+916379929194"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
                             <span className="text-primary text-xs">📱</span>
-                            <span className="text-text-secondary font-body text-xs">97108 30456</span>
+                            <span className="text-text-secondary font-body text-xs">63799 29194</span>
                           </motion.a>
                         </div>
                       </div>
@@ -353,13 +353,13 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             <p className="text-xs text-text-secondary font-body">Technical Assistance</p>
                           </div>
                           <motion.a
-                            href="tel:+919500063471"
+                            href="tel:+919500740713"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
                             <span className="text-primary text-xs">📱</span>
-                            <span className="text-text-secondary font-body text-xs">95000 63471</span>
+                            <span className="text-text-secondary font-body text-xs">95007 40713</span>
                           </motion.a>
                         </div>
                       </div>
@@ -371,13 +371,13 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             <p className="text-xs text-text-secondary font-body">Registration Support</p>
                           </div>
                           <motion.a
-                            href="tel:+918072536987"
+                            href="tel:+916379996749"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
                             <span className="text-primary text-xs">📱</span>
-                            <span className="text-text-secondary font-body text-xs">80725 36987</span>
+                            <span className="text-text-secondary font-body text-xs">63799 96749</span>
                           </motion.a>
                         </div>
                       </div>
@@ -389,13 +389,13 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             <p className="text-xs text-text-secondary font-body">Workshop Coordination</p>
                           </div>
                           <motion.a
-                            href="tel:+919626166996"
+                            href="tel:+919025827412"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
                             <span className="text-primary text-xs">📱</span>
-                            <span className="text-text-secondary font-body text-xs">96261 66996</span>
+                            <span className="text-text-secondary font-body text-xs">90258 27412</span>
                           </motion.a>
                         </div>
                       </div>
@@ -407,13 +407,13 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             <p className="text-xs text-text-secondary font-body">Competition Support</p>
                           </div>
                           <motion.a
-                            href="tel:+919500563471"
+                            href="tel:+918072413865"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
                             <span className="text-primary text-xs">📱</span>
-                            <span className="text-text-secondary font-body text-xs">95005 63471</span>
+                            <span className="text-text-secondary font-body text-xs">80724 13865</span>
                           </motion.a>
                         </div>
                       </div>
