@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
-import { isEventRegistrationEnabled, getRegistrationMessage, isEventEnabled } from '../config/features'
+import { isEventRegistrationEnabled, getRegistrationMessage } from '../config/features'
 
 interface Event {
   id: number

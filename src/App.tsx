@@ -9,7 +9,7 @@ import Home from './pages/Home'
 import Explore from './pages/Explore'
 import Reels from './pages/Reels'
 import About from './pages/About'
-import { featureConfig, isFeatureEnabled } from './config/features'
+import { featureConfig } from './config/features'
 
 function AppContent() {
   const [showInitialLoader, setShowInitialLoader] = useState(false)
