@@ -2,23 +2,16 @@ import { motion } from 'framer-motion'
 
 interface EventsOverviewProps {
   totalEvents: number
-  totalPrize: string
   eventsByCategory: { [key: string]: number }
 }
 
-const EventsOverview = ({ totalEvents, totalPrize, eventsByCategory }: EventsOverviewProps) => {
+const EventsOverview = ({ totalEvents, eventsByCategory }: EventsOverviewProps) => {
   const stats = [
     {
       icon: '🏆',
       label: 'Total Events',
       value: totalEvents.toString(),
       color: 'text-primary'
-    },
-    {
-      icon: '💰',
-      label: 'Prize Pool',
-      value: totalPrize,
-      color: 'text-secondary'
     },
     {
       icon: '🔧',

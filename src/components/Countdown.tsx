@@ -17,7 +17,7 @@ const Countdown = () => {
   })
 
   useEffect(() => {
-    const targetDate = new Date('2025-10-29T10:00:00').getTime()
+    const targetDate = new Date('2025-10-13T10:00:00').getTime()
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -89,7 +89,7 @@ const Countdown = () => {
         className="text-center text-text-secondary"
       >
         <p className="text-xs sm:text-sm md:text-base font-body">
-          October 15, 2025 • 10:00 AM IST
+          October 13, 2025 • 10:00 AM IST
         </p>
       </motion.div>
     </div>

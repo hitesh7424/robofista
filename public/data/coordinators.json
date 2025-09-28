@@ -1,0 +1,84 @@
+{
+  "faculty": [
+    {
+      "id": 1,
+      "name": "A.K. BABU",
+      "designation": "Faculty Overall Coordinator",
+      "department": "Mechanical Engineering",
+      "email": "akbabu@college.edu",
+      "phone": "+91 98404 00868",
+      "avatar": "👨‍🏫",
+      "expertise": ["Robotics", "Automation", "Event Management"],
+      "description": "Faculty Overall Coordinator for ROBONEXUS 2K25, overseeing all technical and administrative aspects of the symposium."
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "GURUAKASH C",
+      "designation": "Student Overall Coordinator",
+      "year": "Final Year",
+      "branch": "Engineering",
+      "email": "guruakash.c@student.edu",
+      "phone": "+91 63799 29194",
+      "avatar": "👨‍🎓",
+      "specialization": ["Event Management", "Overall Coordination"],
+      "responsibilities": ["Overall event coordination", "Team leadership", "Inter-departmental coordination"]
+    },
+    {
+      "id": 2,
+      "name": "RANJITH S",
+      "designation": "Student Coordinator",
+      "year": "Final Year",
+      "branch": "Engineering",
+      "email": "ranjith.s@student.edu",
+      "phone": "+91 95007 40713",
+      "avatar": "�‍🎓",
+      "specialization": ["Technical Events", "Operations"],
+      "responsibilities": ["Technical event coordination", "Equipment management", "Participant support"]
+    },
+    {
+      "id": 3,
+      "name": "WILSON",
+      "designation": "Student Coordinator",
+      "year": "Final Year",
+      "branch": "Engineering",
+      "email": "wilson@student.edu",
+      "phone": "+91 63799 96749",
+      "avatar": "�‍�",
+      "specialization": ["Logistics", "Registration"],
+      "responsibilities": ["Registration management", "Logistics coordination", "Venue management"]
+    },
+    {
+      "id": 4,
+      "name": "ARUL SELVAM",
+      "designation": "Student Coordinator",
+      "year": "Final Year",
+      "branch": "Engineering",
+      "email": "arulselvam@student.edu",
+      "phone": "+91 90258 27412",
+      "avatar": "👨‍🎓",
+      "specialization": ["Media & Outreach", "Publicity"],
+      "responsibilities": ["Social media management", "Photography", "Event publicity"]
+    },
+    {
+      "id": 5,
+      "name": "DINESH",
+      "designation": "Student Coordinator",
+      "year": "Final Year",
+      "branch": "Engineering",
+      "email": "dinesh@student.edu",
+      "phone": "+91 80724 13865",
+      "avatar": "�‍�",
+      "specialization": ["Finance", "Sponsorship"],
+      "responsibilities": ["Budget management", "Sponsor coordination", "Financial planning"]
+    }
+  ],
+  "contactInfo": {
+    "generalEmail": "robonexus2025@college.edu",
+    "helplineNumber": "+91 98404 00868",
+    "whatsappGroup": "https://chat.whatsapp.com/robonexus2025",
+    "officeHours": "9:00 AM - 6:00 PM (Monday to Friday)",
+    "address": "Department of Mechanical Engineering, College of Engineering, ROBONEXUS 2K25"
+  }
+}

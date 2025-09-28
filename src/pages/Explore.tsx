@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import EventCard from '../components/EventCard'
 import EventModal from '../components/EventModal'
 import Loader from '../components/Loader'
+import { isEventEnabled } from '../config/features'
 
 interface Event {
   id: number
@@ -88,7 +89,7 @@ const Explore = () => {
           transition={{ delay: 0.4 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {events.map((event, index) => (
+          {events.filter(event => isEventEnabled(event.id)).map((event, index) => (
             <motion.div
               key={event.id}
               initial={{ opacity: 0, y: 50 }}
@@ -104,7 +105,7 @@ const Explore = () => {
         </motion.div>
 
         {/* Empty State */}
-        {events.length === 0 && !loading && (
+        {events.filter(event => isEventEnabled(event.id)).length === 0 && !loading && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

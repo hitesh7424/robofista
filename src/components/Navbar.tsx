@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { FiHome, FiCalendar, FiCamera, FiInfo } from 'react-icons/fi'
+import { isNavItemEnabled } from '../config/features'
 
 interface NavItem {
   id: string
@@ -90,7 +91,7 @@ const Navbar = () => {
         
         {/* Navigation Items */}
         <div className={`flex ${isMobile ? 'space-x-8' : 'flex-col space-y-8 flex-1 justify-center'}`}>
-        {navItems.map((item) => {
+        {navItems.filter(item => isNavItemEnabled(item.id)).map((item) => {
           const isActive = location.pathname === item.route
           
           return (

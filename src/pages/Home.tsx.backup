@@ -93,29 +93,12 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative z-10 min-h-screen flex items-center justify-center text-center">
         <div className="px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto">
-          {/* Symposium Logo */}
-          <motion.div
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.1, duration: 0.8, type: "spring" }}
-            className="mb-4"
-          >
-            <img
-              src="/logo/logo1.webp"
-              alt="Symposium Logo"
-              className="w-20 sm:w-24 md:w-28 h-auto mx-auto"
-              style={{
-                filter: "drop-shadow(0 0 20px rgba(0, 255, 247, 0.4))"
-              }}
-            />
-          </motion.div>
-
-          {/* Text Logo */}
+          {/* Logo */}
           <motion.div
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ delay: 0.2, duration: 1, type: "spring" }}
-            className="mb-6"
+            className="mb-8"
           >
             <img
               src="/logo/robo_text_logo.webp"
@@ -127,22 +110,24 @@ const Home = () => {
             />
           </motion.div>
 
-          {/* Event Date */}
-          <motion.div
+          {/* Tagline */}
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
-            className="mb-8"
+            transition={{ delay: 0.6, duration: 1 }}
+            className="text-lg sm:text-xl md:text-2xl text-[#00FFF7] font-semibold mb-2"
           >
-            <div className="glassmorphism px-8 py-4 rounded-2xl inline-block">
-              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#00FFF7] mb-2">
-                October 13, 2025
-              </p>
-              <p className="text-sm sm:text-base md:text-lg text-white/80">
-                Robotics & Automation Symposium
-              </p>
-            </div>
-          </motion.div>
+            Robotics & Automation Symposium 2025
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 1 }}
+            className="text-base sm:text-lg md:text-xl text-white/80 mb-12"
+          >
+            Innovation • Competition • Excellence
+          </motion.p>
 
           {/* Countdown */}
           {isFeatureEnabled("showCountdownTimer") && (
@@ -150,7 +135,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 1 }}
-              className="w-full max-w-4xl mx-auto px-2 mb-8"
+              className="w-full max-w-4xl px-2 mb-8"
             >
               <Countdown />
             </motion.div>
@@ -185,13 +170,13 @@ const Home = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 1 }}
-              className="flex flex-col items-center text-white/70 mt-8"
+              className="flex flex-col items-center text-white/70"
             >
-              <p className="text-base sm:text-lg mb-4 text-center">Scroll to see our overall coordinators</p>
+              <p className="text-sm mb-2">Scroll to see coordinators</p>
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="text-3xl text-[#00FFF7]"
+                className="text-2xl"
               >
                 ↓
               </motion.div>
@@ -215,11 +200,12 @@ const Home = () => {
               >
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
                   <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                    Overall Coordinators
+                    Meet Our Coordinators
                   </span>
                 </h2>
                 <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-                  The dedicated team behind ROBONEXUS 2K25
+                  The dedicated team behind ROBONEXUS 2K25, working tirelessly to bring you the best
+                  robotics and automation symposium experience.
                 </p>
               </motion.div>
 
@@ -228,8 +214,10 @@ const Home = () => {
                 <>
                   {/* Faculty Section */}
                   {coordinatorsData.faculty.length > 0 && (
-                    <div className="mb-16">
-                      <h3 className="text-2xl font-bold text-center mb-8 text-primary">Faculty Coordinator</h3>
+                    <div className="mb-12">
+                      <h3 className="text-xl font-heading font-bold text-center mb-6 text-primary">
+                        👨‍🏫 Faculty Coordinator
+                      </h3>
                       <div className="flex justify-center">
                         {coordinatorsData.faculty.map((coordinator, index) => (
                           <motion.div
@@ -238,21 +226,24 @@ const Home = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="text-center"
                           >
-                            <div className="glassmorphism p-6 rounded-2xl hover:neon-glow transition-all duration-300 max-w-sm">
-                              <div className="text-3xl mb-3">👨‍🏫</div>
-                              <h4 className="text-xl font-bold text-primary mb-2">{coordinator.name}</h4>
-                              <p className="text-text-secondary text-sm mb-3">{coordinator.designation}</p>
+                            <div className="glassmorphism rounded-2xl p-6 text-center max-w-sm hover:neon-glow transition-all duration-300">
+                              <div className="text-2xl mb-2">👨‍💼</div>
+                              <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                                {coordinator.name}
+                              </h4>
                               <div className="flex items-center justify-center space-x-2 text-text-secondary">
                                 <span>📞</span>
                                 <a 
-                                  href={`tel:${coordinator.phone.replace(/\s/g, '')}`} 
-                                  className="text-highlight hover:text-secondary transition-colors"
+                                  href={`tel:${coordinator.phone.replace(/\s/g, '')}`}
+                                  className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
                                 >
                                   {coordinator.phone}
                                 </a>
                               </div>
+                              <p className="text-sm text-text-secondary font-body mt-2">
+                                For academic and administrative queries
+                              </p>
                             </div>
                           </motion.div>
                         ))}
@@ -263,8 +254,10 @@ const Home = () => {
                   {/* Student Section */}
                   {coordinatorsData.students.length > 0 && (
                     <div className="mb-12">
-                      <h3 className="text-2xl font-bold text-center mb-8 text-secondary">Student Coordinators</h3>
-                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                      <h3 className="text-xl font-heading font-bold text-center mb-6 text-secondary">
+                        👥 Student Coordinators
+                      </h3>
+                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {coordinatorsData.students.map((coordinator, index) => (
                           <motion.div
                             key={coordinator.id}
@@ -272,20 +265,51 @@ const Home = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: (index * 0.1) + 0.3 }}
                             viewport={{ once: true }}
-                            className="text-center"
                           >
-                            <div className="glassmorphism p-6 rounded-2xl hover:neon-glow transition-all duration-300">
-                              <div className="text-2xl mb-3">👨‍🎓</div>
-                              <h4 className="text-lg font-bold text-primary mb-2">{coordinator.name}</h4>
-                              <div className="flex items-center justify-center space-x-2 text-text-secondary">
+                            <div className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300">
+                              <div className="text-2xl mb-2">👤</div>
+                              <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                                {coordinator.name}
+                              </h4>
+                              <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
                                 <span>📞</span>
                                 <a 
-                                  href={`tel:${coordinator.phone.replace(/\s/g, '')}`} 
-                                  className="text-highlight hover:text-secondary transition-colors"
+                                  href={`tel:${coordinator.phone.replace(/\s/g, '')}`}
+                                  className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
                                 >
                                   {coordinator.phone}
                                 </a>
                               </div>
+                              <p className="text-xs text-text-secondary font-body">
+                                {coordinator.designation}
+                              </p>
+                            </div>
+                          </motion.div>
+                              <div className="w-24 h-24 bg-gradient-to-r from-secondary to-primary rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-bg-primary">
+                                {coordinator.avatar}
+                              </div>
+                              <h3 className="text-lg font-bold mb-1 text-text-primary">
+                                {coordinator.name}
+                              </h3>
+                              <p className="text-text-secondary text-sm mb-1">{coordinator.designation}</p>
+                              {coordinator.year && coordinator.branch && (
+                                <p className="text-text-secondary text-xs mb-3">{coordinator.year} - {coordinator.branch}</p>
+                              )}
+                              <div className="text-xs text-text-secondary space-y-1">
+                                <p>� {coordinator.email}</p>
+                                <p>� {coordinator.phone}</p>
+                              </div>
+                              {coordinator.specialization && (
+                                <div className="mt-3">
+                                  <div className="flex flex-wrap justify-center gap-1">
+                                    {coordinator.specialization.slice(0, 2).map((skill, skillIndex) => (
+                                      <span key={skillIndex} className="text-xs bg-secondary/20 px-2 py-1 rounded-full text-secondary">
+                                        {skill}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
                             </div>
                           </motion.div>
                         ))}
@@ -302,106 +326,49 @@ const Home = () => {
                   <p className="text-text-secondary">Loading coordinators...</p>
                 </div>
               )}
+
+              {/* Contact Information */}
+              {!loading && coordinatorsData?.contactInfo && (
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  viewport={{ once: true }}
+                  className="text-center mt-12"
+                >
+                  <div className="glassmorphism p-6 rounded-2xl max-w-4xl mx-auto">
+                    <h4 className="text-lg font-bold mb-4 text-text-primary">
+                      Need Help? Contact Us!
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-text-secondary">
+                      <div className="space-y-2">
+                        <p><strong>General Email:</strong> {coordinatorsData.contactInfo.generalEmail}</p>
+                        <p><strong>Helpline:</strong> {coordinatorsData.contactInfo.helplineNumber}</p>
+                        <p><strong>Office Hours:</strong> {coordinatorsData.contactInfo.officeHours}</p>
+                      </div>
+                      <div className="space-y-2">
+                        <a 
+                          href={coordinatorsData.contactInfo.whatsappGroup} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300"
+                        >
+                          📱 Join WhatsApp Group
+                        </a>
+                        <p className="text-xs mt-2">{coordinatorsData.contactInfo.address}</p>
+                      </div>
+                    </div>
+                    <p className="text-text-secondary text-sm mt-4">
+                      For any queries or assistance regarding ROBONEXUS 2K25, feel free to reach out
+                      to our coordinators. We're here to help make your experience memorable!
+                    </p>
+                  </div>
+                </motion.div>
+              )}
             </div>
           </div>
         </div>
       )}
-
-      {/* Prizes & Rewards Section */}
-      <div className="relative z-10 bg-gradient-to-b from-bg-primary to-transparent">
-        <div className="px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  🏆 Prizes & Recognition
-                </span>
-              </h2>
-              <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-                Celebrate your achievements and get recognized for your talent
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Technical Events */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
-                viewport={{ once: true }}
-                className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300"
-              >
-                <div className="text-4xl mb-4">🤖</div>
-                <h3 className="text-xl font-bold text-primary mb-4">Technical Events</h3>
-                <div className="space-y-3">
-                  <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-4 border border-primary/20">
-                    <div className="text-2xl mb-2">🥇</div>
-                    <h4 className="font-bold text-primary mb-1">Winner</h4>
-                    <p className="text-text-secondary text-sm">Cash Prize + Certificate + Shield</p>
-                  </div>
-                  <div className="bg-gradient-to-r from-secondary/10 to-primary/10 rounded-xl p-4 border border-secondary/20">
-                    <div className="text-2xl mb-2">🥈</div>
-                    <h4 className="font-bold text-secondary mb-1">Runner Up</h4>
-                    <p className="text-text-secondary text-sm">Cash Prize + Certificate + Shield</p>
-                  </div>
-                  <div className="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl p-3 border border-primary/10">
-                    <div className="text-xl mb-1">📜</div>
-                    <h5 className="font-semibold text-primary text-sm mb-1">All Participants</h5>
-                    <p className="text-text-secondary text-xs">Certificate of Participation</p>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Non-Technical Events */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 }}
-                viewport={{ once: true }}
-                className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300"
-              >
-                <div className="text-4xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold text-secondary mb-4">Non-Technical Events</h3>
-                <div className="space-y-3">
-                  <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-4 border border-primary/20">
-                    <div className="text-2xl mb-2">🏅</div>
-                    <h4 className="font-bold text-primary mb-1">All Participants</h4>
-                    <p className="text-text-secondary text-sm">Certificate + Shield</p>
-                  </div>
-                  <div className="bg-gradient-to-r from-secondary/5 to-primary/5 rounded-xl p-4 border border-secondary/10">
-                    <div className="text-xl mb-2">🎉</div>
-                    <p className="text-text-secondary text-sm">
-                      <strong className="text-primary">Everyone's a Winner!</strong><br/>
-                      Recognition for all participants with certificate and shield
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              viewport={{ once: true }}
-              className="mt-8 text-center"
-            >
-              <div className="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-6 border border-primary/10 max-w-3xl mx-auto">
-                <p className="text-text-secondary text-sm">
-                  🎊 <strong className="text-primary">Recognition Ceremony:</strong> All winners and participants will be celebrated 
-                  during the closing ceremony with proper recognition for their achievements and contributions to ROBONEXUS 2K25.
-                </p>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

@@ -10,7 +10,6 @@ interface Event {
   rules: string[]
   image: string
   category: string
-  prize: string
   registrationLink: string
   coordinators?: {
     students: string[]
@@ -103,9 +102,6 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/20 text-primary backdrop-blur-sm">
                   {event.category}
                 </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary/20 text-secondary backdrop-blur-sm">
-                  🏆 {event.prize}
-                </span>
               </div>
             </div>
 
@@ -177,6 +173,72 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                 </ul>
               </motion.div>
 
+              {/* Prizes & Rewards */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.35 }}
+                className="mb-6"
+              >
+                <h3 className="text-lg font-heading font-semibold text-secondary mb-3">
+                  🏆 Prizes & Rewards
+                </h3>
+                
+                {event.category.toLowerCase().includes('technical') ? (
+                  // Technical Events Prizes
+                  <div className="space-y-3">
+                    <div className="glassmorphism rounded-xl p-4">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <span className="text-2xl">🥇</span>
+                        <h4 className="font-heading font-bold text-primary">Winner</h4>
+                      </div>
+                      <p className="text-text-secondary font-body text-sm ml-8">
+                        Cash Prize + Certificate + Shield
+                      </p>
+                    </div>
+                    
+                    <div className="glassmorphism rounded-xl p-4">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <span className="text-2xl">🥈</span>
+                        <h4 className="font-heading font-bold text-secondary">Runner Up</h4>
+                      </div>
+                      <p className="text-text-secondary font-body text-sm ml-8">
+                        Cash Prize + Certificate + Shield
+                      </p>
+                    </div>
+                    
+                    <div className="glassmorphism rounded-xl p-4">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <span className="text-2xl">📜</span>
+                        <h4 className="font-heading font-bold text-primary">All Participants</h4>
+                      </div>
+                      <p className="text-text-secondary font-body text-sm ml-8">
+                        Certificate of Participation
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  // Non-Technical Events Prizes
+                  <div className="space-y-3">
+                    <div className="glassmorphism rounded-xl p-4">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <span className="text-2xl">🏅</span>
+                        <h4 className="font-heading font-bold text-primary">All Participants</h4>
+                      </div>
+                      <p className="text-text-secondary font-body text-sm ml-8">
+                        Certificate + Shield
+                      </p>
+                    </div>
+                    
+                    <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-3 border border-primary/20">
+                      <p className="text-center text-text-secondary font-body text-sm">
+                        🎉 <strong>Everyone's a Winner!</strong> All participants in non-technical events receive recognition with certificate and shield.
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </motion.div>
+
               {/* Coordinators */}
               {event.coordinators && (
                 <motion.div
@@ -219,67 +281,6 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                           </motion.div>
                         ))}
                       </div>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-
-              {/* Contact Details */}
-              {event.contact && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 }}
-                  className="mb-8"
-                >
-                  <h3 className="text-lg font-heading font-semibold text-secondary mb-4">
-                    Contact Details
-                  </h3>
-                  
-                  <div className="space-y-4">
-                    {/* Phone Numbers */}
-                    <div className="glassmorphism rounded-xl p-4">
-                      <h4 className="text-sm font-semibold text-primary mb-3 flex items-center">
-                        <span className="mr-2">📞</span>
-                        Phone Numbers
-                      </h4>
-                      <div className="flex flex-wrap gap-3">
-                        {event.contact.phone.map((phone, index) => (
-                          <motion.a
-                            key={index}
-                            href={`tel:${phone}`}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.6 + index * 0.1 }}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="flex items-center space-x-2 bg-gradient-to-r from-primary/20 to-secondary/20 hover:from-primary/30 hover:to-secondary/30 rounded-lg px-4 py-2 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer"
-                          >
-                            <span className="text-primary">📱</span>
-                            <span className="text-text-secondary font-body font-medium">{phone}</span>
-                          </motion.a>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Email */}
-                    <div className="glassmorphism rounded-xl p-4">
-                      <h4 className="text-sm font-semibold text-primary mb-3 flex items-center">
-                        <span className="mr-2">📧</span>
-                        Email
-                      </h4>
-                      <motion.a
-                        href={`mailto:${event.contact.email}`}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.7 }}
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="inline-flex items-center space-x-2 bg-gradient-to-r from-secondary/20 to-primary/20 hover:from-secondary/30 hover:to-primary/30 rounded-lg px-4 py-2 border border-secondary/30 hover:border-secondary/50 transition-all duration-300 cursor-pointer"
-                      >
-                        <span className="text-secondary">✉️</span>
-                        <span className="text-text-secondary font-body font-medium">{event.contact.email}</span>
-                      </motion.a>
                     </div>
                   </div>
                 </motion.div>
@@ -329,7 +330,7 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div className="bg-bg-primary/30 rounded-lg p-3">
                         <div className="flex items-center justify-between">
-                          <div>
+                          <div className="flex-1">
                             <p className="text-text-primary font-body font-medium text-sm">GURUAKASH</p>
                             <p className="text-xs text-text-secondary font-body">Event Support</p>
                           </div>
@@ -337,16 +338,17 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             href="tel:+919710830456"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                            className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
-                            📱
+                            <span className="text-primary text-xs">📱</span>
+                            <span className="text-text-secondary font-body text-xs">97108 30456</span>
                           </motion.a>
                         </div>
                       </div>
 
                       <div className="bg-bg-primary/30 rounded-lg p-3">
                         <div className="flex items-center justify-between">
-                          <div>
+                          <div className="flex-1">
                             <p className="text-text-primary font-body font-medium text-sm">RANJITH</p>
                             <p className="text-xs text-text-secondary font-body">Technical Assistance</p>
                           </div>
@@ -354,16 +356,17 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             href="tel:+919500063471"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                            className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
-                            📱
+                            <span className="text-primary text-xs">📱</span>
+                            <span className="text-text-secondary font-body text-xs">95000 63471</span>
                           </motion.a>
                         </div>
                       </div>
 
                       <div className="bg-bg-primary/30 rounded-lg p-3">
                         <div className="flex items-center justify-between">
-                          <div>
+                          <div className="flex-1">
                             <p className="text-text-primary font-body font-medium text-sm">WILSON</p>
                             <p className="text-xs text-text-secondary font-body">Registration Support</p>
                           </div>
@@ -371,16 +374,17 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             href="tel:+918072536987"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                            className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
-                            📱
+                            <span className="text-primary text-xs">📱</span>
+                            <span className="text-text-secondary font-body text-xs">80725 36987</span>
                           </motion.a>
                         </div>
                       </div>
 
                       <div className="bg-bg-primary/30 rounded-lg p-3">
                         <div className="flex items-center justify-between">
-                          <div>
+                          <div className="flex-1">
                             <p className="text-text-primary font-body font-medium text-sm">ARUL SELVAM</p>
                             <p className="text-xs text-text-secondary font-body">Workshop Coordination</p>
                           </div>
@@ -388,16 +392,17 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             href="tel:+919626166996"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                            className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
-                            📱
+                            <span className="text-primary text-xs">📱</span>
+                            <span className="text-text-secondary font-body text-xs">96261 66996</span>
                           </motion.a>
                         </div>
                       </div>
 
-                      <div className="bg-bg-primary/30 rounded-lg p-3 sm:col-span-2">
-                        <div className="flex items-center justify-between max-w-xs mx-auto">
-                          <div>
+                      <div className="bg-bg-primary/30 rounded-lg p-3">
+                        <div className="flex items-center justify-between">
+                          <div className="flex-1">
                             <p className="text-text-primary font-body font-medium text-sm">DINESH</p>
                             <p className="text-xs text-text-secondary font-body">Competition Support</p>
                           </div>
@@ -405,9 +410,10 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             href="tel:+919500563471"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                            className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-2 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer ml-2"
                           >
-                            📱
+                            <span className="text-primary text-xs">📱</span>
+                            <span className="text-text-secondary font-body text-xs">95005 63471</span>
                           </motion.a>
                         </div>
                       </div>

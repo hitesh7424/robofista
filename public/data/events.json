@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Line Follower",
-    "date": "2025-10-29",
+    "date": "2025-10-13",
     "time": "10:00 AM",
     "description": "Classic line following competition where robots navigate through complex paths using sensors to follow a black line on white surface.",
     "rules": [
@@ -14,7 +14,6 @@
     ],
     "image": "/images/events/01_line_follower.png",
     "category": "Technical",
-    "prize": "₹1",
     "registrationLink": "https://forms.google.com/linefollower-registration",
     "coordinators": {
       "students": ["Guru Akash", "Ashvath", "Kishore V", "Manigandan E", "Meganathan"],
@@ -28,7 +27,7 @@
   {
     "id": 2,
     "title": "Sumo Bot",
-    "date": "2025-10-29",
+    "date": "2025-10-13",
     "time": "11:30 AM",
     "description": "Robot sumo wrestling competition where autonomous bots battle to push opponents out of the ring using strategy and power.",
     "rules": [
@@ -40,7 +39,6 @@
     ],
     "image": "/images/events/02_sumo_bot.png",
     "category": "Technical",
-    "prize": "₹1",
     "registrationLink": "https://forms.google.com/sumobot-registration",
     "coordinators": {
       "students": ["Rajesh", "Perumal M", "Mokesh S", "Gokul V"],
@@ -54,7 +52,7 @@
   {
     "id": 3,
     "title": "Paper Presentation",
-    "date": "2025-10-29",
+    "date": "2025-10-13",
     "time": "2:00 PM",
     "description": "Present innovative research papers on robotics, automation, and emerging technologies in front of expert judges.",
     "rules": [
@@ -65,8 +63,7 @@
       "Maximum 4 members per team"
     ],
     "image": "/images/events/06_paper_presentation.png",
-    "category": "Knowledge",
-    "prize": "₹1",
+    "category": "Technical",
     "registrationLink": "https://forms.google.com/paper-presentation-registration",
     "coordinators": {
       "students": ["Madhan", "Monisha", "Santhiya V", "Ramya R", "Akash K"],
@@ -80,7 +77,7 @@
   {
     "id": 4,
     "title": "Robo Race",
-    "date": "2025-10-29",
+    "date": "2025-10-13",
     "time": "3:30 PM",
     "description": "High-speed robot racing competition where autonomous robots navigate through challenging obstacle courses and tracks.",
     "rules": [
@@ -92,7 +89,6 @@
     ],
     "image": "/images/events/03_robo_race.png",
     "category": "Technical",
-    "prize": "₹1",
     "registrationLink": "https://forms.google.com/roborace-registration",
     "coordinators": {
       "students": ["Sharvin", "Udhayakumar P", "Ramalingam J", "Gukesh P"],
@@ -106,7 +102,7 @@
   {
     "id": 5,
     "title": "Project Expo",
-    "date": "2025-10-30",
+    "date": "2025-10-13",
     "time": "10:00 AM",
     "description": "Showcase innovative robotics and automation projects with live demonstrations and interactive exhibits.",
     "rules": [
@@ -117,8 +113,7 @@
       "Open exhibition format"
     ],
     "image": "/images/events/07_project_expo.png",
-    "category": "Knowledge",
-    "prize": "₹1",
+    "category": "Technical",
     "registrationLink": "https://forms.google.com/project-expo-registration",
     "coordinators": {
       "students": ["Adheshwaran", "Sachin S", "Santha Kumar E", "Yogeshwaran"],
@@ -132,7 +127,7 @@
   {
     "id": 6,
     "title": "Robo Soccer",
-    "date": "2025-10-30",
+    "date": "2025-10-13",
     "time": "11:30 AM",
     "description": "Exciting robot soccer matches where teams of autonomous robots compete in strategic gameplay and ball control.",
     "rules": [
@@ -144,7 +139,6 @@
     ],
     "image": "/images/events/04_robo_soccer.png",
     "category": "Technical",
-    "prize": "₹1",
     "registrationLink": "https://forms.google.com/robosoccer-registration",
     "coordinators": {
       "students": ["Pothigaivasan", "Prakash M", "Saranraj N", "Tamil Vanan"],
@@ -158,7 +152,7 @@
   {
     "id": 7,
     "title": "From Theory to Practice",
-    "date": "2025-10-30",
+    "date": "2025-10-13",
     "time": "2:00 PM",
     "description": "Bridge the gap between theoretical knowledge and practical implementation in robotics and automation systems.",
     "rules": [
@@ -169,8 +163,7 @@
       "15 minutes presentation time"
     ],
     "image": "/images/events/08_theory_to_practice.png",
-    "category": "Knowledge",
-    "prize": "₹1",
+    "category": "Non-Technical",
     "registrationLink": "https://forms.google.com/theory-practice-registration",
     "coordinators": {
       "students": ["Anbuselvan", "Prathap A", "Jayavel", "Yuvan Shankara Pandian S"],
@@ -184,7 +177,7 @@
   {
     "id": 8,
     "title": "Technical Quiz",
-    "date": "2025-10-30",
+    "date": "2025-10-13",
     "time": "3:30 PM",
     "description": "Test your technical knowledge in robotics, automation, AI, and emerging technologies through challenging quiz rounds.",
     "rules": [
@@ -196,7 +189,6 @@
     ],
     "image": "/images/events/05_tech_quiz.png",
     "category": "Technical",
-    "prize": "₹8",
     "registrationLink": "https://forms.google.com/technical-quiz-registration",
     "coordinators": {
       "students": ["Ranjith", "Yuvan Shankara Pandian S", "Tamizhvanan R"],
@@ -210,7 +202,7 @@
   {
     "id": 9,
     "title": "Workshop (PLC/ROS)",
-    "date": "2025-10-31",
+    "date": "2025-10-13",
     "time": "10:00 AM",
     "description": "Hands-on workshop on Programmable Logic Controllers (PLC) and Robot Operating System (ROS) for industrial automation.",
     "rules": [
@@ -221,8 +213,7 @@
       "Hands-on practical sessions"
     ],
     "image": "/images/events/09_workshop_plc_ros.png",
-    "category": "Knowledge",
-    "prize": "Certificate + Kit",
+    "category": "Technical",
     "registrationLink": "https://forms.google.com/plc-ros-workshop-registration",
     "coordinators": {
       "students": ["Madhan", "Sheguvaran", "Varshaa R V", "Azeema M", "Kamesh"],
@@ -236,7 +227,7 @@
   {
     "id": 10,
     "title": "Connections",
-    "date": "2025-10-31",
+    "date": "2025-10-13",
     "time": "11:30 AM",
     "description": "Interactive networking event connecting students, industry professionals, and robotics enthusiasts.",
     "rules": [
@@ -247,8 +238,7 @@
       "Open discussion forums"
     ],
     "image": "/images/events/10_connections.png",
-    "category": "Knowledge",
-    "prize": "Networking Opportunities",
+    "category": "Non-Technical",
     "registrationLink": "https://forms.google.com/connections-registration",
     "coordinators": {
       "students": ["Praveen", "Ramachandiran M", "Sridhar S", "Mohamed Hanees R"],
@@ -262,7 +252,7 @@
   {
     "id": 11,
     "title": "E-Sports (Free Fire, Stumble Guys)",
-    "date": "2025-10-31",
+    "date": "2025-10-13",
     "time": "2:00 PM",
     "description": "Gaming tournament featuring popular mobile games Free Fire and Stumble Guys with exciting competitions.",
     "rules": [
@@ -273,8 +263,7 @@
       "Tournament bracket format"
     ],
     "image": "/images/events/11_esports.png",
-    "category": "Fun",
-    "prize": "₹1",
+    "category": "Non-Technical",
     "registrationLink": "https://forms.google.com/esports-registration",
     "coordinators": {
       "students": ["Ashwath", "Vedhagiri S", "Dhanabalan T", "Robin"],
@@ -288,7 +277,7 @@
   {
     "id": 12,
     "title": "CID",
-    "date": "2025-10-31",
+    "date": "2025-10-13",
     "time": "3:30 PM",
     "description": "Crime Investigation Department - A mystery solving competition combining technical skills with detective work.",
     "rules": [
@@ -299,8 +288,7 @@
       "Multi-stage elimination rounds"
     ],
     "image": "/images/events/12_cid.png",
-    "category": "Fun",
-    "prize": "₹1",
+    "category": "Non-Technical",
     "registrationLink": "https://forms.google.com/cid-registration",
     "coordinators": {
       "students": ["Guru Akash", "Mohana Vel S", "Vishva M", "Tamizhvanan R"],

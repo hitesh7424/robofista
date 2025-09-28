@@ -9,7 +9,6 @@ interface Event {
   rules: string[]
   image: string
   category: string
-  prize: string
   registrationLink: string
   coordinators?: {
     students: string[]
@@ -73,11 +72,6 @@ const EventCard = ({ event, onClick }: EventCardProps) => {
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/30 text-white backdrop-blur-sm space-x-1 border border-primary/20">
             <span>{getCategoryIcon(event.category)}</span>
             <span>{event.category}</span>
-          </span>
-
-          {/* Prize badge */}
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-secondary/30 text-white backdrop-blur-sm border border-secondary/20">
-            🏆 {event.prize}
           </span>
         </div>
 

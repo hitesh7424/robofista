@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
+import { isEventRegistrationEnabled, getRegistrationMessage, isEventEnabled } from '../config/features'
 
 interface Event {
   id: number
@@ -10,7 +11,6 @@ interface Event {
   rules: string[]
   image: string
   category: string
-  prize: string
 }
 
 interface EventModalProps {
@@ -94,9 +94,6 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/20 text-primary backdrop-blur-sm">
                   {event.category}
                 </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary/20 text-secondary backdrop-blur-sm">
-                  🏆 {event.prize}
-                </span>
               </div>
             </div>
 
@@ -169,20 +166,39 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
               </motion.div>
 
               {/* Register button */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="flex justify-center pt-4 pb-24 md:pb-6"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-2xl font-heading font-bold text-bg-primary hover:shadow-2xl transition-all duration-300 neon-glow"
+              {isEventRegistrationEnabled(event.id) ? (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="flex justify-center pt-4 pb-24 md:pb-6"
                 >
-                  Register Now
-                </motion.button>
-              </motion.div>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-2xl font-heading font-bold text-bg-primary hover:shadow-2xl transition-all duration-300 neon-glow"
+                  >
+                    Register Now
+                  </motion.button>
+                </motion.div>
+              ) : (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="flex flex-col items-center pt-4 pb-24 md:pb-6 text-center"
+                >
+                  <p className="text-text-secondary text-sm mb-2">
+                    {getRegistrationMessage()}
+                  </p>
+                  <button
+                    disabled
+                    className="px-8 py-3 bg-gray-600 rounded-2xl font-heading font-bold text-gray-400 cursor-not-allowed"
+                  >
+                    Registration Closed
+                  </button>
+                </motion.div>
+              )}
             </div>
           </motion.div>
         </motion.div>

@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import ReelCard from '../components/ReelCard'
 import Loader from '../components/Loader'
+import UnderConstruction from '../components/UnderConstruction'
+import { isFeatureEnabled } from '../config/features'
 
 interface MediaItem {
   id: number
@@ -12,6 +14,17 @@ interface MediaItem {
 }
 
 const Reels = () => {
+  // Check if reels feature is enabled
+  if (!isFeatureEnabled('reelsEnabled')) {
+    return (
+      <UnderConstruction 
+        title="Reels Coming Soon"
+        message="We're creating awesome video content for you! Our team is working on bringing exciting reels showcasing ROBONEXUS 2K25 events, behind-the-scenes footage, and much more."
+        icon="🎬"
+      />
+    )
+  }
+
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [loading, setLoading] = useState(true)
