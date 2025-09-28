@@ -101,7 +101,7 @@ const Home = () => {
             className="mb-4"
           >
             <img
-              src="/logo/logo1.webp"
+              src="/logo/logo2.webp"
               alt="Symposium Logo"
               className="w-20 sm:w-24 md:w-28 h-auto mx-auto"
               style={{
