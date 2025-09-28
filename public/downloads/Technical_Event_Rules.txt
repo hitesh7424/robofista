@@ -1,0 +1,69 @@
+ROBONEXUS 2K25 - Technical Event Rules & Regulations
+===================================================
+
+GENERAL RULES
+-------------
+• All participants must register before the event
+• Teams must arrive 30 minutes before their scheduled time
+• Late arrivals may result in disqualification
+• Participants must carry valid ID cards
+• Event organizers' decisions are final
+
+LINE FOLLOWER ROBOT
+-------------------
+• Robot must follow a black line on white surface
+• Maximum dimensions: 25cm x 25cm x 25cm
+• Weight limit: 2kg
+• Battery voltage: Maximum 12V
+• No remote control allowed
+• Autonomous operation only
+
+SUMO BOT CHAMPIONSHIP
+---------------------
+• Ring diameter: 154cm (black with white border)
+• Robot dimensions: Maximum 20cm x 20cm
+• Weight limit: 3kg
+• Match duration: 3 minutes
+• Best of 3 rounds wins
+• No sticky wheels or gripping mechanisms
+
+ROBO RACE
+---------
+• Track length: Approximately 10 meters
+• Obstacles include ramps, turns, and barriers
+• Time-based scoring system
+• Maximum 3 attempts per team
+• Fastest completion time wins
+• Robot must be autonomous
+
+ROBO SOCCER
+-----------
+• Field size: 2.2m x 1.8m
+• Team size: 2 robots per team
+• Match duration: 2 x 10 minutes
+• Ball: Standard ping-pong ball (orange)
+• No human interference during play
+• Robots must be autonomous
+
+WORKSHOP REQUIREMENTS
+--------------------
+• Participants must bring laptops
+• Software will be provided on-site
+• Basic programming knowledge recommended
+• Hands-on practical sessions included
+• Certificates provided upon completion
+
+DISQUALIFICATION CONDITIONS
+---------------------------
+• Use of prohibited materials
+• Exceeding size/weight limits
+• Unsafe robot design
+• Unsporting behavior
+• Violation of any event rules
+
+CONTACT FOR RULE CLARIFICATIONS
+-------------------------------
+Faculty Coordinator: A.K. BABU - +91 98404 00868
+Technical Support: RANJITH S - +91 95000 63471
+
+© 2025 ROBONEXUS 2K25 - Technical Committee

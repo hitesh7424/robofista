@@ -1,0 +1,26 @@
+{
+  "downloadableContent": [
+    {
+      "id": 1,
+      "title": "ROBONEXUS 2K25 Brochure",
+      "description": "Complete event information including schedule, events, prizes, and coordinator details",
+      "category": "brochure",
+      "fileType": "pdf",
+      "fileSize": "5 KB",
+      "fileName": "ROBONEXUS_2K25_Brochure.pdf",
+      "downloadUrl": "/brochure/ROBONEXUS_2K25_Brochure.txt",
+      "icon": "📄",
+      "uploadDate": "2025-09-28",
+      "featured": true
+    }
+  ],
+  "categories": [
+    { "id": "all", "name": "All Downloads", "icon": "📁" },
+    { "id": "brochure", "name": "Brochures", "icon": "📄" },
+    { "id": "guidelines", "name": "Guidelines", "icon": "📋" },
+    { "id": "rules", "name": "Rules", "icon": "⚙️" },
+    { "id": "map", "name": "Maps", "icon": "🗺️" },
+    { "id": "schedule", "name": "Schedule", "icon": "📅" },
+    { "id": "accommodation", "name": "Accommodation", "icon": "🏨" }
+  ]
+}

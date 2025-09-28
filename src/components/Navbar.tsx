@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { FiHome, FiCalendar, FiCamera, FiInfo } from 'react-icons/fi'
+import { FiHome, FiCalendar, FiCamera, FiInfo, FiDownload } from 'react-icons/fi'
 import { isNavItemEnabled } from '../config/features'
 
 interface NavItem {
@@ -14,6 +14,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   { id: 'home', route: '/', icon: <FiHome size={24} />, label: 'Home' },
   { id: 'explore', route: '/explore', icon: <FiCalendar size={24} />, label: 'Events' },
+  { id: 'downloads', route: '/downloads', icon: <FiDownload size={24} />, label: 'Downloads' },
   { id: 'reels', route: '/reels', icon: <FiCamera size={24} />, label: 'Media' },
   { id: 'about', route: '/about', icon: <FiInfo size={24} />, label: 'About' },
 ]

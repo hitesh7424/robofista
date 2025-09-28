@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { FiUserPlus } from 'react-icons/fi'
 import EventCard from '../components/EventCard'
 import EventModal from '../components/EventModal'
 import Loader from '../components/Loader'
@@ -69,17 +70,36 @@ const Explore = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-8"
+          className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-heading font-black mb-4">
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               ROBONEXUS 2K25 Events
             </span>
           </h1>
-          <p className="text-text-secondary font-body text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary font-body text-lg max-w-2xl mx-auto mb-8">
             Discover exciting competitions, workshops, and exhibitions designed to challenge
             and inspire the next generation of robotics enthusiasts.
           </p>
+          
+          {/* Register Now Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-2xl font-bold text-bg-primary hover:shadow-2xl transition-all duration-300 text-lg neon-glow"
+            >
+              <FiUserPlus size={24} />
+              <span>Register Now</span>
+            </motion.a>
+          </motion.div>
         </motion.div>
 
         {/* Events Grid */}

@@ -1,0 +1,78 @@
+ROBONEXUS 2K25 - Event Schedule
+===============================
+
+OCTOBER 13, 2025 - COMPLETE DAY SCHEDULE
+
+MORNING SESSION (9:00 AM - 12:00 PM)
+------------------------------------
+09:00 - 09:30    Registration & Check-in
+09:30 - 10:00    Opening Ceremony
+                 • Welcome Address
+                 • Chief Guest Speech
+                 • Event Overview
+
+10:00 - 10:15    Inaugural Break & Networking
+
+10:15 - 12:00    Technical Events - Round 1
+                 • Line Follower Robot (Arena 1)
+                 • Sumo Bot Championship (Arena 2)
+                 • Robo Race Trials (Arena 3)
+
+AFTERNOON SESSION (1:00 PM - 5:00 PM)
+-------------------------------------
+01:00 - 02:00    Lunch Break
+
+02:00 - 04:00    Technical Events - Round 2
+                 • Robo Soccer Tournament
+                 • Project Expo Presentations
+                 • Paper Presentation Sessions
+
+04:00 - 04:15    Refreshment Break
+
+04:15 - 05:00    Non-Technical Events
+                 • Tech Quiz Competition
+                 • CID (Creative Investigation)
+                 • Connections Game
+
+EVENING SESSION (5:00 PM - 7:00 PM)
+-----------------------------------
+05:00 - 06:00    Workshop Sessions
+                 • PLC Programming Workshop
+                 • ROS (Robot Operating System)
+                 • Theory to Practice Sessions
+
+06:00 - 06:30    Final Rounds & Results
+06:30 - 07:00    Prize Distribution & Closing Ceremony
+
+SPECIAL ACTIVITIES
+-----------------
+• E-Sports Tournament (Parallel Event)
+• Exhibition Stalls (All Day)
+• Photography Contest
+• Live Demonstrations
+
+VENUE LOCATIONS
+---------------
+• Main Auditorium: Opening/Closing Ceremony
+• Technical Labs: Robotics Competitions
+• Seminar Halls: Presentations & Workshops
+• Cafeteria: Lunch & Refreshments
+• Open Grounds: Project Exhibition
+
+IMPORTANT NOTES
+---------------
+• Participants should arrive 30 minutes early
+• ID cards mandatory for entry
+• Lunch provided for registered participants
+• Parking available on campus
+• Emergency contacts will be provided at registration
+
+CONTACT FOR SCHEDULE QUERIES
+----------------------------
+Event Coordination: GURUAKASH C - +91 63799 29194
+Technical Support: RANJITH S - +91 95000 63471
+General Inquiries: WILSON - +91 80725 36987
+
+Subject to minor changes. Latest updates will be announced on the day of the event.
+
+© 2025 ROBONEXUS 2K25 - Organizing Committee

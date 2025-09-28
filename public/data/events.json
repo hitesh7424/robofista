@@ -14,7 +14,7 @@
     ],
     "image": "/images/events/01_line_follower.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/linefollower-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Guru Akash", "Ashvath", "Kishore V", "Manigandan E", "Meganathan"],
       "faculty": "Mr. J. Srinivas"
@@ -39,7 +39,7 @@
     ],
     "image": "/images/events/02_sumo_bot.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/sumobot-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Rajesh", "Perumal M", "Mokesh S", "Gokul V"],
       "faculty": "Mr. J. Srinivas"
@@ -64,7 +64,7 @@
     ],
     "image": "/images/events/06_paper_presentation.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/paper-presentation-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Madhan", "Monisha", "Santhiya V", "Ramya R", "Akash K"],
       "faculty": "Mrs. Priyanka"
@@ -89,7 +89,7 @@
     ],
     "image": "/images/events/03_robo_race.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/roborace-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Sharvin", "Udhayakumar P", "Ramalingam J", "Gukesh P"],
       "faculty": "Mr. Priyadharshini"
@@ -114,7 +114,7 @@
     ],
     "image": "/images/events/07_project_expo.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/project-expo-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Adheshwaran", "Sachin S", "Santha Kumar E", "Yogeshwaran"],
       "faculty": "Mrs. Vennila"
@@ -139,7 +139,7 @@
     ],
     "image": "/images/events/04_robo_soccer.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/robosoccer-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Pothigaivasan", "Prakash M", "Saranraj N", "Tamil Vanan"],
       "faculty": "Mrs. Vennila"
@@ -164,7 +164,7 @@
     ],
     "image": "/images/events/08_theory_to_practice.png",
     "category": "Non-Technical",
-    "registrationLink": "https://forms.google.com/theory-practice-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Anbuselvan", "Prathap A", "Jayavel", "Yuvan Shankara Pandian S"],
       "faculty": "Mr. Tharmalingam"
@@ -189,7 +189,7 @@
     ],
     "image": "/images/events/05_tech_quiz.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/technical-quiz-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Ranjith", "Yuvan Shankara Pandian S", "Tamizhvanan R"],
       "faculty": "TBA"
@@ -214,7 +214,7 @@
     ],
     "image": "/images/events/09_workshop_plc_ros.png",
     "category": "Technical",
-    "registrationLink": "https://forms.google.com/plc-ros-workshop-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Madhan", "Sheguvaran", "Varshaa R V", "Azeema M", "Kamesh"],
       "faculty": "Mrs. Priyanka"
@@ -239,7 +239,7 @@
     ],
     "image": "/images/events/10_connections.png",
     "category": "Non-Technical",
-    "registrationLink": "https://forms.google.com/connections-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Praveen", "Ramachandiran M", "Sridhar S", "Mohamed Hanees R"],
       "faculty": "Mrs. Jothi Lakhsmi"
@@ -264,7 +264,7 @@
     ],
     "image": "/images/events/11_esports.png",
     "category": "Non-Technical",
-    "registrationLink": "https://forms.google.com/esports-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Ashwath", "Vedhagiri S", "Dhanabalan T", "Robin"],
       "faculty": "Mrs. Priyanka"
@@ -289,7 +289,7 @@
     ],
     "image": "/images/events/12_cid.png",
     "category": "Non-Technical",
-    "registrationLink": "https://forms.google.com/cid-registration",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
       "students": ["Guru Akash", "Mohana Vel S", "Vishva M", "Tamizhvanan R"],
       "faculty": "Mrs. Vennila"

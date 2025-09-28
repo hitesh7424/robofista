@@ -61,7 +61,7 @@ export const featureConfig: FeatureConfig = {
   
   // Navigation controls
   showNavigation: true, // Show navigation bar
-  enabledNavItems: ['home', 'explore', 'reels', 'about'], // Control which nav items are shown
+  enabledNavItems: ['home', 'explore', 'downloads', 'reels', 'about'], // Control which nav items are shown
   
   // Contact and social
   showSocialLinks: true, // Show social media links

@@ -7,6 +7,7 @@ import AnnouncementBanner from './components/AnnouncementBanner'
 import MaintenanceMode from './components/MaintenanceMode'
 import Home from './pages/Home'
 import Explore from './pages/Explore'
+import Downloads from './pages/Downloads'
 import Reels from './pages/Reels'
 import About from './pages/About'
 import { featureConfig } from './config/features'
@@ -50,6 +51,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/downloads" element={<Downloads />} />
           <Route path="/reels" element={<Reels />} />
           <Route path="/about" element={<About />} />
         </Routes>
