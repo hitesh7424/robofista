@@ -298,6 +298,158 @@ const About = () => {
           </div>
         </motion.section>
 
+        {/* Overall Coordinators Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="mb-16"
+        >
+          <div className="glassmorphism rounded-3xl p-8 md:p-12 neon-glow">
+            <h2 className="text-3xl font-heading font-bold text-center mb-8">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Overall Coordinators
+              </span>
+            </h2>
+            
+            {/* Faculty Coordinator */}
+            <div className="mb-8">
+              <h3 className="text-xl font-heading font-bold text-center mb-6 text-primary">
+                👨‍🏫 Faculty Coordinator
+              </h3>
+              <div className="flex justify-center">
+                <div className="glassmorphism rounded-2xl p-6 text-center max-w-sm hover:neon-glow transition-all duration-300">
+                  <div className="text-2xl mb-2">👨‍💼</div>
+                  <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                    A.K.BABU (M.E)
+                  </h4>
+                  <div className="flex items-center justify-center space-x-2 text-text-secondary">
+                    <span>📞</span>
+                    <a 
+                      href="tel:+919840400868" 
+                      className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
+                    >
+                      +91 98404 00868
+                    </a>
+                  </div>
+                  <p className="text-sm text-text-secondary font-body mt-2">
+                    For academic and administrative queries
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Student Coordinators */}
+            <div>
+              <h3 className="text-xl font-heading font-bold text-center mb-6 text-secondary">
+                👥 Student Coordinators
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300">
+                  <div className="text-2xl mb-2">👤</div>
+                  <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                    GURUAKASH
+                  </h4>
+                  <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
+                    <span>📞</span>
+                    <a 
+                      href="tel:+919710830456" 
+                      className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
+                    >
+                      +91 97108 30456
+                    </a>
+                  </div>
+                  <p className="text-xs text-text-secondary font-body">
+                    Event coordination & support
+                  </p>
+                </div>
+                
+                <div className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300">
+                  <div className="text-2xl mb-2">👤</div>
+                  <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                    RANJITH
+                  </h4>
+                  <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
+                    <span>📞</span>
+                    <a 
+                      href="tel:+919500063471" 
+                      className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
+                    >
+                      +91 95000 63471
+                    </a>
+                  </div>
+                  <p className="text-xs text-text-secondary font-body">
+                    Technical assistance & guidance
+                  </p>
+                </div>
+                
+                <div className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300">
+                  <div className="text-2xl mb-2">👤</div>
+                  <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                    WILSON
+                  </h4>
+                  <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
+                    <span>📞</span>
+                    <a 
+                      href="tel:+918072536987" 
+                      className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
+                    >
+                      +91 80725 36987
+                    </a>
+                  </div>
+                  <p className="text-xs text-text-secondary font-body">
+                    Registration & queries
+                  </p>
+                </div>
+                
+                <div className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300">
+                  <div className="text-2xl mb-2">👤</div>
+                  <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                    ARUL SELVAM
+                  </h4>
+                  <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
+                    <span>📞</span>
+                    <a 
+                      href="tel:+919626166996" 
+                      className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
+                    >
+                      +91 96261 66996
+                    </a>
+                  </div>
+                  <p className="text-xs text-text-secondary font-body">
+                    Workshop coordination
+                  </p>
+                </div>
+                
+                <div className="glassmorphism rounded-2xl p-6 text-center hover:neon-glow transition-all duration-300 md:col-span-2 lg:col-span-1">
+                  <div className="text-2xl mb-2">👤</div>
+                  <h4 className="text-lg font-heading font-bold text-primary mb-2">
+                    DINESH
+                  </h4>
+                  <div className="flex items-center justify-center space-x-2 text-text-secondary mb-2">
+                    <span>📞</span>
+                    <a 
+                      href="tel:+919500563471" 
+                      className="text-highlight hover:text-secondary transition-colors duration-300 font-body"
+                    >
+                      +91 95005 63471
+                    </a>
+                  </div>
+                  <p className="text-xs text-text-secondary font-body">
+                    Competition support
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border border-primary/20">
+                <p className="text-center text-text-secondary font-body text-sm">
+                  📞 <strong>Need Help?</strong> Feel free to contact any of our coordinators for assistance with 
+                  registration, event queries, technical support, or general information about ROBONEXUS 2K25.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
         {/* Important Information */}
         <motion.section
           initial={{ opacity: 0, y: 50 }}

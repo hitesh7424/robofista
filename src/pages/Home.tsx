@@ -101,6 +101,108 @@ const Home = () => {
         >
           <Countdown />
         </motion.div>
+
+        {/* Overall Coordinators Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 1 }}
+          className="mt-8 sm:mt-12 w-full max-w-6xl px-4"
+        >
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 sm:p-6 md:p-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-white">
+              Overall Coordinators
+            </h2>
+            
+            {/* Faculty Coordinator */}
+            <div className="mb-6 sm:mb-8">
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-[#00FFF7] text-center">
+                Faculty Coordinator
+              </h3>
+              <div className="flex justify-center">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-4 text-center">
+                  <p className="text-base sm:text-lg font-medium text-white mb-1">
+                    A.K.BABU (M.E)
+                  </p>
+                  <a 
+                    href="tel:+919840400868" 
+                    className="text-[#00FFF7] hover:text-[#9D4EDD] transition-colors duration-300 text-sm sm:text-base"
+                  >
+                    📞 +91 98404 00868
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Student Coordinators */}
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-[#9D4EDD] text-center">
+                Student Coordinators
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-4 text-center">
+                  <p className="text-base sm:text-lg font-medium text-white mb-1">
+                    GURUAKASH
+                  </p>
+                  <a 
+                    href="tel:+919710830456" 
+                    className="text-[#00FFF7] hover:text-[#9D4EDD] transition-colors duration-300 text-sm sm:text-base"
+                  >
+                    📞 +91 97108 30456
+                  </a>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-4 text-center">
+                  <p className="text-base sm:text-lg font-medium text-white mb-1">
+                    RANJITH
+                  </p>
+                  <a 
+                    href="tel:+919500063471" 
+                    className="text-[#00FFF7] hover:text-[#9D4EDD] transition-colors duration-300 text-sm sm:text-base"
+                  >
+                    📞 +91 95000 63471
+                  </a>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-4 text-center">
+                  <p className="text-base sm:text-lg font-medium text-white mb-1">
+                    WILSON
+                  </p>
+                  <a 
+                    href="tel:+918072536987" 
+                    className="text-[#00FFF7] hover:text-[#9D4EDD] transition-colors duration-300 text-sm sm:text-base"
+                  >
+                    📞 +91 80725 36987
+                  </a>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-4 text-center">
+                  <p className="text-base sm:text-lg font-medium text-white mb-1">
+                    ARUL SELVAM
+                  </p>
+                  <a 
+                    href="tel:+919626166996" 
+                    className="text-[#00FFF7] hover:text-[#9D4EDD] transition-colors duration-300 text-sm sm:text-base"
+                  >
+                    📞 +91 96261 66996
+                  </a>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-4 text-center sm:col-span-2 lg:col-span-1 lg:col-start-2">
+                  <p className="text-base sm:text-lg font-medium text-white mb-1">
+                    DINESH
+                  </p>
+                  <a 
+                    href="tel:+919500563471" 
+                    className="text-[#00FFF7] hover:text-[#9D4EDD] transition-colors duration-300 text-sm sm:text-base"
+                  >
+                    📞 +91 95005 63471
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

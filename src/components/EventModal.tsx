@@ -285,6 +285,143 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                 </motion.div>
               )}
 
+              {/* Overall Coordinators */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+                className="mb-8"
+              >
+                <h3 className="text-lg font-heading font-semibold text-secondary mb-4">
+                  Overall Coordinators
+                </h3>
+                
+                <div className="space-y-4">
+                  {/* Faculty Coordinator */}
+                  <div className="glassmorphism rounded-xl p-4">
+                    <h4 className="text-sm font-semibold text-primary mb-3 flex items-center">
+                      <span className="mr-2">👨‍🏫</span>
+                      Faculty Coordinator
+                    </h4>
+                    <div className="flex items-center justify-between bg-bg-primary/30 rounded-lg p-3">
+                      <div>
+                        <p className="text-text-primary font-body font-medium">A.K.BABU (M.E)</p>
+                        <p className="text-xs text-text-secondary font-body">Academic & Administrative Queries</p>
+                      </div>
+                      <motion.a
+                        href="tel:+919840400868"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center space-x-1 bg-primary/20 hover:bg-primary/30 rounded-lg px-3 py-1 border border-primary/30 hover:border-primary/50 transition-all duration-300 cursor-pointer"
+                      >
+                        <span className="text-primary">📱</span>
+                        <span className="text-text-secondary font-body text-sm">Call</span>
+                      </motion.a>
+                    </div>
+                  </div>
+
+                  {/* Student Coordinators */}
+                  <div className="glassmorphism rounded-xl p-4">
+                    <h4 className="text-sm font-semibold text-primary mb-3 flex items-center">
+                      <span className="mr-2">👥</span>
+                      Student Coordinators
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <div className="bg-bg-primary/30 rounded-lg p-3">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="text-text-primary font-body font-medium text-sm">GURUAKASH</p>
+                            <p className="text-xs text-text-secondary font-body">Event Support</p>
+                          </div>
+                          <motion.a
+                            href="tel:+919710830456"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                          >
+                            📱
+                          </motion.a>
+                        </div>
+                      </div>
+
+                      <div className="bg-bg-primary/30 rounded-lg p-3">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="text-text-primary font-body font-medium text-sm">RANJITH</p>
+                            <p className="text-xs text-text-secondary font-body">Technical Assistance</p>
+                          </div>
+                          <motion.a
+                            href="tel:+919500063471"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                          >
+                            📱
+                          </motion.a>
+                        </div>
+                      </div>
+
+                      <div className="bg-bg-primary/30 rounded-lg p-3">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="text-text-primary font-body font-medium text-sm">WILSON</p>
+                            <p className="text-xs text-text-secondary font-body">Registration Support</p>
+                          </div>
+                          <motion.a
+                            href="tel:+918072536987"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                          >
+                            📱
+                          </motion.a>
+                        </div>
+                      </div>
+
+                      <div className="bg-bg-primary/30 rounded-lg p-3">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="text-text-primary font-body font-medium text-sm">ARUL SELVAM</p>
+                            <p className="text-xs text-text-secondary font-body">Workshop Coordination</p>
+                          </div>
+                          <motion.a
+                            href="tel:+919626166996"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                          >
+                            📱
+                          </motion.a>
+                        </div>
+                      </div>
+
+                      <div className="bg-bg-primary/30 rounded-lg p-3 sm:col-span-2">
+                        <div className="flex items-center justify-between max-w-xs mx-auto">
+                          <div>
+                            <p className="text-text-primary font-body font-medium text-sm">DINESH</p>
+                            <p className="text-xs text-text-secondary font-body">Competition Support</p>
+                          </div>
+                          <motion.a
+                            href="tel:+919500563471"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="text-primary hover:text-secondary transition-colors cursor-pointer p-1"
+                          >
+                            📱
+                          </motion.a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-4 p-3 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg border border-primary/20">
+                      <p className="text-center text-text-secondary font-body text-xs">
+                        💡 <strong>Need General Help?</strong> Contact any overall coordinator for assistance with symposium queries, registration, or general support.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+
               {/* Register button */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
