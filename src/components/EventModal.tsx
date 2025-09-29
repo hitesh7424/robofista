@@ -222,8 +222,8 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                   <div className="space-y-3">
                     <div className="glassmorphism rounded-xl p-4">
                       <div className="flex items-center space-x-3 mb-2">
-                        <span className="text-2xl">🏅</span>
-                        <h4 className="font-heading font-bold text-primary">All Participants</h4>
+                        <span className="text-2xl">🥇</span>
+                        <h4 className="font-heading font-bold text-primary">Winner</h4>
                       </div>
                       <p className="text-text-secondary font-body text-sm ml-8">
                         Certificate + Shield
@@ -232,7 +232,7 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                     
                     <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-3 border border-primary/20">
                       <p className="text-center text-text-secondary font-body text-sm">
-                        🎉 <strong>Everyone's a Winner!</strong> All participants in non-technical events receive recognition with certificate and shield.
+                        � <strong>Winner Takes All!</strong> Only the winner in non-technical events receives recognition with certificate and shield.
                       </p>
                     </div>
                   </div>

@@ -353,15 +353,15 @@ const About = () => {
                 </h3>
                 <div className="space-y-3">
                   <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-4 border border-primary/20">
-                    <div className="text-2xl mb-2">🏅</div>
-                    <h4 className="font-bold text-primary mb-1">All Participants</h4>
+                    <div className="text-2xl mb-2">🥇</div>
+                    <h4 className="font-bold text-primary mb-1">Winner</h4>
                     <p className="text-text-secondary font-body text-sm">Certificate + Shield</p>
                   </div>
                   <div className="bg-gradient-to-r from-secondary/5 to-primary/5 rounded-xl p-4 border border-secondary/10">
-                    <div className="text-xl mb-2">�</div>
+                    <div className="text-xl mb-2">🎯</div>
                     <p className="text-text-secondary font-body text-sm">
-                      <strong className="text-primary">Everyone's a Winner!</strong><br/>
-                      Recognition for all participants with certificate and shield
+                      <strong className="text-primary">Winner Takes All!</strong><br/>
+                      Only the winner receives recognition with certificate and shield
                     </p>
                   </div>
                 </div>

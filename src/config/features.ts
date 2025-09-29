@@ -19,6 +19,7 @@ export interface FeatureConfig {
   showCoordinatorContacts: boolean
   showEventPrizes: boolean // In case you want to re-enable prizes
   showEventStats: boolean
+  showBackgroundVideo: boolean // Control background video on homepage
   
   // Navigation controls
   showNavigation: boolean
@@ -58,6 +59,7 @@ export const featureConfig: FeatureConfig = {
   showCoordinatorContacts: true, // Show coordinator contact information
   showEventPrizes: false, // Show prize information (currently disabled)
   showEventStats: true, // Show event statistics in about page
+  showBackgroundVideo: true, // Show background video on homepage
   
   // Navigation controls
   showNavigation: true, // Show navigation bar

@@ -74,24 +74,26 @@ const Home = () => {
         />
 
         {/* Vimeo iframe overlay - Fill method for all screen sizes */}
-        <iframe
-          src="https://player.vimeo.com/video/1115238176?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&background=1&app_id=58479"
-          className="absolute top-0 left-0 opacity-30"
-          style={{
-            pointerEvents: "none",
-            border: "none",
-            width: "100vw",
-            height: "100vh",
-            minWidth: "100%",
-            minHeight: "100%",
-            objectFit: "cover",
-            transform: "scale(1.1)",
-          }}
-        />
+        {isFeatureEnabled("showBackgroundVideo") && (
+          <iframe
+            src="https://player.vimeo.com/video/1115238176?autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0&background=1&app_id=58479"
+            className="absolute top-0 left-0 opacity-30"
+            style={{
+              pointerEvents: "none",
+              border: "none",
+              width: "100vw",
+              height: "100vh",
+              minWidth: "100%",
+              minHeight: "100%",
+              objectFit: "cover",
+              transform: "scale(1.1)",
+            }}
+          />
+        )}
       </div>
 
       {/* Hero Section */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center text-center">
+      <div className="relative z-10 min-h-screen flex items-center justify-center text-center pt-20 md:pt-8">
         <div className="px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto">
           {/* Symposium Logo */}
           <motion.div
@@ -371,14 +373,14 @@ const Home = () => {
                 <div className="space-y-3">
                   <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl p-4 border border-primary/20">
                     <div className="text-2xl mb-2">🏅</div>
-                    <h4 className="font-bold text-primary mb-1">All Participants</h4>
+                    <h4 className="font-bold text-primary mb-1">Winner</h4>
                     <p className="text-text-secondary text-sm">Certificate + Shield</p>
                   </div>
                   <div className="bg-gradient-to-r from-secondary/5 to-primary/5 rounded-xl p-4 border border-secondary/10">
                     <div className="text-xl mb-2">🎉</div>
                     <p className="text-text-secondary text-sm">
                       <strong className="text-primary">Everyone's a Winner!</strong><br/>
-                      Recognition for all participants with certificate and shield
+                      Recognition for all participants with Certificate
                     </p>
                   </div>
                 </div>
