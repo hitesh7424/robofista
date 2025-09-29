@@ -12,15 +12,15 @@ const About = () => {
     { 
       icon: '📷', 
       label: 'Instagram', 
-      value: '@robonexus2k25', 
-      href: 'https://instagram.com/robonexus2k25',
+      value: '@robonexus_2k25', 
+      href: 'https://instagram.com/robonexus_2k25',
       description: 'Follow us for updates'
     },
     { 
       icon: '📧', 
       label: 'Email', 
-      value: 'robonexus2025@college.edu', 
-      href: 'mailto:robonexus2025@college.edu',
+      value: 'robonexus2025@gmail.com', 
+      href: 'mailto:robonexus2025@gmail.com',
       description: 'Send us your queries'
     }
   ]

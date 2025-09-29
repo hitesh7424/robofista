@@ -18,8 +18,8 @@ interface Event {
   prize: string
   registrationLink: string
   coordinators?: {
-    students: string[]
-    faculty: string
+    students: {name: string, phone: string | null}[]
+    faculty: {name: string, phone: string | null}
   }
   contact?: {
     phone: string[]

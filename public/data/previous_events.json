@@ -1,0 +1,310 @@
+{
+  "hack-fest": {
+    "name": "Hack Fest",
+    "shortDescription": "A 24-hour hackathon to innovate and create solutions.",
+    "description": "Hack Fest is a 24-hour hackathon where participants come together to innovate and create solutions to real-world problems. Teams will work on their projects, present their ideas, and compete for exciting prizes. This event is perfect for tech enthusiasts and problem solvers.",
+    "date": "21st to 22nd March",
+    "time": "11:00 AM to 11:00 AM (24 hours)",
+    "venue": "CAD lab",
+    "registrationFee": "₹1000 per Team",
+    "prize": "₹10000",
+    "groupType": "Team (Max 4 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Ms. CH. Priyanka", "8754584534"]],
+    "studentCoordinator": [
+      ["JOHN PETER D", "7305191951"],
+      ["GURU AKASH C", "6379929194"],
+      ["MOHAN E", "8667646495"],
+      ["SHARVIN V", "9176023120"]
+    ]
+    ,
+    "image": "images/hack-fest.webp",
+    "rules": [
+      "Develop your project entirely during the hackathon with all contributions coming from your team.",
+      "Complete your project within the defined timeframe and meet all submission deadlines.",
+      "Submit a final product that includes a working prototype along with clear documentation.",
+      "Utilize available programming tools while avoiding reliance on pre-built templates or unauthorized code.",
+      "Accept that judging will be based on innovation, technical execution, design, and overall presentation with no external help allowed."
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSdS0MVp6Cmfj1KxJyDwHAeoJp7DwoCkOQSpMqS1oO3_Ov7gJA/viewform?usp=sharing"
+  },
+  "workshop-plc": {
+    "name": "Workshop-1 PLC",
+    "shortDescription": "WORKSHOP – PLC Essentials: From Theory to Practice",
+    "description": "The Workshop-1 PLC provides an introduction to Programmable Logic Controllers (PLCs). Participants will learn about PLC programming, hardware configuration, and practical applications in industrial automation.",
+    "date": "21st March",
+    "time": "9:30 AM - 12:30 PM",
+    "venue": "IOT Lab",
+    "registrationFee": "₹200 per person",
+    "prize": "NA",
+    "groupType": "Individual",
+    "eventType": "Offline",
+    "category": "Workshop",
+    "facultyCoordinator": [["Ms. CH. Priyanka", "8754584534"]],
+    "studentCoordinator": [
+      ["Madhan E", "8754724997"],
+      ["Pranav Anandkumar", "9952869573"]
+    ],
+    "image": "images/workshop-plc.webp",
+    "rules": [
+      "Participants must review and complete all preparatory materials on PLC fundamentals before attending the workshop.",
+      "All safety protocols and operational guidelines provided by the facilitators must be followed without exception.",
+      "Each programming task and exercise should be completed independently, with proper documentation maintained throughout.",
+      "Participants are required to stick to the allotted time slots for each session to help maintain an organized workshop schedule.",
+      "Every participant must bring their own laptop with the necessary PLC simulation software pre-installed, as detailed in the workshop prerequisites."
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfW8irnG9cU-o9iXw6W8uID3rUfEDF0GGl-NdNjdVlfwi8SyQ/viewform?usp=sharing"
+  },
+  "workshop-ros": {
+    "name": "Workshop-2 ROS",
+    "shortDescription": "ROS for Absolute Beginners: Basics on Navigation",
+    "description": "Join the Workshop-2 ROS to dive into the world of robotics. This workshop offers hands-on experience with the Robot Operating System (ROS), covering essential concepts, programming, and real-world applications. Perfect for aspiring roboticists and engineers.",
+    "date": "22nd March 2025",
+    "time": "9:00 AM - 12:00 PM",
+    "venue": "IOT Lab",
+    "registrationFee": "₹250 per person",
+    "prize": "NA",
+    "groupType": "Individual",
+    "eventType": "Offline",
+    "category": "Workshop",
+    "facultyCoordinator": [["Mr. S. Tharmlingam", "9786588167"]],
+    "studentCoordinator": [
+      ["Karthick P", "8220996520"],
+      ["Mokesh S", "7550271234"]
+    ],
+    "image": "images/workshop-ros.webp",
+    "rules": [
+      "Participants must complete all pre-workshop tutorials to build a basic understanding of ROS before the session begins.",
+      "All instructions and guidelines provided by the organizers must be strictly followed throughout the workshop.",
+      "Each participant is expected to complete all hands-on exercises and coding tasks independently, ensuring full academic integrity.",
+      "Participants should adhere to the designated session timings to ensure an efficient and smooth learning experience.",
+      "Every participant must bring their own laptop with the required ROS software pre-installed as specified in the pre-workshop guidelines."
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScwx3xA9pay3JxF4mYm_dX_HE7hZYMUlpCHGGpgxoOYx6YbNg/viewform?usp=sharing"
+  },
+  "project-expo": {
+    "name": "Project Expo",
+    "shortDescription": "Showcase your innovative projects to industry experts.",
+    "description": "The Project Expo is a platform for aspiring innovators to present their groundbreaking projects. Participants will have the opportunity to showcase their work to industry experts, receive valuable feedback, and compete for exciting prizes.",
+    "date": "22nd March 2025",
+    "time": "10:00 AM to 11:30 AM",
+    "venue": "CAD lab",
+    "registrationFee": "₹150 per Team",
+    "prize": "₹2000",
+    "groupType": "Team (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Mr. S. Tharmlingam", "9786588167"]],
+    "studentCoordinator": [
+      ["Vignesh K", "7418354320"],
+      ["Ranjan S", "7904125505"]
+    ],
+    "image": "images/project-expo.webp",
+    "rules": [
+      "Exhibit an original project with comprehensive documentation that clearly explains your concept and methodology.",
+      "Set up your display according to the provided guidelines to maintain safety and accessibility.",
+      "Incorporate a live demonstration or interactive element to showcase your project’s functionality.",
+      "Adhere to your allocated time slot for the demonstration to ensure fairness for all participants.",
+      "Avoid any unauthorized modifications or external assistance during the expo."
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfsS7XHlpKXAHkABPlLxfZOKkfQ0KwChJwG5ZsEnDaOKowuLA/viewform?usp=sharing"
+  },
+  "paper-presentation": {
+    "name": "Paper Presentation",
+    "shortDescription": "Present your research and innovative ideas.",
+    "description": "The Paper Presentation event provides a platform for researchers and students to present their innovative ideas and research findings. Participants will have the opportunity to showcase their work, receive feedback from experts, and compete for recognition and prizes. Topics include:",
+    "topics": [
+      "Smart Collaborative Robotics",
+      "Digital Twin-Driven Robotics",
+      "3D Printing and Rapid Prototyping",
+      "Autonomous Mobile Robots in Industrial Logistics",
+      "Smart Sensor Networks in Automation",
+      "Bio-hybrid Robotics",
+      "Deep Learning in Computer Vision",
+      "Cyber security in a Connected World",
+      "IoT-Enabled Smart Cities",
+      "Quantum Machine Learning"
+    ],
+    "date": "22nd March 2025",
+    "time": "9:30 AM - 12:30 PM",
+    "venue": "EDUSAT Hall",
+    "registrationFee": "₹150 per team",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Ms. CH. Priyanka", "8754584534"]],
+    "studentCoordinator": [
+      ["Shankar Narayan S", "9444034424"],
+      ["Henson Samrat GC", "8438523972"]
+    ],
+    "image": "images/paper-presentation.webp",
+    "rules":  [
+      "Present original research with proper citations to uphold academic integrity.",
+      "Deliver your presentation within the designated time frame (typically 10–15 minutes including Q&A).",
+      "Follow the prescribed format and guidelines provided by the organizers.",
+      "Use clear and professional visual aids to effectively support your content.",
+      "Ensure that no external assistance or mid-presentation modifications are involved."
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSf4mqocGKaU-HqcdZ6M3oKFb4zgGEIdvvtt9jAC9liEahnK8A/viewform?usp=sharing"
+  },
+  "sumo-bot": {
+    "name": "Sumo Bot",
+    "shortDescription": "Battle your robots in the ultimate Sumo showdown.",
+    "description": "The Sumo Bot competition challenges participants to design and build robots that can compete in a Sumo-style arena. Teams will battle their robots against each other, aiming to push their opponents out of the ring. This event tests creativity, engineering skills, and strategic thinking.",
+    "date": "22nd March 2025",
+    "time": "9:30 AM - 10:30 AM",
+    "venue": "MSB T8",
+    "registrationFee": "₹250 per Team",
+    "prize": "₹3000",
+    "groupType": "Team (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Ms. M. Vennila", "7708103292"]],
+    "studentCoordinator": [
+      ["Prashanth S", "8925489725"],
+      ["Mohan E", "8667646495"]
+    ],
+    "image": "images/sumo-bot.webp",
+    "rules":[
+      "Robo : Max 20 × 20 cm ,3kg ,safe material,no weapons.",
+      "Match : 3 rounds (1-2 Mins each ), push the opponents out of the line to win.",
+      "Ring : 77- 154cm diameter, non- slip surface.",
+      "Control: wireless remote ; no sign interference",
+      "Fair Play : No jamming, no holding beyond 5 sec, no unfair play"
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
+  },
+  "robo-race": {
+    "name": "Robo Race",
+    "shortDescription": "Race your robots to victory in an exciting competition.",
+    "description": "The Robo Race event challenges participants to design and build fast, agile robots capable of navigating a complex racecourse. Teams will compete to see whose robot can complete the course in the shortest time, testing their engineering skills and creativity.",
+    "date": "22nd March 2025",
+    "time": "10:30 AM - 11:30 AM",
+    "venue": "MSB T7",
+    "registrationFee": "₹250 per person",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Ms. S. Priyadharshini", "9629149715"]],
+    "studentCoordinator": [
+      ["Muthuselvam D", "9566189224"],
+      ["Sharvin V", "9176023120"]
+    ],
+    "image": "images/robo-race.webp",
+    "rules": [
+      "Robo : Max 20 × 20 cm, 3 kg, safe material; design optimized for speed with no hazardous modifications.",
+      "Race : Timed rounds (1–2 mins each, best time wins); multiple heats may be used to determine finalists.",
+      "Control : Wireless remote; no signal interference or unauthorized adjustments during the race.",
+      "Fair Play : No track sabotage, no external assistance, and no mid-race modifications strict adherence to safety and sportsmanship is required."
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
+  },
+  "line-following-robot": {
+    "name": "Line Following Robot",
+    "shortDescription": "Build and program robots to follow a line autonomously.",
+    "description": "The Line Following Robot event challenges participants to design and program robots that can autonomously follow a line on a track. Teams will compete to see whose robot can navigate the course with the highest speed and accuracy, testing their skills in robotics and programming.",
+    "date": "22nd March",
+    "time": "9:30 AM - 10:30 AM",
+    "venue": "MSB T8",
+    "registrationFee": "₹250 per Team",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Mr. S. Tharmlingam", "9786588167"]],
+    "studentCoordinator": [
+      ["Gokulraj K", "6383583728"],
+      ["Guru Akash C", "6379929194"]
+    ],
+    "image": "images/line-following-robot.webp",
+    "rules":  [
+      "The robot must be autonomous and wireless",
+      "The robot must fit inside a 20 cm x 20 cm x 20 cm box",
+      "The robot must not use infrared light-reflecting materials on the outside",
+      "The robot must not produce magnetic interference for other robots",
+      "The robot must be able to move in all directions",
+      "The robot must follow a black line on the playing field"
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
+  },
+  "robo-soccer": {
+    "name": "Robo Soccer",
+    "shortDescription": "Compete in a thrilling soccer match with your robots.",
+    "description": "The Robo Soccer event invites participants to design and build robots capable of playing soccer. Teams will compete in exciting matches, showcasing their robots' agility, strategy, and teamwork. This event combines engineering, programming, and sportsmanship in a fun and competitive environment.",
+    "date": "22nd March",
+    "time": "10:30 AM - 11:30 AM",
+    "venue": "MSB T3",
+    "registrationFee": "₹250 per Team",
+    "prize": "₹3000",
+    "groupType": "Group (Minimum 2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Mr. J. Srinivas", "8754114996"]],
+    "studentCoordinator": [
+      ["Akash R", "7200372319"],
+      ["Prathap A", "7695970453"]
+    ],
+    "image": "images/robo-soccer.webp",
+    "rules":  [
+      "Robo : Max 20 x 20 cm, 4kg, safe material, ball-striking mechanism permitted; no additional offensive attachments.",
+      "Match : Best 2 out of 3 rounds (2-3 mins each), score more goals than opponent to win.",
+      "Control : Wireless remote; no signal jamming or unauthorized interference.",
+      "Fair Play : No physical obstruction, no holding beyond 5 sec"
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
+  },
+  "drone-shoot": {
+    "name": "Drone Shoot",
+    "shortDescription": "Capture breathtaking aerial footage with your drone.",
+    "description": "Experience a new perspective on our campus! Drone Shoot is a dynamic event where participants use drones equipped with cameras to capture stunning aerial footage of our campus. Showcase your technical skills and creative vision by submitting a finalized video that highlights our campus from above. Join us to elevate your perspective—register now and bring your aerial vision to life!",
+    "date": "22nd March 2025",
+    "time": "09:00 AM TO 12:00 PM",
+    "venue": "KVEG CAMPUS",
+    "registrationFee": "₹250 per Team of 2",
+    "prize": "₹3000",
+    "groupType": "Group (2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Ms. S. PRIYADHARSHINI", "9629149715"]],
+    "studentCoordinator": [
+      ["RANJITH S", "9500740713"],
+      ["KEERTHIHARAN S", "9843882088"],
+      ["HITESH KUMAR GAURAV", "7319776396"]
+    ],
+    "image": "images/drone-shoot.webp",
+    "rules": [
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
+  },
+  "maze-solver": {
+    "name": "Maze Solver",
+    "shortDescription": "Program your robot to navigate and solve a complex maze.",
+    "description": "The Maze Solver event challenges participants to design and program robots that can autonomously navigate through a complex maze. Teams will compete to see whose robot can find the exit in the shortest time, testing their skills in robotics, programming, and problem-solving.",
+    "date": "22nd March",
+    "time": "10:00AM - 11:00AM",
+    "venue": "MSB T7",
+    "registrationFee": "₹250 per Team",
+    "prize": "₹3000",
+    "groupType": "Group (2 Members)",
+    "eventType": "Offline",
+    "category": "Technical",
+    "facultyCoordinator": [["Mr. J. Srinivas", "8754114996"]],
+    "studentCoordinator": [
+      ["VijayaKumar V", "8940231185"],
+      ["Jeron S", "7358997481"]
+    ],
+    "image": "images/robo-maze.webp",
+    "rules":  [
+      "Time duration for the Event: 10 minutes maximum across all runs",
+      "Robot Weight Range: Any",
+      "Robot Dimensions: 20 cm x 20 cm",
+      "Robot Control Specifications: Autonomous",
+      "prioritizing finding the exit while navigating through the maze, and returning to the start if no solution is found.",
+      "The robot shall not jump over, fly over, climb, scratch, cut, burn, mark, damage, or destroy the walls of the maze"
+    ],
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfRZECvyVEp7pJYR82pOC16RQdKNOBfXzxAbuh3S9J2gtyskA/viewform?usp=sharing"
+  }
+}

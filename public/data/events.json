@@ -6,18 +6,25 @@
     "time": "10:00 AM",
     "description": "Classic line following competition where robots navigate through complex paths using sensors to follow a black line on white surface.",
     "rules": [
-      "Follow black line on white surface",
-      "Fastest completion wins",
-      "No human intervention during run",
-      "Maximum 3 attempts per team",
-      "Robot must stay within track boundaries"
+      "The robot must be autonomous and wireless",
+      "The robot must fit inside a 20 cm x 20 cm x 20 cm box",
+      "The robot must not use infrared light-reflecting materials on the outside",
+      "The robot must not produce magnetic interference for other robots",
+      "The robot must be able to move in all directions",
+      "The robot must follow a black line on the playing field"
     ],
     "image": "/images/events/01_line_follower.png",
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Guru Akash", "Ashvath", "Kishore V", "Manigandan E", "Meganathan"],
-      "faculty": "Mr. J. Srinivas"
+      "students": [
+        {"name": "Guru Akash", "phone": "+91 63799 29194"},
+        {"name": "Ashvath", "phone": "+91 89253 21490"},
+        {"name": "Kishore V", "phone": null},
+        {"name": "Manigandan E", "phone": null},
+        {"name": "Meganathan", "phone": null}
+      ],
+      "faculty": {"name": "Mr. J. Srinivas", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -31,18 +38,23 @@
     "time": "11:30 AM",
     "description": "Robot sumo wrestling competition where autonomous bots battle to push opponents out of the ring using strategy and power.",
     "rules": [
-      "Maximum robot weight: 3kg",
-      "Robot dimensions: 20cm x 20cm",
-      "Autonomous operation only",
-      "No remote control allowed",
-      "Match duration: 3 minutes"
+      "Robo : Max 20 × 20 cm ,3kg ,safe material,no weapons.",
+      "Match : 3 rounds (1-2 Mins each ), push the opponents out of the line to win.",
+      "Ring : 77- 154cm diameter, non- slip surface.",
+      "Control: wireless remote ; no sign interference",
+      "Fair Play : No jamming, no holding beyond 5 sec, no unfair play"
     ],
     "image": "/images/events/02_sumo_bot.png",
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Rajesh", "Perumal M", "Mokesh S", "Gokul V"],
-      "faculty": "Mr. J. Srinivas"
+      "students": [
+        {"name": "Rajesh", "phone": null},
+        {"name": "Perumal M", "phone": null},
+        {"name": "Mokesh S", "phone": null},
+        {"name": "Gokul V", "phone": null}
+      ],
+      "faculty": {"name": "Mr. J. Srinivas", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -56,18 +68,24 @@
     "time": "2:00 PM",
     "description": "Present innovative research papers on robotics, automation, and emerging technologies in front of expert judges.",
     "rules": [
-      "Maximum 15 minutes presentation",
-      "5 minutes Q&A session",
-      "Original research work only",
-      "PowerPoint presentation required",
-      "Maximum 4 members per team"
+      "Present original research with proper citations to uphold academic integrity",
+      "Deliver your presentation within the designated time frame (typically 10–15 minutes including Q&A)",
+      "Follow the prescribed format and guidelines provided by the organizers",
+      "Use clear and professional visual aids to effectively support your content",
+      "Ensure that no external assistance or mid-presentation modifications are involved"
     ],
     "image": "/images/events/06_paper_presentation.png",
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Madhan", "Monisha", "Santhiya V", "Ramya R", "Akash K"],
-      "faculty": "Mrs. Priyanka"
+      "students": [
+        {"name": "Madhan", "phone": "+91 87547 24997"},
+        {"name": "Monisha", "phone": null},
+        {"name": "Santhiya V", "phone": null},
+        {"name": "Ramya R", "phone": null},
+        {"name": "Akash K", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Priyanka", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -81,18 +99,22 @@
     "time": "3:30 PM",
     "description": "High-speed robot racing competition where autonomous robots navigate through challenging obstacle courses and tracks.",
     "rules": [
-      "Maximum robot dimensions: 30cm x 30cm x 30cm",
-      "Autonomous navigation only",
-      "No remote control allowed",
-      "Time-based scoring system",
-      "Multiple track challenges"
+      "Robo : Max 20 × 20 cm, 3 kg, safe material; design optimized for speed with no hazardous modifications.",
+      "Race : Timed rounds (1–2 mins each, best time wins); multiple heats may be used to determine finalists.",
+      "Control : Wireless remote; no signal interference or unauthorized adjustments during the race.",
+      "Fair Play : No track sabotage, no external assistance, and no mid-race modifications strict adherence to safety and sportsmanship is required."
     ],
     "image": "/images/events/03_robo_race.png",
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Sharvin", "Udhayakumar P", "Ramalingam J", "Gukesh P"],
-      "faculty": "Mr. Priyadharshini"
+      "students": [
+        {"name": "Sharvin", "phone": null},
+        {"name": "Udhayakumar P", "phone": null},
+        {"name": "Ramalingam J", "phone": "+91 90256 86628"},
+        {"name": "Gukesh P", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Priyadharshini", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -106,18 +128,23 @@
     "time": "10:00 AM",
     "description": "Showcase innovative robotics and automation projects with live demonstrations and interactive exhibits.",
     "rules": [
-      "Original project work required",
-      "Live demonstration mandatory",
-      "Project documentation needed",
-      "Maximum 5 members per team",
-      "Open exhibition format"
+      "Exhibit an original project with comprehensive documentation that clearly explains your concept and methodology",
+      "Set up your display according to the provided guidelines to maintain safety and accessibility",
+      "Incorporate a live demonstration or interactive element to showcase your project's functionality",
+      "Adhere to your allocated time slot for the demonstration to ensure fairness for all participants",
+      "Avoid any unauthorized modifications or external assistance during the expo"
     ],
     "image": "/images/events/07_project_expo.png",
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Adheshwaran", "Sachin S", "Santha Kumar E", "Yogeshwaran"],
-      "faculty": "Mrs. Vennila"
+      "students": [
+        {"name": "Adheshwaran", "phone": null},
+        {"name": "Sachin S", "phone": null},
+        {"name": "Santha Kumar E", "phone": null},
+        {"name": "Yogeshwaran", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Vennila", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -131,18 +158,22 @@
     "time": "11:30 AM",
     "description": "Exciting robot soccer matches where teams of autonomous robots compete in strategic gameplay and ball control.",
     "rules": [
-      "Maximum 3 robots per team",
-      "Autonomous play only",
-      "Standard soccer field dimensions",
-      "Match duration: 20 minutes",
-      "No human intervention during play"
+      "Robo : Max 20 x 20 cm, 4kg, safe material, ball-striking mechanism permitted; no additional offensive attachments.",
+      "Match : Best 2 out of 3 rounds (2-3 mins each), score more goals than opponent to win.",
+      "Control : Wireless remote; no signal jamming or unauthorized interference.",
+      "Fair Play : No physical obstruction, no holding beyond 5 sec"
     ],
     "image": "/images/events/04_robo_soccer.png",
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Pothigaivasan", "Prakash M", "Saranraj N", "Tamil Vanan"],
-      "faculty": "Mrs. Vennila"
+      "students": [
+        {"name": "Pothigaivasan", "phone": null},
+        {"name": "Prakash M", "phone": null},
+        {"name": "Saranraj N", "phone": null},
+        {"name": "Tamil Vanan", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Vennila", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -166,8 +197,13 @@
     "category": "Non-Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Anbuselvan", "Prathap A", "Jayavel", "Yuvan Shankara Pandian S"],
-      "faculty": "Mr. Tharmalingam"
+      "students": [
+        {"name": "Anbuselvan", "phone": null},
+        {"name": "Prathap A", "phone": null},
+        {"name": "Jayavel", "phone": null},
+        {"name": "Yuvan Shankara Pandian S", "phone": "+91 70103 70280"}
+      ],
+      "faculty": {"name": "Mr. Tharmalingam", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -191,8 +227,12 @@
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Ranjith", "Yuvan Shankara Pandian S", "Tamizhvanan R"],
-      "faculty": "TBA"
+      "students": [
+        {"name": "Ranjith", "phone": "+91 95007 40713"},
+        {"name": "Yuvan Shankara Pandian S", "phone": "+91 70103 70280"},
+        {"name": "Tamizhvanan R", "phone": null}
+      ],
+      "faculty": {"name": "TBA", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -206,18 +246,24 @@
     "time": "10:00 AM",
     "description": "Hands-on workshop on Programmable Logic Controllers (PLC) and Robot Operating System (ROS) for industrial automation.",
     "rules": [
-      "Bring your own laptop",
-      "Basic programming knowledge required",
-      "Certificate provided upon completion",
-      "Limited to 40 participants",
-      "Hands-on practical sessions"
+      "Participants must review and complete all preparatory materials on PLC fundamentals before attending the workshop",
+      "All safety protocols and operational guidelines provided by the facilitators must be followed without exception",
+      "Each programming task and exercise should be completed independently, with proper documentation maintained throughout",
+      "Participants are required to stick to the allotted time slots for each session to help maintain an organized workshop schedule",
+      "Every participant must bring their own laptop with the necessary PLC simulation software pre-installed, as detailed in the workshop prerequisites"
     ],
     "image": "/images/events/09_workshop_plc_ros.png",
     "category": "Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Madhan", "Sheguvaran", "Varshaa R V", "Azeema M", "Kamesh"],
-      "faculty": "Mrs. Priyanka"
+      "students": [
+        {"name": "Madhan", "phone": "+91 87547 24997"},
+        {"name": "Sheguvaran", "phone": "+91 93445 32342"},
+        {"name": "Varshaa R V", "phone": "+91 63693 19704"},
+        {"name": "Azeema M", "phone": null},
+        {"name": "Kamesh", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Priyanka", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -241,8 +287,13 @@
     "category": "Non-Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Praveen", "Ramachandiran M", "Sridhar S", "Mohamed Hanees R"],
-      "faculty": "Mrs. Jothi Lakhsmi"
+      "students": [
+        {"name": "Praveen", "phone": null},
+        {"name": "Ramachandiran M", "phone": null},
+        {"name": "Sridhar S", "phone": null},
+        {"name": "Mohamed Hanees R", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Jothi Lakhsmi", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -266,8 +317,13 @@
     "category": "Non-Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Ashwath", "Vedhagiri S", "Dhanabalan T", "Robin"],
-      "faculty": "Mrs. Priyanka"
+      "students": [
+        {"name": "Ashwath", "phone": "+91 89253 21490"},
+        {"name": "Vedhagiri S", "phone": null},
+        {"name": "Dhanabalan T", "phone": "+91 63798 01816"},
+        {"name": "Robin", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Priyanka", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],
@@ -291,8 +347,13 @@
     "category": "Non-Technical",
     "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScxj6g-UdO01nLB7rtEWlVw8z-EOxa1uiFuBwyL5h76PuTbkg/viewform",
     "coordinators": {
-      "students": ["Guru Akash", "Mohana Vel S", "Vishva M", "Tamizhvanan R"],
-      "faculty": "Mrs. Vennila"
+      "students": [
+        {"name": "Guru Akash", "phone": "+91 63799 29194"},
+        {"name": "Mohana Vel S", "phone": null},
+        {"name": "Vishva M", "phone": null},
+        {"name": "Tamizhvanan R", "phone": null}
+      ],
+      "faculty": {"name": "Mrs. Vennila", "phone": null}
     },
     "contact": {
       "phone": ["+91 98404 00868", "+91 63799 29194"],

@@ -12,8 +12,8 @@ interface Event {
   category: string
   registrationLink: string
   coordinators?: {
-    students: string[]
-    faculty: string
+    students: {name: string, phone: string | null}[]
+    faculty: {name: string, phone: string | null}
   }
   contact?: {
     phone: string[]
@@ -258,7 +258,18 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                         <span className="mr-2">👨‍🏫</span>
                         Faculty Coordinator
                       </h4>
-                      <p className="text-text-secondary font-body">{event.coordinators.faculty}</p>
+                      <div className="space-y-1">
+                        <p className="text-text-secondary font-body font-medium">{event.coordinators.faculty.name}</p>
+                        {event.coordinators.faculty.phone && (
+                          <a 
+                            href={`tel:${event.coordinators.faculty.phone}`}
+                            className="text-primary hover:text-primary-dark text-sm flex items-center space-x-1 transition-colors duration-200"
+                          >
+                            <span>📞</span>
+                            <span>{event.coordinators.faculty.phone}</span>
+                          </a>
+                        )}
+                      </div>
                     </div>
 
                     {/* Student Coordinators */}
@@ -274,10 +285,21 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.5 + index * 0.05 }}
-                            className="flex items-center space-x-2 bg-bg-primary/30 rounded-lg p-2"
+                            className="flex flex-col space-y-1 bg-bg-primary/30 rounded-lg p-3"
                           >
-                            <span className="w-2 h-2 rounded-full bg-primary"></span>
-                            <span className="text-text-secondary font-body text-sm">{student}</span>
+                            <div className="flex items-center space-x-2">
+                              <span className="w-2 h-2 rounded-full bg-primary"></span>
+                              <span className="text-text-secondary font-body text-sm font-medium">{student.name}</span>
+                            </div>
+                            {student.phone && (
+                              <a 
+                                href={`tel:${student.phone}`}
+                                className="text-primary hover:text-primary-dark text-xs flex items-center space-x-1 ml-4 transition-colors duration-200"
+                              >
+                                <span>📞</span>
+                                <span>{student.phone}</span>
+                              </a>
+                            )}
                           </motion.div>
                         ))}
                       </div>
