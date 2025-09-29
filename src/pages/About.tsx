@@ -19,8 +19,8 @@ const About = () => {
     { 
       icon: '📧', 
       label: 'Email', 
-      value: 'robonexus2025@gmail.com', 
-      href: 'mailto:robonexus2025@gmail.com',
+      value: 'robonexus.ra@gmail.com', 
+      href: 'mailto:robonexus.ra@gmail.com',
       description: 'Send us your queries'
     }
   ]
