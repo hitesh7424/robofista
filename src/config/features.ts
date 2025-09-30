@@ -59,7 +59,7 @@ export const featureConfig: FeatureConfig = {
   showCoordinatorContacts: true, // Show coordinator contact information
   showEventPrizes: false, // Show prize information (currently disabled)
   showEventStats: true, // Show event statistics in about page
-  showBackgroundVideo: true, // Show background video on homepage
+  showBackgroundVideo: false, // Show background video on homepage
   
   // Navigation controls
   showNavigation: true, // Show navigation bar

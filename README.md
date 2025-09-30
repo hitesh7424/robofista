@@ -21,28 +21,32 @@ A modern, responsive website for the ROBONEXUS 2K25 Robotics & Automation Sympos
 ## 🚀 Tech Stack
 
 ### Frontend
+
 - **React 19.1.1** - Latest React with concurrent features
 - **TypeScript 5.8.3** - Type-safe development
 - **Vite 7.1.2** - Lightning-fast build tool
 - **React Router DOM 7.8.2** - Client-side routing
 
 ### Styling & UI
+
 - **TailwindCSS 3.4.17** - Utility-first CSS framework
 - **Framer Motion 12.23.12** - Production-ready motion library
 - **React Icons 5.5.0** - Popular icon library
 - **CSS Glassmorphism** - Modern glass-effect design
 
 ### Development Tools
+
 - **ESLint 9.33.0** - Code linting and formatting
 - **TypeScript ESLint** - TypeScript-specific linting rules
 - **PostCSS & Autoprefixer** - CSS processing and vendor prefixes
 
 ### Analytics & Monitoring
+
 - **Vercel Analytics** - Real-time visitor tracking and insights
 
 ## 📁 Project Structure
 
-```
+```tree
 robofista/
 ├── public/
 │   ├── data/                    # JSON data files
@@ -89,23 +93,27 @@ robofista/
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm or yarn package manager
 
 ### Quick Start
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/hitesh7424/robofista.git
    cd robofista
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -182,17 +190,20 @@ Analytics are automatically enabled when deployed to Vercel.
 ## 🎨 Design System
 
 ### Color Palette
+
 - **Primary**: Modern blue gradient
 - **Secondary**: Complementary purple tones
 - **Background**: Dark theme with glassmorphism effects
 - **Text**: High contrast for accessibility
 
 ### Typography
+
 - **Headings**: Clean, modern sans-serif
 - **Body**: Readable font with optimal line spacing
 - **Code**: Monospace for technical content
 
 ### Components
+
 - **Glassmorphism Cards**: Translucent cards with backdrop blur
 - **Smooth Animations**: Framer Motion powered transitions
 - **Interactive Elements**: Hover states and micro-interactions
@@ -207,17 +218,20 @@ Analytics are automatically enabled when deployed to Vercel.
 ## 🔧 Development Guidelines
 
 ### Code Style
+
 - TypeScript for type safety
 - ESLint for code quality
 - Functional components with hooks
 - Component composition over inheritance
 
 ### File Naming
+
 - Components: PascalCase (e.g., `EventCard.tsx`)
 - Utilities: camelCase (e.g., `formatDate.ts`)
 - Pages: PascalCase (e.g., `About.tsx`)
 
 ### Data Management
+
 - JSON files in `public/data/` for static content
 - TypeScript interfaces for data structure
 - Feature flags for conditional rendering
@@ -225,6 +239,7 @@ Analytics are automatically enabled when deployed to Vercel.
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 1. Connect GitHub repository to Vercel
 2. Configure build settings:
    - Build Command: `npm run build`
@@ -232,9 +247,11 @@ Analytics are automatically enabled when deployed to Vercel.
 3. Deploy automatically on push to main branch
 
 ### Manual Build
+
 ```bash
 npm run build
 ```
+
 Deploy the `dist/` folder to your hosting provider.
 
 ## 🤝 Contributing
@@ -251,7 +268,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Team
 
-**ROBONEXUS 2K25 Development Team**
+### ROBONEXUS 2K25 Development Team
+
 - Lead Developer: Comprehensive full-stack development
 - UI/UX Design: Modern glassmorphism interface
 - Content Management: Event and coordinator data
@@ -259,6 +277,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For technical issues or questions:
+
 - Create an issue in the GitHub repository
 - Contact the development team through the symposium coordinators
 
@@ -273,4 +292,4 @@ For technical issues or questions:
 
 ---
 
-**Built with ❤️ for ROBONEXUS 2K25 - Robotics & Automation Symposium**
+## Built with ❤️ for ROBONEXUS 2K25 - Robotics & Automation Symposium
