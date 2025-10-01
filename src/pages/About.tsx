@@ -567,7 +567,8 @@ const About = () => {
                   📅 Event Schedule
                 </h3>
                 <ul className="space-y-2 text-text-secondary font-body">
-                  <li>• Registration Deadline: October 12, 2025</li>
+                  <li>• Registration Deadline: October 13, 2025 </li>
+                  <li>• On Spot Registration Available </li>
                   <li>• Event Date: October 13, 2025</li>
                   <li>• Venue: KVCET Campus</li>
                   <li>• Reporting Time: 9:00 AM (All Days)</li>

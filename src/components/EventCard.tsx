@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { featureConfig } from '../config/features'
 
 interface Event {
   id: number
@@ -86,10 +87,12 @@ const EventCard = ({ event, onClick }: EventCardProps) => {
               <span>📅</span>
               <span className="font-body">{formatDate(event.date)}</span>
             </div>
-            <div className="flex items-center space-x-1">
-              <span>🕐</span>
-              <span className="font-body">{event.time}</span>
-            </div>
+            {featureConfig.showEventTimes && (
+              <div className="flex items-center space-x-1">
+                <span>🕐</span>
+                <span className="font-body">{event.time}</span>
+              </div>
+            )}
           </div>
 
           {/* Hover indicator */}

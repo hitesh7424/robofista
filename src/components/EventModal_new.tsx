@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect } from 'react'
-import { isEventRegistrationEnabled, getRegistrationMessage } from '../config/features'
+import { isEventRegistrationEnabled, getRegistrationMessage, featureConfig } from '../config/features'
 
 interface Event {
   id: number
@@ -118,10 +118,12 @@ const EventModal = ({ event, isOpen, onClose }: EventModalProps) => {
                   <span className="text-lg">📅</span>
                   <span className="font-body">{formatDate(event.date)}</span>
                 </div>
-                <div className="flex items-center space-x-2 text-text-secondary">
-                  <span className="text-lg">🕐</span>
-                  <span className="font-body">{event.time}</span>
-                </div>
+                {featureConfig.showEventTimes && (
+                  <div className="flex items-center space-x-2 text-text-secondary">
+                    <span className="text-lg">🕐</span>
+                    <span className="font-body">{event.time}</span>
+                  </div>
+                )}
               </motion.div>
 
               {/* Description */}

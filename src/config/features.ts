@@ -20,6 +20,7 @@ export interface FeatureConfig {
   showEventPrizes: boolean // In case you want to re-enable prizes
   showEventStats: boolean
   showBackgroundVideo: boolean // Control background video on homepage
+  showEventTimes: boolean // Control display of event times
   
   // Navigation controls
   showNavigation: boolean
@@ -60,6 +61,7 @@ export const featureConfig: FeatureConfig = {
   showEventPrizes: false, // Show prize information (currently disabled)
   showEventStats: true, // Show event statistics in about page
   showBackgroundVideo: false, // Show background video on homepage
+  showEventTimes: true, // Show event times in event cards and modals
   
   // Navigation controls
   showNavigation: true, // Show navigation bar
