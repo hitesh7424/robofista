@@ -7,7 +7,7 @@
     "description": "Classic line following competition where robots navigate through complex paths using sensors to follow a black line on white surface.",
     "rules": [
       "The robot must be autonomous and wireless",
-      "The robot must fit inside a 20 cm x 20 cm x 20 cm box",
+      "The robot must fit inside a 25 cm x 25 cm x 25 cm box, 1kg weight limit",
       "The robot must not use infrared light-reflecting materials on the outside",
       "The robot must not produce magnetic interference for other robots",
       "The robot must be able to move in all directions",
@@ -38,7 +38,7 @@
     "time": "11:30 AM",
     "description": "Robot sumo wrestling competition where autonomous bots battle to push opponents out of the ring using strategy and power.",
     "rules": [
-      "Robo : Max 20 × 20 cm ,3kg ,safe material,no weapons.",
+      "Robo : Max 30 × 30 cm ,5kg ,safe material,no weapons.",
       "Match : 3 rounds (1-2 Mins each ), push the opponents out of the line to win.",
       "Ring : 77- 154cm diameter, non- slip surface.",
       "Control: wireless remote ; no sign interference",
@@ -99,7 +99,7 @@
     "time": "3:30 PM",
     "description": "High-speed robot racing competition where autonomous robots navigate through challenging obstacle courses and tracks.",
     "rules": [
-      "Robo : Max 20 × 20 cm, 3 kg, safe material; design optimized for speed with no hazardous modifications.",
+      "Robo : Max 30 × 30 cm, 5 kg, safe material; design optimized for speed with no hazardous modifications.",
       "Race : Timed rounds (1–2 mins each, best time wins); multiple heats may be used to determine finalists.",
       "Control : Wireless remote; no signal interference or unauthorized adjustments during the race.",
       "Fair Play : No track sabotage, no external assistance, and no mid-race modifications strict adherence to safety and sportsmanship is required."
@@ -158,7 +158,7 @@
     "time": "11:30 AM",
     "description": "Exciting robot soccer matches where teams of autonomous robots compete in strategic gameplay and ball control.",
     "rules": [
-      "Robo : Max 20 x 20 cm, 4kg, safe material, ball-striking mechanism permitted; no additional offensive attachments.",
+      "Robo : Max 30 x 30 cm, 5kg, safe material, ball-striking mechanism permitted; no additional offensive attachments.",
       "Match : Best 2 out of 3 rounds (2-3 mins each), score more goals than opponent to win.",
       "Control : Wireless remote; no signal jamming or unauthorized interference.",
       "Fair Play : No physical obstruction, no holding beyond 5 sec"
