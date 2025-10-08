@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Line Follower",
     "date": "2025-10-13",
-    "time": "10:00 AM",
+    "time": "10:00 AM - 11:30 AM",
     "description": "Classic line following competition where robots navigate through complex paths using sensors to follow a black line on white surface.",
     "rules": [
       "The robot must be autonomous and wireless",
@@ -35,7 +35,7 @@
     "id": 2,
     "title": "Sumo Bot",
     "date": "2025-10-13",
-    "time": "11:30 AM",
+    "time": "10:30 AM - 12:00 PM",
     "description": "Robot sumo wrestling competition where autonomous bots battle to push opponents out of the ring using strategy and power.",
     "rules": [
       "Robo : Max 30 × 30 cm ,5kg ,safe material,no weapons.",
@@ -65,7 +65,7 @@
     "id": 3,
     "title": "Paper Presentation",
     "date": "2025-10-13",
-    "time": "2:00 PM",
+    "time": "10:00 AM - 12:30 PM",
     "description": "Present innovative research papers on robotics, automation, and emerging technologies in front of expert judges.",
     "rules": [
       "Present original research with proper citations to uphold academic integrity",
@@ -96,7 +96,7 @@
     "id": 4,
     "title": "Robo Race",
     "date": "2025-10-13",
-    "time": "3:30 PM",
+    "time": "10:00 AM - 12:00 PM",
     "description": "High-speed robot racing competition where autonomous robots navigate through challenging obstacle courses and tracks.",
     "rules": [
       "Robo : Max 30 × 30 cm, 5 kg, safe material; design optimized for speed with no hazardous modifications.",
@@ -125,7 +125,7 @@
     "id": 5,
     "title": "Project Expo",
     "date": "2025-10-13",
-    "time": "10:00 AM",
+    "time": "10:00 AM - 12:30 PM",
     "description": "Showcase innovative robotics and automation projects with live demonstrations and interactive exhibits.",
     "rules": [
       "Exhibit an original project with comprehensive documentation that clearly explains your concept and methodology",
@@ -155,7 +155,7 @@
     "id": 6,
     "title": "Robo Soccer",
     "date": "2025-10-13",
-    "time": "11:30 AM",
+    "time": "10:30 AM - 12:00 PM",
     "description": "Exciting robot soccer matches where teams of autonomous robots compete in strategic gameplay and ball control.",
     "rules": [
       "Robo : Max 30 x 30 cm, 5kg, safe material, ball-striking mechanism permitted; no additional offensive attachments.",
@@ -184,7 +184,7 @@
     "id": 7,
     "title": "From Theory to Practice",
     "date": "2025-10-13",
-    "time": "2:00 PM",
+    "time": "11:45 AM - 1:00 PM",
     "description": "Bridge the gap between theoretical knowledge and practical implementation in robotics and automation systems.",
     "rules": [
       "Theory to practical demonstration",
@@ -214,7 +214,7 @@
     "id": 8,
     "title": "Technical Quiz",
     "date": "2025-10-13",
-    "time": "3:30 PM",
+    "time": "11:00 AM - 12:30 PM",
     "description": "Test your technical knowledge in robotics, automation, AI, and emerging technologies through challenging quiz rounds.",
     "rules": [
       "Multiple rounds of questions",
@@ -243,7 +243,7 @@
     "id": 9,
     "title": "Workshop (PLC/ROS)",
     "date": "2025-10-13",
-    "time": "10:00 AM",
+    "time": "10:00 AM - 1:30 PM",
     "description": "Hands-on workshop on Programmable Logic Controllers (PLC) and Robot Operating System (ROS) for industrial automation.",
     "rules": [
       "Participants must review and complete all preparatory materials on PLC fundamentals before attending the workshop",
@@ -274,7 +274,7 @@
     "id": 10,
     "title": "Connections",
     "date": "2025-10-13",
-    "time": "11:30 AM",
+    "time": "12:00 PM - 1:00 PM",
     "description": "Interactive networking event connecting students, industry professionals, and robotics enthusiasts.",
     "rules": [
       "Interactive networking format",
@@ -304,7 +304,7 @@
     "id": 11,
     "title": "E-Sports (Free Fire, Stumble Guys)",
     "date": "2025-10-13",
-    "time": "2:00 PM",
+    "time": "11:30 AM - 1:00 PM",
     "description": "Gaming tournament featuring popular mobile games Free Fire and Stumble Guys with exciting competitions.",
     "rules": [
       "Mobile gaming tournament",
@@ -334,7 +334,7 @@
     "id": 12,
     "title": "CID",
     "date": "2025-10-13",
-    "time": "3:30 PM",
+    "time": "11:45 AM - 1:00 PM",
     "description": "Crime Investigation Department - A mystery solving competition combining technical skills with detective work.",
     "rules": [
       "Team-based mystery solving",
